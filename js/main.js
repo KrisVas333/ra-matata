@@ -151,7 +151,7 @@
     function validate(n) {
       var ok = true;
       if (n === 1) { if (val('city').length < 2) { err('city', 'Įrašykite miestą arba darželį, kad žinotume, kur atidaryti grupę.'); ok = false; } else err('city'); }
-      if (n === 3) {
+      if (n === 4) {
         if (val('parent_name').length < 2) { err('parent_name', 'Įrašykite vardą, kad žinotume, kaip kreiptis.'); ok = false; } else err('parent_name');
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('email'))) { err('email', 'Patikrinkite el. paštą: reikia @ ir taško, pvz. vardas@pastas.lt.'); ok = false; } else err('email');
       }
