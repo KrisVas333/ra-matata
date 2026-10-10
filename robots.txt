@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /komandai/
+Sitemap: https://krisvas333.github.io/ra-matata/sitemap.xml
