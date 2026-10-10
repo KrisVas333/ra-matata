@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="assets/img/hero-zoo-700.webp" imagesrcset="assets/img/hero-zoo-700.webp 700w, assets/img/hero-zoo-1400.webp 1400w" imagesizes="(min-width:900px) 520px, 92vw">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="stylesheet" href="css/style.css?v=5">
 <!-- Rule 16: cookieless event tracker (anonymous events only; no child data ever) -->
 <script defer src="https://krisvas333.github.io/neuron-ar/track.js" data-brand="ra" data-artifact="matata" data-kind="landing"></script>
 <script type="application/ld+json">
@@ -330,7 +330,7 @@
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Visa įranga pamokoje: robotas, pasakų žemėlapiai, komandų kortelės. Nieko pirkti nereikia.</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Nauja paveikslėlių knyga kiekvieną savaitę ir namų kortelė tėvams po pamokos.</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Vilniuje: Tech Zity centre ir darželiuose. Dieną išsirenkate formoje.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Vilniuje: Tech Zity centre ir darželiuose. Galime atvykti į jūsų darželį: pamokos dienos metu, tėvams nereikia vežti.</span></li>
         </ul>
       </div>
       <div class="cta-box">
@@ -381,10 +381,15 @@
       <div class="fstep" data-step="2">
         <h3>Kur būtų patogiausia?</h3>
         <div class="opts" role="radiogroup" aria-label="Vieta">
-          <label class="opt row"><input type="radio" name="location_pref" value="darzelis" checked><span><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Vaiko darželyje</span></label>
+          <label class="opt row"><input type="radio" name="location_pref" value="darzelis" checked><span><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Darželyje dienos metu</span></label>
           <label class="opt row"><input type="radio" name="location_pref" value="ra-centras"><span><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Robotikos akademijos centre (Tech Zity, Vilnius)</span></label>
           <label class="opt row"><input type="radio" name="location_pref" value="namuose"><span><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Namuose su rinkiniu ir video tėvams</span></label>
+          <small class="coi-mini">Skaidrumas: robotus Lietuvoje platina su RA bendrasavininkio šeima susijusi įmonė.</small>
         </div>
+        <label class="f">Kurį darželį lanko vaikas? <span class="muted" style="font-weight:600">(nebūtina)</span>
+          <input type="text" name="kindergarten_name" placeholder="Darželio pavadinimas" autocomplete="off" maxlength="120">
+          <span class="helper">Jei susirinks keli tėvai iš to paties darželio, pasiūlysime pamokas darželyje dienos metu, be vežiojimo.</span>
+        </label>
         <h3 style="font-size:1.1rem;margin-top:4px">Kas domina labiausiai?</h3>
         <div class="opts cols2" role="radiogroup" aria-label="Kas domina">
           <label class="opt"><input type="radio" name="interest" value="grupe" checked><span>Pamokos grupėje</span></label>
@@ -470,6 +475,7 @@
       <details><summary>Kodėl brangiau už minutę nei įprastas būrelis?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Grupė maža, o robotas tenka dviem vaikams. Kiekvienas vaikas spaudžia mygtukus pats, o ne žiūri. Kiekvieną savaitę nauja knyga ir namų kortelė tėvams.</p></details>
       <details><summary>O jei vaikui nusibos arba nepatiks?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Kiekvieną savaitę nauja tema ir nauja knyga: gyvūnai, augalai, maistas, miestas, kosmosas. Robotas dar piešia, šoka ir kalba vaiko balsu. Prieš mokėdami gausite visą informaciją ir galėsite apsigalvoti.</p></details>
       <details><summary>Ar vaikas išmoks anglų kalbą ir skaityti?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Išmoks pirmuosius angliškus žodžius ir frazes per žaidimą: tai pradžia, ne kalbos kursas. Skaityti per kelis mėnesius neišmoks: ugdome meilę knygai, klausymąsi, pasakojimą ir pažintį su raidėmis.</p></details>
+      <details><summary>Mano vaikas drovus arba dar gerai nekalba. Ar tiks?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Taip. Dirbame poromis, vaikas gali tik spausti mygtukus ir klausytis. Kalbėti nereikia, kol pats nenori.</p></details>
       <details><summary>Kur ir kada vyksta?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Vilniuje: Tech Zity centre ir darželiuose. Dieną ir vietą išsirenkate formoje, o kai susirinks grupė, parašysime tikslų laiką.</p></details>
       <details><summary>Kas atsitiks užsiregistravus į sąrašą?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Gausite laišką, kai atsidarys grupė jūsų darželyje ar centre. Įsipareigojimo nėra: tada ir nuspręsite.</p></details>
     </div>
@@ -622,6 +628,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
-<script src="js/main.js?v=4" defer></script>
+<script src="js/main.js?v=5" defer></script>
 </body>
 </html>

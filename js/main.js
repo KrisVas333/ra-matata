@@ -160,7 +160,7 @@
       return ok;
     }
     function product() { var a = val('child_age'); return a === '3' ? 'matata-3' : a === '4' ? 'matata-4' : 'matata'; }
-    function whereText() { var l = val('location_pref'); return l === 'darzelis' ? 'darželyje' : l === 'ra-centras' ? 'Robotikos akademijos centre' : 'namuose'; }
+    function whereText() { var l = val('location_pref'); return l === 'darzelis' ? 'darželyje dienos metu' : l === 'ra-centras' ? 'Robotikos akademijos centre' : 'namuose'; }
     function summary() {
       var a = val('child_age'); var s = $('#summary');
       if (s) s.textContent = (a === 'kitas' ? 'Vaikas: kito amžiaus' : 'Vaikas: ' + a + ' m.') + ' · ' + val('city') + ' · ' + whereText() + ' · ' + val('email');
@@ -187,6 +187,7 @@
         location_pref: val('location_pref'),
         interest: val('interest'),
         price_pref: val('price_pref'),
+        kindergarten_name: val('kindergarten_name').slice(0, 120) || null,
         preferred_day: days() || null,
         src: SRC,
         consent_contact: true,
