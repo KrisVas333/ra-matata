@@ -5,7 +5,7 @@
   // ---------- config ----------
   var SUPABASE_URL = 'https://iiekmeylpppczicrsxho.supabase.co/rest/v1/ra_waitlist';
   var SUPABASE_KEY = 'sb_publishable_iJC59f30YJm7hU4OwZsLDQ_9FN-ygzF';
-  var CLARITY_ID = ''; // TODO: Clarity project for ra-matata not created yet. Paste the id here; loads only after „Leisti".
+  var CLARITY_ID = 'yvonvcmo2n'; // Clarity project (Strict masking), loads ONLY after „Leisti".
   var CONSENT_KEY = 'matata-consent-v1';
 
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -28,7 +28,7 @@
   }
   var startAge = params.get('age');
   if (!startAge) { try { startAge = localStorage.getItem('matata-age'); } catch (e) {} }
-  setAge(startAge || '3', true);
+  setAge(startAge || '4', true);
   $$('[data-set-age]').forEach(function (b) { b.addEventListener('click', function () { setAge(b.getAttribute('data-set-age')); }); });
 
   // ---------- CTA tracking + interest prefill ----------
@@ -40,11 +40,36 @@
     });
   });
 
+  // ---------- intro video: click-to-play, poster only until then ----------
+  var pv = $('#pv'), pvPlay = $('#pvPlay');
+  if (pv && pvPlay) {
+    pvPlay.addEventListener('click', function () { pvPlay.classList.add('off'); var p = pv.play(); if (p && p.catch) p.catch(function () {}); });
+    var fired = false;
+    pv.addEventListener('play', function () { pvPlay.classList.add('off'); pv.controls = true; if (!fired) { fired = true; track('value', { step: 'video_play', age: body.getAttribute('data-age') }); } });
+  }
+
+  // ---------- outcomes: tabs on mobile (one period at a time) ----------
+  function showOut(i) {
+    $$('.out-grid').forEach(function (g) { $$('.out', g).forEach(function (o, k) { o.classList.toggle('show', k === i); }); });
+    $$('.out-tabs [data-out]').forEach(function (b) { b.setAttribute('aria-selected', String(+b.getAttribute('data-out') === i)); });
+  }
+  showOut(1);
+  $$('.out-tabs [data-out]').forEach(function (b) { b.addEventListener('click', function () { showOut(+b.getAttribute('data-out')); track('engage', { what: 'outcome_tab', i: b.getAttribute('data-out') }); }); });
+
+  // ---------- collapsible sections on mobile ----------
+  $$('[data-collapsible] .mob-sum').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var sec = b.closest('[data-collapsible]'); var open = !sec.classList.contains('open');
+      sec.classList.toggle('open', open); b.setAttribute('aria-expanded', String(open));
+      if (open) track('engage', { what: 'expand', id: b.getAttribute('aria-controls') });
+    });
+  });
+
   // ---------- sticky bar: show once the hero is scrolled past ----------
   var hero = $('.hero');
   if ('IntersectionObserver' in window && hero) {
     new IntersectionObserver(function (es) {
-      es.forEach(function (e) { body.classList.toggle('show-bar', !e.isIntersecting && e.boundingClientRect.top < 0); });
+      es.forEach(function (e) { var out = !e.isIntersecting && e.boundingClientRect.top < 0; body.classList.toggle('show-bar', out); if (out && typeof window.__consentMaybe === 'function') window.__consentMaybe(); });
     }, { threshold: 0 }).observe(hero);
     var wl = $('#sarasas');
     if (wl) new IntersectionObserver(function (es) {
@@ -116,12 +141,13 @@
       cur = n; steps.forEach(function (s) { s.classList.toggle('on', +s.dataset.step === n); });
       prog.forEach(function (p, i) { p.classList.toggle('on', i < n); });
       if (ann) ann.textContent = n + ' žingsnis iš ' + total;
-      if (n === 4) summary();
+      if (n === total) summary();
       var first = steps[n - 1].querySelector('input:not([type=radio]):not([type=checkbox]), h3');
       if (first && first.focus) { first.setAttribute('tabindex', '-1'); first.focus({ preventScroll: true }); }
       track('engage', { what: 'form_step', step: n });
     }
-    function val(name) { var e = form.elements[name]; return e ? (e.value || '').trim() : ''; }
+    function val(name) { var e = form.elements[name]; if (!e) return ''; if (e.length && !e.value && e[0] && e[0].type === 'radio') { for (var i = 0; i < e.length; i++) if (e[i].checked) return e[i].value; return ''; } return (e.value || '').trim(); }
+    function days() { return $$('input[name="preferred_day"]:checked', form).map(function (c) { return c.value; }).join(','); }
     function validate(n) {
       var ok = true;
       if (n === 1) { if (val('city').length < 2) { err('city', 'Įrašykite miestą arba darželį, kad žinotume, kur atidaryti grupę.'); ok = false; } else err('city'); }
@@ -129,7 +155,8 @@
         if (val('parent_name').length < 2) { err('parent_name', 'Įrašykite vardą, kad žinotume, kaip kreiptis.'); ok = false; } else err('parent_name');
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('email'))) { err('email', 'Patikrinkite el. paštą: reikia @ ir taško, pvz. vardas@pastas.lt.'); ok = false; } else err('email');
       }
-      if (n === 4) { if (!form.elements.consent_contact.checked) { err('consent_contact', 'Be sutikimo negalėsime parašyti, kai atsidarys grupė.'); ok = false; } else err('consent_contact'); }
+      if (n === 3) { if (!val('price_pref')) { err('price_pref', 'Pasirinkite vieną variantą, kad žinotume, kokia kaina jums tinka.'); ok = false; } else err('price_pref'); }
+      if (n === 5) { if (!form.elements.consent_contact.checked) { err('consent_contact', 'Be sutikimo negalėsime parašyti, kai atsidarys grupė.'); ok = false; } else err('consent_contact'); }
       return ok;
     }
     function product() { var a = val('child_age'); return a === '3' ? 'matata-3' : a === '4' ? 'matata-4' : 'matata'; }
@@ -144,11 +171,11 @@
       else show(Math.max(cur - 1, 1));
     });
     $$('input[name="child_age"]', form).forEach(function (r) { r.addEventListener('change', function () { if (r.value === '3' || r.value === '4') setAge(r.value, true); }); });
-    form.addEventListener('keydown', function (e) { if (e.key === 'Enter' && e.target.tagName === 'INPUT' && e.target.type !== 'checkbox' && cur < 4) { e.preventDefault(); if (validate(cur)) show(cur + 1); } });
+    form.addEventListener('keydown', function (e) { if (e.key === 'Enter' && e.target.tagName === 'INPUT' && e.target.type !== 'checkbox' && cur < total) { e.preventDefault(); if (validate(cur)) show(cur + 1); } });
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      if (!validate(4)) return;
+      if (!validate(total)) return;
       var btn = $('#submitBtn'); btn.disabled = true; btn.textContent = 'Siunčiame…'; form.classList.add('sending'); err('submit');
       var payload = {
         product: product(),
@@ -159,6 +186,8 @@
         city: val('city').slice(0, 120),
         location_pref: val('location_pref'),
         interest: val('interest'),
+        price_pref: val('price_pref'),
+        preferred_day: days() || null,
         src: SRC,
         consent_contact: true,
         consent_text_version: 'v1'
@@ -208,7 +237,8 @@
   }
   function openBanner() { banner.classList.add('on'); body.classList.add('consent-open'); }
   var saved = null; try { saved = localStorage.getItem(CONSENT_KEY); } catch (e) {}
-  if (saved === 'all') loadClarity(); else if (!saved) setTimeout(openBanner, 1200);
+  if (saved === 'all') loadClarity();
+  window.__consentMaybe = function () { if (!saved && CLARITY_ID && !banner.classList.contains('on')) { openBanner(); window.__consentMaybe = null; } };
   $('#consentYes').addEventListener('click', function () { decide('all'); });
   $('#consentNo').addEventListener('click', function () { decide('essential'); });
   var co = $('#consentOpen'); if (co) co.addEventListener('click', openBanner);
