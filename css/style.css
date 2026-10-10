@@ -566,5 +566,5 @@ body.consent-open .bar{transform:translateY(110%)}
 }
 
 /* ===================== round 2d: polish ===================== */
-h1{font-size:clamp(2.1rem,5vw,3.5rem);overflow-wrap:anywhere}
+h1{font-size:clamp(2.1rem,4.6vw,3.3rem)}
 @media (max-width:899px){.num b{white-space:nowrap;font-size:.95rem;letter-spacing:-.03em}}
