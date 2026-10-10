@@ -573,3 +573,6 @@ h1{font-size:clamp(2.1rem,4.6vw,3.3rem)}
 .coi-mini{display:block;font-size:.78rem;color:var(--ink-3);font-weight:600;padding:2px 4px 0}
 label.f .helper{font-weight:600;font-size:.85rem;color:var(--ink-3);line-height:1.35}
 @media (max-width:899px){summary{padding:10px 0;min-height:46px}.faq-list{gap:6px}}
+/* round 4 */
+@media (max-width:899px){.faq-list{gap:5px}.fears .ans p{font-size:.93rem}.legal-lines{font-size:.72rem}}
+@media (max-width:899px){.wl-copy .lead{display:none}#rezultatai .foot-note{font-size:.75rem}.fears .ans .src{font-size:.72rem}}
