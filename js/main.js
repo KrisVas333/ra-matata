@@ -106,7 +106,7 @@
       var h1 = $('.hero-copy h1');
       $$('span[data-age-only]', h1).forEach(function (s) {
         if (s.dataset.split) return; s.dataset.split = '1';
-        s.innerHTML = s.innerHTML.replace(/(<em>.*?<\/em>|[^\s<]+)/g, function (m) { return '<span class="w">' + m + '</span>'; });
+        s.innerHTML = s.innerHTML.replace(/(<em>.*?<\/em>[.,!?]*|[^\s<]+)/g, function (m) { return '<span class="w">' + m + '</span>'; });
       });
 
       var tl = g.timeline({ defaults: { ease: 'expo.out' } });
