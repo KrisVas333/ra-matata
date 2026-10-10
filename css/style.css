@@ -247,8 +247,8 @@ body[data-age="3"] [data-age-only="4"],body[data-age="4"] [data-age-only="3"]{di
 .price .card{background:var(--ink);color:#fff;border-radius:var(--r);padding:clamp(26px,4vw,44px);display:grid;gap:26px}
 @media (min-width:860px){.price .card{grid-template-columns:1.1fr 1fr;align-items:center}}
 .price h2{color:#fff}
-.price .big{font-family:var(--display);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:800;color:var(--yellow);line-height:1;margin:0 0 6px}
-.price .big small{font-size:.4em;color:#fff;font-weight:700;font-family:var(--body)}
+.price .big{font-family:var(--display);font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;color:var(--yellow);line-height:1;margin:0 0 6px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.price .big small{font-size:.4em;color:#fff;font-weight:700;font-family:var(--body);white-space:nowrap}
 .price ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .price li{display:flex;gap:12px;align-items:flex-start;color:#E8EDF9}
 .price li svg{width:22px;height:22px;color:var(--yellow);flex:none;margin-top:3px}
