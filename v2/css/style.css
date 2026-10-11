@@ -704,3 +704,29 @@ body.consent-open footer{padding-bottom:calc(96px + var(--consent-h,0px))}
   *,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}
   .bar{transition:none}
 }
+
+/* ---------- v2.1 (2026-10-11): daugiau vaikų pirmame ekrane ---------- */
+.kids-strip{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.kids-strip li{position:relative;margin:0;background:#fff;border-radius:14px;padding:3px;box-shadow:var(--shadow-soft)}
+.kids-strip img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 35%;border-radius:11px}
+.kids-strip span{position:absolute;left:8px;bottom:8px;background:rgba(21,32,57,.82);color:#fff;font-weight:800;font-size:.8rem;line-height:1;padding:4px 7px;border-radius:999px}
+.kids-note{margin:4px 2px 0;font-size:.8rem;font-weight:700;color:#fff;opacity:.9;text-align:right}
+.tb-photo{margin:0;position:relative}
+.tb-photo img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 30%;border-radius:14px}
+.tb-photo figcaption,.vc-ph figcaption{position:absolute;right:8px;bottom:8px;background:rgba(21,32,57,.8);color:#fff;font-size:.8rem;font-weight:800;padding:3px 8px;border-radius:999px}
+.vc-ph{grid-column:1/-1;grid-row:1;margin:0 0 8px;position:relative}
+.vc:has(.vc-ph) .ico{grid-row:2/4}
+.vc-ph img{display:block;width:100%;aspect-ratio:2/1;object-fit:cover;border-radius:12px}
+@media (min-width:860px){.vc-ph{margin:0;grid-row:auto}.vc:has(.vc-ph) .ico{grid-row:auto}.vc-ph img{aspect-ratio:16/10}}
+@media (min-width:900px){
+  .kids-strip{gap:12px;margin-top:12px}
+  .kids-note{text-align:left}
+  .tb-photo{grid-column:1/-1}
+  .tb-photo img{aspect-ratio:4/1;object-position:50% 72%}
+  .trustbar .card .src{grid-column:1/-1}
+}
+@media (min-width:1200px){
+  .trustbar .card{grid-template-columns:150px auto minmax(0,1.6fr) auto;gap:20px}
+  .tb-photo{grid-column:auto}
+  .tb-photo img{aspect-ratio:4/3}
+}
