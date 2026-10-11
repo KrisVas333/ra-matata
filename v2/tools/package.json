@@ -1,0 +1,11 @@
+{
+  "name": "matata-v2-tools",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Sinchronizuoja config.js į statinį tekstą, perdaro QR, lankstinukas.pdf ir og.png",
+  "scripts": { "sync": "node sync.js" },
+  "dependencies": {
+    "puppeteer-core": "24.9.0",
+    "qrcode": "1.5.4"
+  }
+}

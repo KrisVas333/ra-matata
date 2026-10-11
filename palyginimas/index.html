@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matata v1 ir v2 palyginimas</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../v2/assets/logo/ra-favicon-48.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Syne:wght@800&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#152039;--blue:#2A4FB5;--yellow:#FEC404;--line:rgba(42,79,181,.2);--sky:#EEF3FF}
+  *{box-sizing:border-box}
+  body{margin:0;background:#F3F4F8;color:var(--ink);font-family:Nunito,sans-serif;font-size:16px;line-height:1.5}
+  header{background:var(--ink);color:#fff;padding:14px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  header img{height:34px;width:auto}
+  header h1{font-family:Syne,sans-serif;font-size:1.2rem;margin:0}
+  header .sp{flex:1}
+  header a{color:#fff;font-weight:700}
+  .wrap{max-width:1180px;margin:0 auto;padding:20px}
+  .cols{display:grid;gap:20px;grid-template-columns:1fr;justify-items:center}
+  @media (min-width:860px){.cols{grid-template-columns:1fr 1fr}}
+  .col{width:100%;max-width:430px}
+  .col h2{font-family:Syne,sans-serif;font-size:1.1rem;margin:0 0 8px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .col h2 a{font-family:Nunito,sans-serif;font-size:.9rem;font-weight:700;color:var(--blue)}
+  .phone{width:390px;max-width:100%;height:844px;border:10px solid #152039;border-radius:36px;background:#fff;overflow:hidden;box-shadow:0 30px 60px -30px rgba(21,32,57,.5);margin:0 auto}
+  .phone iframe{width:390px;height:844px;border:0;display:block}
+  .meta{font-size:.85rem;color:#56658C;margin:8px 0 0;text-align:center}
+  table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:28px;font-size:.95rem}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--sky);font-family:Syne,sans-serif;font-size:.85rem}
+  tr:last-child td{border-bottom:0}
+  .ph{color:#56658C}
+  .links{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0 0}
+  .links a{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border-radius:999px;background:#fff;border:1.5px solid var(--line);color:var(--ink);font-weight:800;text-decoration:none}
+  .links a.y{background:var(--yellow);border-color:var(--yellow)}
+</style>
+</head>
+<body>
+<header>
+  <img src="../v2/assets/logo/ra-logo-white.svg" alt="Robotikos akademija">
+  <h1>Matata: v1 ir v2 palyginimas</h1>
+  <span class="sp"></span>
+  <a href="../">v1</a> · <a href="../v2/">v2</a>
+</header>
+<div class="wrap">
+  <p>Abi versijos mobiliu rėmeliu (390 px). Slinkite kiekviename rėmelyje atskirai. Kompiuterio vaizdui atidarykite nuorodas žemiau.</p>
+  <div class="cols">
+    <div class="col">
+      <h2>v1 (dabartinė) <a href="../" target="_blank" rel="noopener">atidaryti kompiuteriui</a></h2>
+      <div class="phone"><iframe src="../?src=palyginimas" title="Matata v1 mobiliu rėmeliu" loading="lazy"></iframe></div>
+      <p class="meta">krisvas333.github.io/ra-matata/</p>
+    </div>
+    <div class="col">
+      <h2>v2 (nauja) <a href="../v2/" target="_blank" rel="noopener">atidaryti kompiuteriui</a></h2>
+      <div class="phone"><iframe src="../v2/?src=palyginimas" title="Matata v2 mobiliu rėmeliu" loading="lazy"></iframe></div>
+      <p class="meta">krisvas333.github.io/ra-matata/v2/</p>
+    </div>
+  </div>
+  <div class="links">
+    <a class="y" href="../v2/" target="_blank" rel="noopener">v2 kompiuteriui</a>
+    <a href="../" target="_blank" rel="noopener">v1 kompiuteriui</a>
+    <a href="../v2/lankstinukas/" target="_blank" rel="noopener">v2 lankstinukas</a>
+    <a href="../lankstinukas/" target="_blank" rel="noopener">v1 lankstinukas</a>
+  </div>
+
+  <table aria-label="Balų lentelė">
+    <thead><tr><th>Kriterijus</th><th>v1</th><th>v2</th><th>Pastaba</th></tr></thead>
+    <tbody>
+      <!--SCORES-->
+      <tr><td>Funkcionalumas (10)</td><td class="ph">6,5</td><td class="ph">laukia vertinimo</td><td class="ph">v1 balas iš 2026-10-11 patikrinto audito</td></tr>
+      <tr><td>UX / UI (10)</td><td class="ph">5</td><td class="ph">laukia vertinimo</td><td class="ph"></td></tr>
+      <tr><td>Benchmark (10)</td><td class="ph">6,5</td><td class="ph">laukia vertinimo</td><td class="ph">stipriausias konkurentas 6,4</td></tr>
+      <tr><td>RA 15 punktų sąrašas</td><td class="ph">8,5 / 15</td><td class="ph">laukia vertinimo</td><td class="ph"></td></tr>
+      <tr><td>Įvykių aprėptis</td><td class="ph">56 %</td><td class="ph">laukia vertinimo</td><td class="ph">tikslas ≥ 95 %</td></tr>
+      <tr><td>Mobilaus puslapio aukštis (390 px)</td><td class="ph">≈ 6 000 px</td><td class="ph">laukia matavimo</td><td class="ph">riba ≤ 6 000 px</td></tr>
+      <!--/SCORES-->
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

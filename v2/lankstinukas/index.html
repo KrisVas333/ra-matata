@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matata lankstinukas A5 (v2) · Robotikos akademija</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../assets/logo/ra-favicon-48.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Syne:wght@800&display=swap" rel="stylesheet">
+<script src="../config.js?v=1"></script>
+<script defer src="https://krisvas333.github.io/neuron-ar/track.js" data-brand="ra" data-artifact="matata-v2-lankstinukas" data-kind="tool"></script>
+<style>
+  :root{--ink:#152039;--blue:#2A4FB5;--blue-l:#3F6EDC;--yellow:#FEC404;--paper:#FFFCF5;--sky:#EEF3FF;--line:rgba(42,79,181,.22);--ink2:#3B4A72;--ink3:#56658C}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#E9E6DD;font-family:Nunito,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .toolbar{display:flex;gap:12px;align-items:center;justify-content:center;padding:14px;font-weight:700;font-size:14px}
+  .toolbar button{font:inherit;font-weight:800;border:0;background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;cursor:pointer}
+  .sheet{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;padding:0 12px 40px}
+  .page{width:148mm;height:210mm;background:var(--paper);position:relative;overflow:hidden;box-shadow:0 20px 50px -30px rgba(0,0,0,.4);page-break-after:always;break-after:page}
+  .page:last-child{page-break-after:auto;break-after:auto}
+  /* ---- kids side ---- */
+  .kids{background:linear-gradient(165deg,#3357C9 0%,#3F6EDC 55%,#3B86E8 100%);color:#fff}
+  .kids .hi{position:absolute;left:9mm;top:7.5mm;font-family:Syne,sans-serif;font-weight:800;font-size:9.2mm;line-height:1;white-space:nowrap}
+  .kids .hi span{color:var(--yellow)}
+  .kids .logo{position:absolute;right:9mm;top:9mm;height:7mm;width:auto}
+  .kids .photo{position:absolute;left:9mm;right:9mm;top:21mm;height:68mm;border-radius:7mm;overflow:hidden;background:#fff;padding:2.2mm}
+  .kids .photo img{width:100%;height:100%;object-fit:cover;border-radius:5.5mm}
+  .kids .photo .cap{position:absolute;left:5mm;bottom:5mm;background:rgba(21,32,57,.8);color:#fff;font-size:2.6mm;font-weight:800;padding:1.1mm 2.6mm;border-radius:999px}
+  .kids .bubble{position:absolute;right:6mm;top:17mm;background:var(--yellow);color:var(--ink);font-family:Syne,sans-serif;font-weight:800;font-size:4.2mm;padding:2.4mm 3.6mm;border-radius:5mm 5mm 5mm 1mm;box-shadow:0 4mm 8mm -4mm rgba(0,0,0,.35)}
+  .kids .game{position:absolute;left:9mm;right:9mm;top:94mm;bottom:16mm;background:#fff;color:var(--ink);border-radius:7mm;padding:5mm 6mm 4mm}
+  .kids .game h2{font-family:Syne,sans-serif;font-size:7mm;margin:0 0 1.5mm;line-height:1.05}
+  .kids .game p{margin:0 0 2.5mm;font-weight:700;font-size:3.8mm;color:var(--ink2)}
+  .kids .game svg{width:100%;height:60mm;display:block}
+  .kids .foot{position:absolute;left:9mm;right:9mm;bottom:6mm;display:flex;justify-content:space-between;align-items:center;font-weight:800;font-size:4mm}
+  .kids .foot .btns{display:flex;gap:1.6mm}
+  .kids .foot .btns i{width:7mm;height:7mm;border-radius:2mm;border:1mm solid #fff;box-shadow:0 1mm 2mm rgba(0,0,0,.2);display:block}
+  /* ---- parents side ---- */
+  .par{padding:8mm 9mm 6mm;display:flex;flex-direction:column}
+  .par .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:3mm}
+  .par .top img{height:9mm;width:auto}
+  .par .tag{display:inline-block;background:var(--yellow);border-radius:999px;padding:1.5mm 3.6mm;font-weight:900;font-size:3.4mm}
+  .par h1{font-family:Syne,sans-serif;font-weight:800;font-size:8.6mm;line-height:1.04;margin:0 0 2.5mm}
+  .par h1 span{color:var(--blue)}
+  .par .lead{font-size:3.7mm;font-weight:700;margin:0 0 3mm;line-height:1.35;color:var(--ink2)}
+  .par ul.dna{list-style:none;margin:0 0 3mm;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:1.6mm}
+  .par ul.dna li{display:flex;gap:2.2mm;align-items:center;background:#fff;border:.4mm solid var(--line);border-radius:4mm;padding:1.8mm 2.6mm;font-weight:800;font-size:3.4mm;line-height:1.2}
+  .par ul.dna svg{width:6.5mm;height:6.5mm;flex:none}
+  .par .facts{display:flex;flex-wrap:wrap;gap:1.6mm;margin:0 0 3mm}
+  .par .facts span{background:var(--ink);color:#fff;border-radius:999px;padding:1.5mm 3.2mm;font-weight:800;font-size:3.2mm}
+  .par .prices{display:grid;grid-template-columns:1fr 1fr;gap:2.4mm;margin:0 0 3mm}
+  .par .pc{background:var(--sky);border-radius:4.5mm;padding:2.6mm 3.2mm}
+  .par .pc b{font-family:Syne,sans-serif;font-size:8mm;color:var(--blue);line-height:1;display:block}
+  .par .pc b .eur{font-family:Nunito,sans-serif;font-weight:900;font-size:6.4mm}
+  .par .pc>span{display:block;font-weight:800;font-size:3.3mm;margin-top:.8mm}
+  .par .pc b span,.par .pc span span,.par .pc small span{display:inline;font-size:inherit;margin:0}
+  .par .pc small{display:block;font-weight:700;font-size:2.8mm;color:var(--ink3);margin-top:.6mm}
+  .par .qr{display:flex;gap:4mm;align-items:center;background:#fff;border:.5mm solid var(--line);border-radius:5mm;padding:3mm;margin-top:auto}
+  .par .qr svg{width:31mm;height:31mm;flex:none}
+  .par .qr .t{font-weight:900;font-size:4.6mm;line-height:1.15;margin:0 0 1.2mm}
+  .par .qr .u{font-weight:700;font-size:3.1mm;color:var(--blue);margin:0;word-break:break-all}
+  .par .qr .s{font-weight:700;font-size:3mm;color:var(--ink3);margin:1.4mm 0 0}
+  .par .tst{border:.5mm dashed var(--line);border-radius:4mm;padding:2.4mm 3mm;margin-top:3mm;font-size:3mm;color:var(--ink3)}
+  .par .tst b{display:block;font-size:2.5mm;letter-spacing:.05em;text-transform:uppercase;margin-bottom:.6mm}
+  .par .ra{display:block;margin-top:3mm;font-weight:800;font-size:3mm;color:var(--ink2);line-height:1.4}
+  .par .legal{font-size:2.5mm;line-height:1.3;color:var(--ink3);margin:1.5mm 0 0}
+  .par .coi{font-size:2.5mm;line-height:1.3;color:var(--ink3);margin:1.5mm 0 0}
+  .par .coi:empty{display:none}
+  @media print{
+    @page{size:A5;margin:0}
+    html,body{background:#fff}
+    .toolbar{display:none}
+    .sheet{display:block;padding:0}
+    .page{box-shadow:none;margin:0}
+  }
+</style>
+</head>
+<body>
+<div class="toolbar"><span>A5 · dvi pusės · spausdinti ant abiejų lapo pusių</span><button type="button" onclick="window.print()">Spausdinti / PDF</button></div>
+<div class="sheet">
+
+<!-- ======== PUSĖ 1: VAIKAMS ======== -->
+<section class="page kids" aria-label="Pusė vaikams">
+  <div class="hi">Labas! <span>Hello!</span></div>
+  <img class="logo" src="../assets/logo/ra-logo-white.svg" alt="Robotikos akademija">
+  <div class="photo"><img src="../assets/img/ai-liutas-du-vaikai-3x2-1200.webp" alt="Du vaikai juokiasi, kai robotas sustoja prie liūto žemėlapyje. DI iliustracija."><span class="cap">DI iliustracija</span></div>
+  <div class="bubble">Eime pas liūtą?</div>
+  <div class="game">
+    <h2>Suskaičiuok žingsnius iki liūto: 1, 2, 3!</h2>
+    <p>Vesk pirštu arba pieštuku nuo roboto iki liūto. Kiek langelių suskaičiavai?</p>
+    <svg viewBox="0 0 520 300" fill="none" aria-label="Žaidimas: kelias nuo roboto iki liūto">
+      <g stroke="#DCE6FF" stroke-width="2"><rect x="10" y="10" width="500" height="280" rx="14" fill="#F4FAE6"/><path d="M110 10v280M210 10v280M310 10v280M410 10v280M10 80h500M10 150h500M10 220h500"/></g>
+      <path d="M60 255 H160 V185 H260 V115 H360 V45 H440" stroke="#3F6EDC" stroke-width="5" stroke-dasharray="2 14" stroke-linecap="round" opacity=".5"/>
+      <g transform="translate(22 222)"><rect x="0" y="0" width="76" height="60" rx="16" fill="#fff" stroke="#152039" stroke-width="3"/><rect x="0" y="0" width="14" height="60" rx="9" fill="#F7A11A"/><circle cx="36" cy="34" r="8" fill="#152039"/><circle cx="60" cy="34" r="8" fill="#152039"/><circle cx="39" cy="31" r="3" fill="#fff"/><circle cx="63" cy="31" r="3" fill="#fff"/><circle cx="30" cy="12" r="4" fill="#56B13F"/><circle cx="41" cy="12" r="4" fill="#FEC404"/><circle cx="52" cy="12" r="4" fill="#3F6EDC"/><circle cx="63" cy="12" r="4" fill="#E6483B"/></g>
+      <g transform="translate(432 18)"><circle cx="28" cy="28" r="26" fill="#F7A11A"/><circle cx="28" cy="31" r="17" fill="#FFD27A"/><circle cx="21" cy="29" r="2.6" fill="#152039"/><circle cx="35" cy="29" r="2.6" fill="#152039"/><path d="M23 37c3 3 7 3 10 0" stroke="#152039" stroke-width="2.4" stroke-linecap="round"/><path d="M28 32v4" stroke="#152039" stroke-width="2.4" stroke-linecap="round"/><circle cx="10" cy="10" r="6" fill="#F7A11A"/><circle cx="46" cy="10" r="6" fill="#F7A11A"/></g>
+      <g transform="translate(240 20)"><circle cx="28" cy="34" r="20" fill="#E6483B"/><path d="M28 14c2-8 8-10 12-10" stroke="#3E8A28" stroke-width="4" stroke-linecap="round"/><ellipse cx="38" cy="10" rx="8" ry="4" fill="#56B13F"/></g>
+      <g transform="translate(130 90)"><g fill="#FEC404"><circle cx="30" cy="8" r="8"/><circle cx="30" cy="52" r="8"/><circle cx="8" cy="30" r="8"/><circle cx="52" cy="30" r="8"/><circle cx="14" cy="14" r="8"/><circle cx="46" cy="14" r="8"/><circle cx="14" cy="46" r="8"/><circle cx="46" cy="46" r="8"/></g><circle cx="30" cy="30" r="13" fill="#8B5A2B"/></g>
+      <g transform="translate(335 160)"><path d="M4 8c10-3 18-3 26 2v40c-8-5-16-5-26-2V8zM56 8c-10-3-18-3-26 2v40c8-5 16-5 26-2V8z" fill="#fff" stroke="#3F6EDC" stroke-width="3" stroke-linejoin="round"/><path d="M12 20h12M12 28h12M36 20h12M36 28h12" stroke="#3F6EDC" stroke-width="2.5" stroke-linecap="round"/></g>
+      <g transform="translate(440 160)"><path d="M6 30L32 8l26 22v26H6z" fill="#fff" stroke="#152039" stroke-width="3" stroke-linejoin="round"/><rect x="26" y="36" width="12" height="20" fill="#F7A11A"/><rect x="12" y="34" width="8" height="8" fill="#DCE8FF"/></g>
+    </svg>
+  </div>
+  <div class="foot"><span>Eime kartu?</span><span class="btns"><i style="background:#56B13F"></i><i style="background:#FEC404"></i><i style="background:#3F6EDC"></i><i style="background:#E6483B"></i><i style="background:#F7A11A"></i></span></div>
+</section>
+
+<!-- ======== PUSĖ 2: TĖVAMS ======== -->
+<section class="page par" aria-label="Pusė tėvams">
+  <div class="top"><img src="../assets/logo/ra-logo-color.svg" alt="Robotikos akademija"><span class="tag"><span data-cfg="product.agesLong">3–4 metų vaikams</span></span></div>
+  <h1>Robotas ir pasakų knyga. <span>Be ekrano.</span></h1>
+  <p class="lead"><span data-cfg="claims.first">Pirmasis Robotikos akademijos būrelis 3–4 metų vaikams su kalbančiu robotu</span>. Vaikas pats valdo robotą ir skaičiuoja žingsnius, o žodžius kartoja lietuviškai ir angliškai. Mokomės keliais būdais iš karto: klausomės, judame, spaudžiame mygtukus ir kalbame. Pabaigoje vaikas parodo draugams, ką padarė.</p>
+  <ul class="dna" aria-label="Meilė mokytis">
+    <li><svg viewBox="0 0 32 32" fill="none" stroke="#2A4FB5" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M26 16a10 10 0 1 1-3-7.1"/><path d="M26 6v4h-4"/><path d="M16 11v5l3 2"/></svg>Mokomės mokytis</li>
+    <li><svg viewBox="0 0 32 32" fill="none" stroke="#B37F00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7c4-1 7-1 11 1v18c-4-2-7-2-11-1V7zM28 7c-4-1-7-1-11 1v18c4-2 7-2 11-1V7z"/></svg>Mylime knygą</li>
+    <li><svg viewBox="0 0 32 32" fill="none" stroke="#3E8A28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20c-3 0-5-2-5-5s2-6 5-6 5 3 5 6-2 5-5 5zM23 26c-3 0-5-2-5-5s2-6 5-6 5 3 5 6-2 5-5 5z"/></svg>Skaičiuojame žingsniais</li>
+    <li><svg viewBox="0 0 32 32" fill="none" stroke="#C25E00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="4" width="8" height="14" rx="4"/><path d="M8 14a8 8 0 0 0 16 0"/><path d="M16 22v6M11 28h10"/></svg>Parodome draugams</li>
+  </ul>
+  <div class="facts"><span><span data-cfg="lessonMinutes">30</span> min</span><span>kartą per savaitę</span><span>iki <span data-cfg="groupMax">10</span> vaikų</span><span>1 robotas dviem</span></div>
+  <div class="prices">
+    <div class="pc"><b><span data-cfg="prices.darzelis.amount">25</span> <span class="eur">€</span></b><span>per mėnesį <span data-cfg="prices.darzelis.where">darželyje, dienos metu</span></span><small><span data-cfg="lessonsPerMonth">4</span> pamokos · apie <span data-cfg="calc:perLesson.darzelis">6,25</span> € už pamoką</small></div>
+    <div class="pc"><b><span data-cfg="prices.centras.amount">29</span> <span class="eur">€</span></b><span>per mėnesį <span data-cfg="prices.centras.label">Tech Zity centre</span></span><small><span data-cfg="lessonsPerMonth">4</span> pamokos · apie <span data-cfg="calc:perLesson.centras">7,25</span> € už pamoką</small></div>
+  </div>
+  <div class="qr">
+    <!--QR--><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" shape-rendering="crispEdges" role="img" aria-label="QR kodas: https://krisvas333.github.io/ra-matata/v2/?src=lankstinukas"><path fill="#ffffff" d="M0 0h41v41H0z"/><path stroke="#152039" d="M4 4.5h7m2 0h1m1 0h1m2 0h1m1 0h1m2 0h3m1 0h1m2 0h7M4 5.5h1m5 0h1m2 0h1m1 0h2m2 0h2m3 0h1m3 0h1m1 0h1m5 0h1M4 6.5h1m1 0h3m1 0h1m1 0h4m2 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1M4 7.5h1m1 0h3m1 0h1m1 0h1m2 0h1m5 0h1m1 0h2m1 0h1m3 0h1m1 0h3m1 0h1M4 8.5h1m1 0h3m1 0h1m1 0h4m2 0h3m1 0h4m1 0h1m2 0h1m1 0h3m1 0h1M4 9.5h1m5 0h1m1 0h1m1 0h4m6 0h2m4 0h1m5 0h1M4 10.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M12 11.5h1m1 0h1m5 0h1m1 0h2m1 0h4M4 12.5h1m1 0h5m2 0h6m2 0h1m4 0h1m3 0h5M4 13.5h4m4 0h1m2 0h3m3 0h7m2 0h2m1 0h2m1 0h1M6 14.5h1m1 0h3m2 0h1m1 0h1m1 0h4m1 0h1m1 0h1m4 0h2m1 0h1m1 0h2M12 15.5h1m2 0h3m2 0h1m2 0h8m1 0h4M4 16.5h2m3 0h4m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m4 0h1m1 0h3m1 0h2M4 17.5h1m1 0h3m2 0h1m2 0h1m1 0h1m2 0h1m1 0h7m1 0h3m2 0h3M4 18.5h1m1 0h2m2 0h1m3 0h1m2 0h1m1 0h2m1 0h1m1 0h1m4 0h2m2 0h3M4 19.5h2m3 0h1m1 0h2m4 0h2m3 0h2m1 0h3m1 0h3m1 0h2M4 20.5h1m1 0h5m3 0h1m2 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h3m2 0h1M4 21.5h2m5 0h1m2 0h3m3 0h2m1 0h2m1 0h2m2 0h2m1 0h2m1 0h1M10 22.5h1m2 0h2m1 0h6m3 0h2m2 0h1m1 0h2m1 0h2M4 23.5h1m2 0h1m6 0h2m2 0h2m2 0h5m1 0h1m1 0h6M4 24.5h3m1 0h1m1 0h2m1 0h3m1 0h2m1 0h2m1 0h1m2 0h2m3 0h3m1 0h2M4 25.5h3m1 0h1m3 0h1m1 0h2m4 0h1m2 0h3m1 0h4m2 0h2m1 0h1M4 26.5h1m1 0h1m2 0h2m2 0h1m1 0h2m2 0h2m9 0h2m2 0h2M4 27.5h1m1 0h1m2 0h1m3 0h3m1 0h3m3 0h5m1 0h2m2 0h4M4 28.5h1m2 0h1m2 0h1m1 0h1m1 0h1m2 0h3m1 0h1m1 0h1m3 0h6m3 0h1M12 29.5h1m2 0h1m1 0h1m2 0h1m1 0h2m2 0h1m1 0h1m3 0h1m1 0h1m1 0h1M4 30.5h7m5 0h2m1 0h1m4 0h5m1 0h1m1 0h1m1 0h1M4 31.5h1m5 0h1m1 0h2m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h2m3 0h4M4 32.5h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m3 0h1m4 0h1m1 0h6M4 33.5h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h4m3 0h1m2 0h1m1 0h3M4 34.5h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h5m1 0h1m3 0h4m1 0h2M4 35.5h1m5 0h1m2 0h1m1 0h1m1 0h1m4 0h1m2 0h2m5 0h3M4 36.5h7m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m3 0h1m1 0h2m1 0h1m1 0h1"/></svg>
+<!--/QR-->
+    <div><p class="t" data-cfg="ctas.primary">Užsirašyti į laukiančiųjų sąrašą</p><p class="u" data-cfg="calc:qrUrlShort">krisvas333.github.io/ra-matata/v2/?src=lankstinukas</p><p class="s">Dirbate darželyje? Tas pats QR, pasirinkite „Dirbu darželyje": <span data-cfg="ctas.org">Pakvieskite į savo darželį</span>. Įsipareigojimo nėra.</p></div>
+  </div>
+  <div class="tst"><b>Pavyzdys · čia bus tikras atsiliepimas</b>Tėvų, vaikų ir mentorių žodžius iš pirmųjų grupių įdėsime po pirmojo mėnesio.</div>
+  <div class="ra"><span data-cfg="trust.years.value">13+</span>&nbsp;metų patirties · <span data-cfg="trust.kids.value">10 000+</span>&nbsp;vaikų per metus · <span data-cfg="trust.recommend.value">9 iš 10</span>&nbsp;klientų rekomenduoja · robotikosakademija.lt</div>
+  <p class="legal"><span data-cfg="legal.name">VšĮ „Robotikos akademija"</span>, <span data-cfg="legal.address">Panerių g. 43, LT-03202 Vilnius</span>, <span data-cfg="legal.code">įm. k. 303015010</span>. Iliustracija su užrašu „DI iliustracija" sukurta dirbtiniu intelektu. Mokymosi rezultatai yra programos tikslai, ne garantija.</p>
+  <p class="coi" data-cfg="coi.text"></p>
+</section>
+
+</div>
+</body>
+</html>
