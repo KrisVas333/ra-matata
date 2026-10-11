@@ -52,13 +52,14 @@
   .contact p{margin:0;font-size:3.4mm;font-weight:700;line-height:1.45}
   .contact .u{font-size:3.8mm;font-weight:900;color:var(--yellow)}
   .legal{font-size:2.7mm;line-height:1.3;color:var(--ink3);margin:3mm 0 0}
-  @media (max-width:860px){.page{width:100%;height:auto;min-height:0;padding:16px}.cols,.img,.steps{grid-template-columns:1fr}.contact{grid-template-columns:1fr}}
+  @media screen and (max-width:860px){.page{width:100%;height:auto;min-height:0;padding:16px}.cols,.img,.steps{grid-template-columns:1fr}.contact{grid-template-columns:1fr}}
   @media print{
     @page{size:A4;margin:0}
     html,body{background:#fff}
     .toolbar{display:none}
     .sheet{display:block;padding:0}
     .page{box-shadow:none;margin:0;width:210mm;height:297mm;padding:12mm 14mm 10mm}
+    .noprint{display:none!important}
   }
 </style>
 </head>
@@ -119,7 +120,7 @@
   <p class="legal"><span data-cfg="legal.name">VšĮ „Robotikos akademija"</span>, <span data-cfg="legal.address">Panerių g. 43, LT-03202 Vilnius</span>, <span data-cfg="legal.code">įm. k. 303015010</span>. Iliustracija su užrašu „DI iliustracija" sukurta dirbtiniu intelektu ir nerodo tikrų vaikų ar Robotikos akademijos pamokų. „<span data-cfg="robotName">Tale-Bot Pro</span>" ir „MatataStudio" yra jų savininkų prekių ženklai.</p>
 </section>
 </div>
-<p style="text-align:center;font:600 13px Nunito,sans-serif;color:#56658C;margin:0 0 30px"><button type="button" data-consent-open style="background:none;border:0;color:#2A4FB5;font:inherit;font-weight:800;text-decoration:underline;cursor:pointer;min-height:44px">Slapukų nustatymai</button></p>
+<p class="noprint" style="text-align:center;font:600 13px Nunito,sans-serif;color:#56658C;margin:0 0 30px"><button type="button" data-consent-open style="background:none;border:0;color:#2A4FB5;font:inherit;font-weight:800;text-decoration:underline;cursor:pointer;min-height:44px">Slapukų nustatymai</button></p>
 <script>
 (function(){var C=window.RA_CFG||{};function g(p){return p.split('.').reduce(function(o,k){return o&&o[k]!==undefined?o[k]:undefined},C)}
 function money(n){return String(n).replace('.',',')}
