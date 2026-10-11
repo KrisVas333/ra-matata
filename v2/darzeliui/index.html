@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matata darželiui: vieno puslapio santrauka vadovui (v2) · Robotikos akademija</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../assets/logo/ra-favicon-48.png" type="image/png">
+<script src="../config.js?v=3"></script>
+<script defer src="https://krisvas333.github.io/neuron-ar/track.js" data-brand="ra" data-artifact="matata-v2-darzeliui" data-kind="tool"></script>
+<script defer src="../js/consent.js" data-clarity="yvonvcmo2n"></script>
+<style>
+  @font-face{font-family:'Nunito';font-weight:500 900;font-display:swap;src:url(../assets/fonts/nunito-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+1E00-1EFF}
+  @font-face{font-family:'Nunito';font-weight:500 900;font-display:swap;src:url(../assets/fonts/nunito-latin.woff2) format('woff2')}
+  @font-face{font-family:'Syne';font-weight:700 800;font-display:swap;src:url(../assets/fonts/syne-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+1E00-1EFF}
+  @font-face{font-family:'Syne';font-weight:700 800;font-display:swap;src:url(../assets/fonts/syne-latin.woff2) format('woff2')}
+  :root{--ink:#152039;--ink2:#3B4A72;--ink3:#56658C;--blue:#2A4FB5;--yellow:#FEC404;--sky:#EEF3FF;--line:rgba(42,79,181,.22)}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#E9E6DD;font-family:Nunito,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .toolbar{display:flex;gap:12px;align-items:center;justify-content:center;padding:14px;font-weight:700;font-size:14px;flex-wrap:wrap}
+  .toolbar button,.toolbar a{font:inherit;font-weight:800;border:0;background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;cursor:pointer;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+  .toolbar a.w{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+  .sheet{display:flex;justify-content:center;padding:0 12px 40px}
+  .page{width:210mm;height:297mm;background:#fff;position:relative;overflow:hidden;box-shadow:0 20px 50px -30px rgba(0,0,0,.4);padding:12mm 14mm 10mm;display:flex;flex-direction:column}
+  .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:5mm}
+  .top img{height:11mm;width:auto}
+  .tag{display:inline-block;background:var(--yellow);border-radius:999px;padding:1.6mm 4mm;font-weight:900;font-size:3.4mm}
+  h1{font-family:Syne,sans-serif;font-weight:800;font-size:9mm;line-height:1.05;margin:0 0 2mm}
+  h1 span{color:var(--blue)}
+  .lead{font-size:3.9mm;font-weight:700;color:var(--ink2);margin:0 0 4mm;line-height:1.35}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:4mm;margin-bottom:4mm}
+  .box{background:var(--sky);border-radius:4.5mm;padding:3.4mm 4mm}
+  .box h2{font-family:Syne,sans-serif;font-size:4.4mm;margin:0 0 1.6mm}
+  .box ul{margin:0;padding-left:4.5mm;font-size:3.4mm;line-height:1.4;font-weight:600;color:var(--ink2)}
+  .box li{margin-bottom:.6mm}
+  .price{display:grid;grid-template-columns:auto 1fr;gap:4mm;align-items:center;background:#fff;border:.5mm solid var(--line);border-radius:4.5mm;padding:3mm 4mm;margin-bottom:4mm}
+  .price b.big{font-family:Syne,sans-serif;font-size:11mm;color:var(--blue);line-height:1;display:block;white-space:nowrap}
+  .price b.big span{font-size:inherit}
+  .price .eur{font-family:Nunito,sans-serif;font-weight:900;font-size:8mm}
+  .price p{margin:0;font-size:3.4mm;color:var(--ink2);font-weight:600;line-height:1.4}
+  .price p b{color:var(--ink)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2.4mm;margin-bottom:4mm}
+  .steps div{background:#fff;border:.5mm solid var(--line);border-radius:4mm;padding:2.6mm 3mm;font-size:3.2mm;font-weight:600;color:var(--ink2);line-height:1.35}
+  .steps b{display:block;font-family:Syne,sans-serif;color:var(--blue);font-size:5mm;margin-bottom:1mm}
+  .img{display:grid;grid-template-columns:1fr 1.1fr;gap:4mm;align-items:center;margin-bottom:4mm}
+  .img figure{margin:0;position:relative;border-radius:4.5mm;overflow:hidden}
+  .img img{width:100%;display:block;aspect-ratio:3/2;object-fit:cover}
+  .img figcaption{position:absolute;left:3mm;bottom:3mm;background:rgba(21,32,57,.8);color:#fff;font-size:2.8mm;font-weight:800;padding:1mm 2.6mm;border-radius:999px}
+  .who{font-size:3.3mm;color:var(--ink2);font-weight:600;line-height:1.4;margin:0}
+  .who b{color:var(--ink)}
+  .contact{margin-top:auto;display:grid;grid-template-columns:1fr auto;gap:4mm;align-items:center;background:var(--ink);color:#fff;border-radius:4.5mm;padding:3.4mm 4.5mm}
+  .contact p{margin:0;font-size:3.4mm;font-weight:700;line-height:1.45}
+  .contact .u{font-size:3.8mm;font-weight:900;color:var(--yellow)}
+  .legal{font-size:2.7mm;line-height:1.3;color:var(--ink3);margin:3mm 0 0}
+  @media (max-width:860px){.page{width:100%;height:auto;min-height:0;padding:16px}.cols,.img,.steps{grid-template-columns:1fr}.contact{grid-template-columns:1fr}}
+  @media print{
+    @page{size:A4;margin:0}
+    html,body{background:#fff}
+    .toolbar{display:none}
+    .sheet{display:block;padding:0}
+    .page{box-shadow:none;margin:0;width:210mm;height:297mm;padding:12mm 14mm 10mm}
+  }
+</style>
+</head>
+<body>
+<div class="toolbar"><span>A4 · vienas puslapis · darželio vadovui</span><button type="button" onclick="window.print()">Spausdinti / PDF</button><a class="w" href="darzeliui.pdf" download>Atsisiųsti PDF</a><a class="w" href="../#darzeliams">Grįžti į puslapį</a></div>
+<div class="sheet">
+<section class="page" aria-label="Matata darželiui">
+  <div class="top"><img src="../assets/logo/ra-logo-color.svg" alt="Robotikos akademija"><span class="tag"><span data-cfg="product.agesLong">3–4 metų vaikams</span> · darželiui</span></div>
+  <h1>Matata darželyje: <span>robotas ir pasakų knyga. Be ekrano.</span></h1>
+  <p class="lead"><span data-cfg="claims.first">Pirmasis Robotikos akademijos būrelis 3–4 metų vaikams su kalbančiu robotu</span>. Vaikas pats valdo robotą, skaičiuoja žingsnius ir kartoja žodžius lietuviškai ir angliškai. Pabaigoje parodo draugams, ką padarė.</p>
+
+  <div class="cols">
+    <div class="box"><h2>Formatas</h2><ul>
+      <li><span data-cfg="lessonMinutes">30</span> min, kartą per savaitę, <span data-cfg="lessonsPerMonth">4</span> pamokos per mėnesį.</li>
+      <li>Grupė iki <span data-cfg="groupMax">10</span> vaikų, <span data-cfg="robotRatio">1 robotas dviem</span>.</li>
+      <li>Laiką deriname su darželiu.</li>
+      <li>Veda Robotikos akademijos mentorius, visą pamoką prie stalo.</li>
+    </ul></div>
+    <div class="box"><h2>Ką atsivežame</h2><ul>
+      <li>Robotus, pasakų žemėlapius ir komandų korteles.</li>
+      <li>Naują paveikslėlių knygą ir temą kiekvieną savaitę.</li>
+      <li>Nieko pirkti ar ruošti nereikia.</li>
+    </ul></div>
+    <div class="box"><h2>Ko reikia iš darželio</h2><ul>
+      <li>Grupės kambarys: stalas arba kilimas.</li>
+      <li>30 min laiko, suderinto su darželiu.</li>
+      <li>Kontaktas, kuris padės pasiekti tėvus.</li>
+    </ul></div>
+    <div class="box"><h2>Saugumo taisyklės</h2><ul>
+      <li>Priedus su smulkiomis dalimis dalija tik mentorius.</li>
+      <li>Mentorius dirba vaiko akių lygyje ir nespaudžia už vaiką.</li>
+      <li>Vaikų veidų nefilmuojame ir nefotografuojame be raštiško tėvų sutikimo.</li>
+      <li>Telefonai kišenėje: vaikams jokio ekrano.</li>
+    </ul></div>
+  </div>
+
+  <div class="price">
+    <b class="big"><span data-cfg="prices.darzelis.amount">25</span> <span class="eur" data-cfg="prices.currency">€</span></b>
+    <p><b>Tėvams per mėnesį</b>: <span data-cfg="lessonsPerMonth">4</span> pamokos po <span data-cfg="lessonMinutes">30</span> min, apie <span data-cfg="calc:perLesson.darzelis">6,25</span> € už pamoką. <b>Darželiui tai nekainuoja.</b> Įsirašymas į laukiančiųjų sąrašą tėvų neįpareigoja: prieš mokėdami jie gauna visą informaciją.</p>
+  </div>
+
+  <div class="steps">
+    <div><b>1</b>Tėvai užsirašo į laukiančiųjų sąrašą ir nurodo darželį.</div>
+    <div><b>2</b>Kai užsirašo keli tėvai iš to paties darželio, susisiekiame su darželiu.</div>
+    <div><b>3</b>Atvykstame pasikalbėti ir parodyti, kaip vyksta pamoka. Suderiname laiką.</div>
+    <div><b>4</b><span data-cfg="start.text">Grupės startuoja, kai susirenka pakankamai vaikų. Laukiančiųjų sąraše esantiems pranešime pirmiesiems.</span></div>
+  </div>
+
+  <div class="img">
+    <figure><img src="../assets/img/ai-mentore-grupe-3x2-800.webp" alt="Mentorė atsiklaupusi vaikų akių lygyje rodo žemėlapio langelį, vaikas deda robotą į starto vietą. DI iliustracija."><figcaption>DI iliustracija</figcaption></figure>
+    <p class="who"><b>Kas kuria programą.</b> Robotą ir pagrindines veiklų korteles sukūrė MatataStudio. Užsiėmimus veda Robotikos akademijos mentoriai, o pati akademija vaikus moko nuo 2013 metų: <span data-cfg="trust.years.value">13+</span> metų patirties, <span data-cfg="trust.kids.value">10 000+</span> vaikų per metus, <span data-cfg="trust.recommend.value">9 iš 10</span> klientų rekomenduoja. Matata yra nauja programa; mokymosi rezultatai yra programos tikslai, ne garantija.</p>
+  </div>
+
+  <div class="contact">
+    <p>Pakvieskite Matata į savo darželį: trumpa forma puslapyje, skirtukas „<span data-cfg="ctas.orgTab">Kviečiu į darželį</span>".<br><span class="u">krisvas333.github.io/ra-matata/v2/?src=darzeliui-pdf</span></p>
+    <p><span data-cfg="legal.email">info@robotikosakademija.lt</span><br><span data-cfg="legal.phone">+370 5 25 25 713</span><br><span data-cfg="legal.siteLabel">robotikosakademija.lt</span></p>
+  </div>
+  <p class="legal"><span data-cfg="legal.name">VšĮ „Robotikos akademija"</span>, <span data-cfg="legal.address">Panerių g. 43, LT-03202 Vilnius</span>, <span data-cfg="legal.code">įm. k. 303015010</span>. Iliustracija su užrašu „DI iliustracija" sukurta dirbtiniu intelektu ir nerodo tikrų vaikų ar Robotikos akademijos pamokų. „<span data-cfg="robotName">Tale-Bot Pro</span>" ir „MatataStudio" yra jų savininkų prekių ženklai.</p>
+</section>
+</div>
+<p style="text-align:center;font:600 13px Nunito,sans-serif;color:#56658C;margin:0 0 30px"><button type="button" data-consent-open style="background:none;border:0;color:#2A4FB5;font:inherit;font-weight:800;text-decoration:underline;cursor:pointer;min-height:44px">Slapukų nustatymai</button></p>
+<script>
+(function(){var C=window.RA_CFG||{};function g(p){return p.split('.').reduce(function(o,k){return o&&o[k]!==undefined?o[k]:undefined},C)}
+function money(n){return String(n).replace('.',',')}
+function calc(k){var l=C.lessonsPerMonth||4;if(k==='perLesson.darzelis')return money((g('prices.darzelis.amount')/l).toFixed(2).replace(/\.?0+$/,''));return undefined}
+document.querySelectorAll('[data-cfg]').forEach(function(el){var p=el.getAttribute('data-cfg'),v=p.indexOf('calc:')===0?calc(p.slice(5)):g(p);if(v!==undefined&&v!==null){v=typeof v==='number'?money(v):String(v);if(el.textContent!==v)el.textContent=v}});})();
+</script>
+</body>
+</html>

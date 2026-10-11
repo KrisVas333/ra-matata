@@ -6,15 +6,20 @@
 <title>Matata lankstinukas A5 (v2) · Robotikos akademija</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="../assets/logo/ra-favicon-48.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&family=Syne:wght@800&display=swap" rel="stylesheet">
-<script src="../config.js?v=1"></script>
+<script src="../config.js?v=3"></script>
 <script defer src="https://krisvas333.github.io/neuron-ar/track.js" data-brand="ra" data-artifact="matata-v2-lankstinukas" data-kind="tool"></script>
+<script defer src="../js/consent.js" data-clarity="yvonvcmo2n"></script>
 <style>
+  @font-face{font-family:'Nunito';font-weight:500 900;font-display:swap;src:url(../assets/fonts/nunito-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+1E00-1EFF}
+  @font-face{font-family:'Nunito';font-weight:500 900;font-display:swap;src:url(../assets/fonts/nunito-latin.woff2) format('woff2')}
+  @font-face{font-family:'Syne';font-weight:700 800;font-display:swap;src:url(../assets/fonts/syne-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+1E00-1EFF}
+  @font-face{font-family:'Syne';font-weight:700 800;font-display:swap;src:url(../assets/fonts/syne-latin.woff2) format('woff2')}
   :root{--ink:#152039;--blue:#2A4FB5;--blue-l:#3F6EDC;--yellow:#FEC404;--paper:#FFFCF5;--sky:#EEF3FF;--line:rgba(42,79,181,.22);--ink2:#3B4A72;--ink3:#56658C}
   *{box-sizing:border-box}
   html,body{margin:0;background:#E9E6DD;font-family:Nunito,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .toolbar{display:flex;gap:12px;align-items:center;justify-content:center;padding:14px;font-weight:700;font-size:14px}
-  .toolbar button{font:inherit;font-weight:800;border:0;background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;cursor:pointer}
+  .toolbar button{font:inherit;font-weight:800;border:0;background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;cursor:pointer;min-height:44px}
+  .linkbtn{background:none;border:0;color:var(--blue);font:inherit;font-weight:800;text-decoration:underline;cursor:pointer;min-height:44px}
   .sheet{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;padding:0 12px 40px}
   .page{width:148mm;height:210mm;background:var(--paper);position:relative;overflow:hidden;box-shadow:0 20px 50px -30px rgba(0,0,0,.4);page-break-after:always;break-after:page}
   .page:last-child{page-break-after:auto;break-after:auto}
@@ -113,22 +118,23 @@
     <li><svg viewBox="0 0 32 32" fill="none" stroke="#3E8A28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 20c-3 0-5-2-5-5s2-6 5-6 5 3 5 6-2 5-5 5zM23 26c-3 0-5-2-5-5s2-6 5-6 5 3 5 6-2 5-5 5z"/></svg>Skaičiuojame žingsniais</li>
     <li><svg viewBox="0 0 32 32" fill="none" stroke="#C25E00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="4" width="8" height="14" rx="4"/><path d="M8 14a8 8 0 0 0 16 0"/><path d="M16 22v6M11 28h10"/></svg>Parodome draugams</li>
   </ul>
-  <div class="facts"><span><span data-cfg="lessonMinutes">30</span> min</span><span>kartą per savaitę</span><span>iki <span data-cfg="groupMax">10</span> vaikų</span><span>1 robotas dviem</span></div>
+  <div class="facts"><span><span data-cfg="lessonMinutes">30</span> min</span><span>kartą per savaitę</span><span>iki <span data-cfg="groupMax">10</span> vaikų</span><span data-cfg="robotRatio">1 robotas dviem</span></div>
   <div class="prices">
-    <div class="pc"><b><span data-cfg="prices.darzelis.amount">25</span> <span class="eur">€</span></b><span>per mėnesį <span data-cfg="prices.darzelis.where">darželyje, dienos metu</span></span><small><span data-cfg="lessonsPerMonth">4</span> pamokos · apie <span data-cfg="calc:perLesson.darzelis">6,25</span> € už pamoką</small></div>
-    <div class="pc"><b><span data-cfg="prices.centras.amount">29</span> <span class="eur">€</span></b><span>per mėnesį <span data-cfg="prices.centras.label">Tech Zity centre</span></span><small><span data-cfg="lessonsPerMonth">4</span> pamokos · apie <span data-cfg="calc:perLesson.centras">7,25</span> € už pamoką</small></div>
+    <div class="pc"><b><span data-cfg="prices.darzelis.amount">25</span> <span class="eur" data-cfg="prices.currency">€</span></b><span>per mėnesį <span data-cfg="prices.darzelis.where">darželyje, laiką deriname su darželiu</span></span><small><span data-cfg="lessonsPerMonth">4</span> pamokos · apie <span data-cfg="calc:perLesson.darzelis">6,25</span> € už pamoką</small></div>
+    <div class="pc"><b><span data-cfg="prices.centras.amount">29</span> <span class="eur" data-cfg="prices.currency">€</span></b><span>per mėnesį <span data-cfg="prices.centras.label">Tech Zity centre</span></span><small><span data-cfg="lessonsPerMonth">4</span> pamokos · apie <span data-cfg="calc:perLesson.centras">7,25</span> € už pamoką</small></div>
   </div>
   <div class="qr">
     <!--QR--><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" shape-rendering="crispEdges" role="img" aria-label="QR kodas: https://krisvas333.github.io/ra-matata/v2/?src=lankstinukas"><path fill="#ffffff" d="M0 0h41v41H0z"/><path stroke="#152039" d="M4 4.5h7m2 0h1m1 0h1m2 0h1m1 0h1m2 0h3m1 0h1m2 0h7M4 5.5h1m5 0h1m2 0h1m1 0h2m2 0h2m3 0h1m3 0h1m1 0h1m5 0h1M4 6.5h1m1 0h3m1 0h1m1 0h4m2 0h1m1 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h3m1 0h1M4 7.5h1m1 0h3m1 0h1m1 0h1m2 0h1m5 0h1m1 0h2m1 0h1m3 0h1m1 0h3m1 0h1M4 8.5h1m1 0h3m1 0h1m1 0h4m2 0h3m1 0h4m1 0h1m2 0h1m1 0h3m1 0h1M4 9.5h1m5 0h1m1 0h1m1 0h4m6 0h2m4 0h1m5 0h1M4 10.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M12 11.5h1m1 0h1m5 0h1m1 0h2m1 0h4M4 12.5h1m1 0h5m2 0h6m2 0h1m4 0h1m3 0h5M4 13.5h4m4 0h1m2 0h3m3 0h7m2 0h2m1 0h2m1 0h1M6 14.5h1m1 0h3m2 0h1m1 0h1m1 0h4m1 0h1m1 0h1m4 0h2m1 0h1m1 0h2M12 15.5h1m2 0h3m2 0h1m2 0h8m1 0h4M4 16.5h2m3 0h4m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m4 0h1m1 0h3m1 0h2M4 17.5h1m1 0h3m2 0h1m2 0h1m1 0h1m2 0h1m1 0h7m1 0h3m2 0h3M4 18.5h1m1 0h2m2 0h1m3 0h1m2 0h1m1 0h2m1 0h1m1 0h1m4 0h2m2 0h3M4 19.5h2m3 0h1m1 0h2m4 0h2m3 0h2m1 0h3m1 0h3m1 0h2M4 20.5h1m1 0h5m3 0h1m2 0h3m1 0h1m1 0h1m3 0h1m1 0h1m1 0h3m2 0h1M4 21.5h2m5 0h1m2 0h3m3 0h2m1 0h2m1 0h2m2 0h2m1 0h2m1 0h1M10 22.5h1m2 0h2m1 0h6m3 0h2m2 0h1m1 0h2m1 0h2M4 23.5h1m2 0h1m6 0h2m2 0h2m2 0h5m1 0h1m1 0h6M4 24.5h3m1 0h1m1 0h2m1 0h3m1 0h2m1 0h2m1 0h1m2 0h2m3 0h3m1 0h2M4 25.5h3m1 0h1m3 0h1m1 0h2m4 0h1m2 0h3m1 0h4m2 0h2m1 0h1M4 26.5h1m1 0h1m2 0h2m2 0h1m1 0h2m2 0h2m9 0h2m2 0h2M4 27.5h1m1 0h1m2 0h1m3 0h3m1 0h3m3 0h5m1 0h2m2 0h4M4 28.5h1m2 0h1m2 0h1m1 0h1m1 0h1m2 0h3m1 0h1m1 0h1m3 0h6m3 0h1M12 29.5h1m2 0h1m1 0h1m2 0h1m1 0h2m2 0h1m1 0h1m3 0h1m1 0h1m1 0h1M4 30.5h7m5 0h2m1 0h1m4 0h5m1 0h1m1 0h1m1 0h1M4 31.5h1m5 0h1m1 0h2m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h2m3 0h4M4 32.5h1m1 0h3m1 0h1m1 0h1m1 0h1m2 0h1m3 0h1m4 0h1m1 0h6M4 33.5h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h4m3 0h1m2 0h1m1 0h3M4 34.5h1m1 0h3m1 0h1m1 0h1m3 0h1m1 0h5m1 0h1m3 0h4m1 0h2M4 35.5h1m5 0h1m2 0h1m1 0h1m1 0h1m4 0h1m2 0h2m5 0h3M4 36.5h7m1 0h1m1 0h1m1 0h1m1 0h1m2 0h2m1 0h1m3 0h1m1 0h2m1 0h1m1 0h1"/></svg>
 <!--/QR-->
-    <div><p class="t" data-cfg="ctas.primary">Užsirašyti į laukiančiųjų sąrašą</p><p class="u" data-cfg="calc:qrUrlShort">krisvas333.github.io/ra-matata/v2/?src=lankstinukas</p><p class="s">Dirbate darželyje? Tas pats QR, pasirinkite „Dirbu darželyje": <span data-cfg="ctas.org">Pakvieskite į savo darželį</span>. Įsipareigojimo nėra.</p></div>
+    <div><p class="t" data-cfg="ctas.primary">Užsirašyti į laukiančiųjų sąrašą</p><p class="u" data-cfg="calc:qrUrlShort">krisvas333.github.io/ra-matata/v2/?src=lankstinukas</p><p class="s">Dirbate darželyje? Tas pats QR, skirtukas „<span data-cfg="ctas.orgTab">Kviečiu į darželį</span>": <span data-cfg="ctas.org">Pakvieskite į savo darželį</span>. Įsipareigojimo nėra. <span data-cfg="start.text">Grupės startuoja, kai susirenka pakankamai vaikų. Laukiančiųjų sąraše esantiems pranešime pirmiesiems.</span></p></div>
   </div>
-  <div class="tst"><b>Pavyzdys · čia bus tikras atsiliepimas</b>Tėvų, vaikų ir mentorių žodžius iš pirmųjų grupių įdėsime po pirmojo mėnesio.</div>
+  <div class="tst"><b>Pavyzdys · čia bus tikras atsiliepimas</b>„[Ką vaikas pradėjo daryti namie po 4 pamokų]" · [Vardas], [N] m. vaiko mama arba tėtis. Tikrus žodžius įdėsime tik su raštišku sutikimu.</div>
   <div class="ra"><span data-cfg="trust.years.value">13+</span>&nbsp;metų patirties · <span data-cfg="trust.kids.value">10 000+</span>&nbsp;vaikų per metus · <span data-cfg="trust.recommend.value">9 iš 10</span>&nbsp;klientų rekomenduoja · robotikosakademija.lt</div>
   <p class="legal"><span data-cfg="legal.name">VšĮ „Robotikos akademija"</span>, <span data-cfg="legal.address">Panerių g. 43, LT-03202 Vilnius</span>, <span data-cfg="legal.code">įm. k. 303015010</span>. Iliustracija su užrašu „DI iliustracija" sukurta dirbtiniu intelektu. Mokymosi rezultatai yra programos tikslai, ne garantija.</p>
   <p class="coi" data-cfg="coi.text"></p>
 </section>
 
 </div>
+<p class="toolbar" style="padding-top:0"><button type="button" class="linkbtn" data-consent-open>Slapukų nustatymai</button></p>
 </body>
 </html>

@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Matata: robotas ir pasakų knyga be ekrano 3–4 metų vaikams · Robotikos akademija</title>
-<meta name="description" content="Naujausia Robotikos akademijos inovacija darželiams: pirmasis būrelis 3–4 metų vaikams su kalbančiu robotu. Vaikas pats valdo robotą, skaičiuoja žingsnius, kartoja žodžius lietuviškai ir angliškai. 30 min kartą per savaitę, darželyje nuo 25 € per mėnesį.">
+<meta name="description" data-cfg-tpl="content={claims.innovation}: pirmasis būrelis 3–4 metų vaikams su kalbančiu robotu. Vaikas pats valdo robotą, skaičiuoja žingsnius, kartoja žodžius lietuviškai ir angliškai. {lessonMinutes} min kartą per savaitę, darželyje nuo {prices.darzelis.amount} € per mėnesį." content="Naujausia Robotikos akademijos inovacija darželiams: pirmasis būrelis 3–4 metų vaikams su kalbančiu robotu. Vaikas pats valdo robotą, skaičiuoja žingsnius, kartoja žodžius lietuviškai ir angliškai. 30 min kartą per savaitę, darželyje nuo 25 € per mėnesį.">
 <link rel="canonical" href="https://krisvas333.github.io/ra-matata/v2/">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://krisvas333.github.io/ra-matata/v2/">
 <meta property="og:title" content="Matata: robotas ir pasakų knyga. Be ekrano. 3–4 metų vaikams">
-<meta property="og:description" content="Pirmasis Robotikos akademijos būrelis 3–4 metų vaikams su kalbančiu robotu. 30 min kartą per savaitę, darželyje arba Tech Zity centre. Nuo 25 € per mėnesį.">
+<meta property="og:description" data-cfg-tpl="content={claims.first}. {lessonMinutes} min kartą per savaitę, darželyje arba Tech Zity centre. Nuo {prices.darzelis.amount} € per mėnesį." content="Pirmasis Robotikos akademijos būrelis 3–4 metų vaikams su kalbančiu robotu. 30 min kartą per savaitę, darželyje arba Tech Zity centre. Nuo 25 € per mėnesį.">
 <meta property="og:image" content="https://krisvas333.github.io/ra-matata/v2/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -20,12 +20,25 @@
 <link rel="icon" href="assets/logo/ra-favicon-48.png" type="image/png" sizes="48x48">
 <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/syne-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/syne-latin-ext.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/nunito-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/nunito-latin-ext.woff2" crossorigin>
 <link rel="preload" as="image" href="assets/img/higgsfield-happy-lesson-800.webp" imagesrcset="assets/img/higgsfield-happy-lesson-480.webp 480w, assets/img/higgsfield-happy-lesson-800.webp 800w, assets/img/higgsfield-happy-lesson-1200.webp 1200w" imagesizes="(min-width:900px) 560px, 94vw">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=2">
-<script src="config.js?v=2"></script>
+<link rel="stylesheet" href="css/style.css?v=3">
+<script src="config.js?v=3"></script>
+<script>
+(function(){
+  document.documentElement.className+=' js';
+  var p=new URLSearchParams(location.search);function c(v,n){return (v||'').replace(/[^a-z0-9_.-]/gi,'').slice(0,n||40)}
+  var base={version:'v2',src:c(p.get('src'))||'direct'};var us=c(p.get('utm_source'));if(us)base.utm_source=us;var uc=c(p.get('utm_campaign'),60);if(uc)base.utm_campaign=uc;if(p.has('fbclid'))base.fbclid=1;
+  window.__btBase=base;
+  window.__nativeShare=(navigator.share&&navigator.canShare!==undefined)?navigator.share.bind(navigator):(navigator.share?navigator.share.bind(navigator):null);
+  var real=window.umami,wrapped=null;
+  function wrap(u){if(!u)return u;if(wrapped&&wrapped.__of===u)return wrapped;var t=u.track;wrapped={__of:u,identify:u.identify?u.identify.bind(u):undefined,track:function(n,d){if(typeof n==='string')return t.call(u,n,Object.assign({},base,d||{}));return t.apply(u,arguments);}};return wrapped;}
+  try{Object.defineProperty(window,'umami',{configurable:true,get:function(){return wrap(real)},set:function(v){real=v}});}catch(e){}
+})();
+</script>
 <script defer src="https://krisvas333.github.io/neuron-ar/track.js" data-brand="ra" data-artifact="matata-v2" data-kind="landing"></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Course","name":"Matata: robotas ir pasakų knyga be ekrano 3–4 metų vaikams","description":"Pirmasis Robotikos akademijos būrelis 3–4 metų vaikams su kalbančiu robotu. 30 min kartą per savaitę, grupės iki 10 vaikų, darželyje arba Tech Zity centre Vilniuje.","provider":{"@type":"Organization","name":"Robotikos akademija","url":"https://robotikosakademija.lt/"},"audience":{"@type":"EducationalAudience","audienceType":"3 ir 4 metų vaikai ir jų tėvai"},"inLanguage":"lt"}
@@ -64,17 +77,17 @@
       </ul>
       <p class="claim" data-cfg="claims.innovation">Naujausia Robotikos akademijos inovacija darželiams</p>
       <h1 id="h1">Robotas ir pasakų knyga. <em>Be ekrano.</em></h1>
-      <p class="lead"><span data-cfg="claims.first">Pirmasis Robotikos akademijos būrelis 3–4 metų vaikams su kalbančiu robotu</span>. <span class="desk-only">Vaikas pats valdo robotą, skaičiuoja žingsnius ir kartoja žodžius lietuviškai ir angliškai.</span><span class="mob-only">Vaikas pats valdo robotą ir skaičiuoja žingsnius.</span></p>
+      <p class="lead"><span data-cfg="claims.first">Pirmasis Robotikos akademijos būrelis 3–4 metų vaikams su kalbančiu robotu</span>. <span class="desk-only">Vaikas pats valdo robotą ir kartoja žodžius lietuviškai ir angliškai.</span><span class="mob-only">Vaikas pats valdo robotą ir skaičiuoja žingsnius.</span></p>
       <div class="hero-cta">
         <a class="btn btn-y" href="#sarasas" data-cta="hero"><span data-cfg="ctas.primary">Užsirašyti į laukiančiųjų sąrašą</span> <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         <a class="btn btn-w" href="#darzeliams" data-cta="hero_org"><span data-cfg="ctas.org">Pakvieskite į savo darželį</span></a>
       </div>
-      <p class="micro desk-only">Užtruks 1 minutę. Įsipareigojimo nėra.</p>
+      <p class="micro desk-only" data-cfg="ctas.micro">Užtruks 1 minutę. Parašysime, kai atidarysime grupę jūsų darželyje ar centre.</p>
       <ul class="facts" aria-label="Pagrindiniai faktai">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="desk-only"><span data-cfg="lessonMinutes">30</span> min kartą per savaitę</span><span class="mob-only"><span data-cfg="lessonMinutes">30</span> min / sav.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5M14 19c0-2.5 1.5-4 3.5-4S21 16.5 21 19"/></svg><span class="desk-only">iki <span data-cfg="groupMax">10</span> vaikų, 1 robotas dviem</span><span class="mob-only">iki <span data-cfg="groupMax">10</span> vaikų</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span class="desk-only">darželyje arba Tech Zity, Vilnius</span><span class="mob-only">darželyje ar Tech Zity</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span class="desk-only">nuo <span data-cfg="prices.darzelis.amount">25</span> € per mėnesį</span><span class="mob-only">nuo <span data-cfg="prices.darzelis.amount">25</span> €/mėn.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 19c0-3 3-5 6-5s6 2 6 5M14 19c0-2.5 1.5-4 3.5-4S21 16.5 21 19"/></svg><span class="desk-only">iki <span data-cfg="groupMax">10</span> vaikų, <span data-cfg="robotRatio">1 robotas dviem</span></span><span class="mob-only">iki <span data-cfg="groupMax">10</span> vaikų</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span class="desk-only">darželyje arba Tech Zity, Vilnius</span><span class="mob-only">Vilniaus darželiuose ar Tech Zity</span></li>
+        <li class="price"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span class="desk-only">nuo <span data-cfg="prices.darzelis.amount">25</span> € per mėnesį</span><span class="mob-only">nuo <span data-cfg="prices.darzelis.amount">25</span> €/mėn.</span></li>
       </ul>
     </div>
 
@@ -105,10 +118,10 @@
         <li data-trust="recommend"><b><span data-cfg="trust.recommend.value">9 iš 10</span></b><span data-cfg="trust.recommend.text">klientų rekomenduoja</span></li>
       </ul>
       <div class="stem" id="stem">
-        <img src="assets/logo/stem-org-accredited-200.png" alt="STEM.org Accredited" width="52" height="52">
-        <div><b data-cfg="trust.stemOrg.text">STEM.org Accredited™ akredituota organizacija</b><a href="https://blockchain.stem.org/6e43c2b3-e72b-4a8c-9707-ecb45a6cc024" target="_blank" rel="noopener" data-out="stem-verify" data-cfg="trust.stemOrg.verifyLabel">Patikrinti</a></div>
+        <img src="assets/logo/stem-org-accredited-200.png" data-cfg-attr="src:trust.stemOrg.img" alt="STEM.org Accredited" width="52" height="52">
+        <div><b data-cfg="trust.stemOrg.text">STEM.org Accredited™ akredituota organizacija</b><a href="https://blockchain.stem.org/6e43c2b3-e72b-4a8c-9707-ecb45a6cc024" data-cfg-attr="href:trust.stemOrg.href" target="_blank" rel="noopener" data-out="stem-verify" data-cfg="trust.stemOrg.verifyLabel">Patikrinti</a></div>
       </div>
-      <p class="src desk-only" data-cfg="trust.source">Skaičiai iš robotikosakademija.lt. Matata yra nauja programa: pirmųjų grupių rezultatus skelbsime čia.</p>
+      <p class="src desk-only" data-cfg="trust.source">Skaičiai iš robotikosakademija.lt. Matata yra nauja programa.</p>
     </div>
   </div>
 </section>
@@ -117,7 +130,7 @@
 <section class="value" id="kodel">
   <div class="wrap">
     <div class="sec-head">
-      <h2><span class="desk-only">Trys dalykai, kuriuos tėvai klausia pirmiausia</span><span class="mob-only">Trys tėvų klausimai</span></h2>
+      <h2><span class="desk-only">Trys dalykai, kurių tėvai klausia pirmiausia</span><span class="mob-only">Trys tėvų klausimai</span></h2>
     </div>
     <div class="grid">
       <article class="vc">
@@ -133,7 +146,7 @@
       <article class="vc">
         <div class="ico grass"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="10" r="4"/><circle cx="22" cy="11" r="3.5"/><path d="M3 27c0-5 4-8 8-8s8 3 8 8M17 27c0-4 2-7 5-7s6 3 6 7"/></svg></div>
         <h3>Kiekvienas vaikas spaudžia pats</h3>
-        <p>Iki <span data-cfg="groupMax">10</span> vaikų grupėje, vienas robotas dviem. Mygtukus spaudžia kiekvienas<span class="desk-only">, niekas nelieka stebėti iš šono</span>.</p>
+        <p>Iki <span data-cfg="groupMax">10</span> vaikų grupėje, <span data-cfg="robotRatio">1 robotas dviem</span>. Mygtukus spaudžia kiekvienas<span class="desk-only">, niekas nelieka stebėti iš šono</span>.</p>
       </article>
     </div>
   </div>
@@ -158,7 +171,7 @@
             <div class="bot" id="bot" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none"><rect x="14" y="26" width="92" height="74" rx="20" fill="#fff" stroke="#152039" stroke-width="3"/><rect x="14" y="26" width="18" height="74" rx="12" fill="#F7A11A"/><circle cx="58" cy="62" r="11" fill="#152039"/><circle cx="86" cy="62" r="11" fill="#152039"/><circle cx="61" cy="58" r="4" fill="#fff"/><circle cx="89" cy="58" r="4" fill="#fff"/><path class="smile" d="M60 82c6 7 18 7 24 0" stroke="#152039" stroke-width="4" stroke-linecap="round"/><circle cx="48" cy="34" r="4" fill="#56B13F"/><circle cx="60" cy="34" r="4" fill="#FEC404"/><circle cx="72" cy="34" r="4" fill="#3F6EDC"/><circle cx="84" cy="34" r="4" fill="#E6483B"/></svg></div>
             <div class="msg" id="gameMsg" aria-live="polite"></div>
           </div>
-          <div class="cmds" id="cmds" aria-label="Komandų seka"><span class="empty">Čia atsiras jūsų komandos</span></div>
+          <div class="cmds" id="cmds" role="group" aria-label="Komandų seka"><span class="empty">Čia atsiras jūsų komandos</span></div>
           <div class="pad">
             <button type="button" class="g" data-move="up" aria-label="Aukštyn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V5M6 11l6-6 6 6"/></svg></button>
             <button type="button" class="b" data-move="down" aria-label="Žemyn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v15M6 13l6 6 6-6"/></svg></button>
@@ -256,8 +269,8 @@
     <div>
       <h2><span class="desk-only">Viena pamoka: 30 minučių, minutė po minutės</span><span class="mob-only">Pamoka minutė po minutės</span></h2>
       <p class="lead desk-only">Tema „Apsilankymas zoologijos sode": paveikslėlių knyga apie gyvūnus, 5 robotai, 5 žemėlapiai, iki 10 vaikų. Mentorius visą laiką prie stalo.</p>
+      <div class="steps-wrap"><span class="line" aria-hidden="true"></span>
       <ol class="steps" id="steps" tabindex="0" aria-label="Pamokos žingsniai, slinkite į šoną">
-        <span class="line" aria-hidden="true"></span>
         <li class="step"><span class="min">0–3 min</span><h3>Sveikinimasis ratu</h3><p>Robotas pasisveikina įrašytu balsu: „Labas! Hello!" Vaikas pasako robotui savo vardą.</p><span class="v4" data-age-only="4"><b>4 m.:</b> ir „Hello, I am…"</span><figure><img loading="lazy" decoding="async" src="assets/img/ai-mentore-grupe-4x5-480.webp" width="480" height="600" alt="Mokytoja klūpo šalia keturių vaikų ir rodo kelią istorijų žemėlapyje, vaikas laiko robotą. DI iliustracija."><figcaption>DI iliustracija</figcaption></figure></li>
         <li class="step"><span class="min">3–8 min</span><h3>Knyga</h3><p>Mentorius skaito 3–4 puslapius ir klausia: „Kas čia? Kokį garsą daro liūtas?" Vaikai rodo ir kartoja gyvūnų vardus lietuviškai ir angliškai.</p><span class="v4" data-age-only="4"><b>4 m.:</b> vaikai patys spėja, kas bus toliau</span><figure><img loading="lazy" decoding="async" src="assets/img/ai-knyga-robotui-4x5-480.webp" width="480" height="600" alt="Mergaitė rodo robotui atverstą paveikslėlių knygą, šalia smalsiai žiūri mažesnis berniukas. DI iliustracija."><figcaption>DI iliustracija</figcaption></figure></li>
         <li class="step"><span class="min">8–11 min</span><h3>„Būk robotas" kūnu</h3><p>Vaikai žingsniuoja pagal rodyklių korteles ant grindų ir skaičiuoja žingsnius garsiai. Be roboto, visu kūnu.</p><span class="v4" data-age-only="4"><b>4 m.:</b> 4–5 žingsnių seka</span><figure><img loading="lazy" decoding="async" src="assets/img/video-korteliu-seka-ranka-480.webp" width="480" height="362" alt="Ranka dėlioja komandų korteles: dvi rodyklės į priekį ir posūkis."><figcaption>Nuotr. MatataStudio</figcaption></figure></li>
@@ -266,22 +279,23 @@
         <li class="step"><span class="min">26–29 min</span><h3>Parodyk draugams</h3><p>Dvi ar trys poros paleidžia savo robotą, kiti ploja. Vaikas papasakoja, kur robotas nuėjo.</p><span class="v4" data-age-only="4"><b>4 m.:</b> atsako „kodėl pasirinkai tą kelią?"</span><figure><img loading="lazy" decoding="async" src="assets/img/ai-liutas-du-vaikai-dokumentinis-4x5-480.webp" width="480" height="596" alt="Mergaitė ir berniukas klūpo ant grindų ir juokiasi, robotas stovi prie liūto langelio. DI iliustracija."><figcaption>DI iliustracija</figcaption></figure></li>
         <li class="step"><span class="min">29–30 min</span><h3>Atsisveikinimas ratu</h3><p>Prisimename, ką šiandien aplankė robotas, ir atsisveikiname su juo lietuviškai ir angliškai.</p><figure><img loading="lazy" decoding="async" src="assets/img/ai-mentore-grupe-dokumentinis-3x2-800.webp" width="800" height="537" alt="Mokytoja violetiniais marškinėliais klūpo prie vaikų grupės ir rodo kelią istorijų žemėlapyje. DI iliustracija."><figcaption>DI iliustracija</figcaption></figure></li>
       </ol>
+      </div>
     </div>
     <div class="side">
       <div class="mentor-card" id="mentorCard">
         <div class="ava" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="8"/><path d="M8 42c0-9 7-14 16-14s16 5 16 14"/></svg></div>
         <span class="ph-label">Pavyzdys · čia bus tikras mentorius</span>
         <b>Su jūsų vaiku bus Robotikos akademijos mentorius</b>
-        <p>Vardą, nuotrauką ir sakinį jo paties žodžiais įdėsime, kai susirinks pirmoji grupė. <span class="desk-only">Mentoriai kasmet mokosi: klasės valdymo, dirbtinio intelekto, pirmosios pagalbos.</span></p>
+        <p>Vardą ir nuotrauką įdėsime, kai susirinks pirmoji grupė. <span class="desk-only">Mentoriai kasmet mokosi: klasės valdymo, dirbtinio intelekto, pirmosios pagalbos.</span></p>
       </div>
       <figure class="vid" id="video">
         <div class="vid-box">
-          <video id="pv" poster="assets/poster-640.webp" preload="none" playsinline width="1280" height="720" aria-label="Matata pristatymas, 72 sekundės, lietuviškai">
-            <source src="../assets/video/matata-pristatymas.mp4" type="video/mp4">
+          <video id="pv" poster="assets/poster-640.webp" preload="none" playsinline width="1280" height="720" aria-label="Matata pristatymas, 58 sekundės, lietuviškai">
+            <source src="assets/video/matata-pristatymas-v2.mp4" type="video/mp4">
           </video>
-          <button type="button" class="vid-play" id="pvPlay" aria-label="Paleisti pristatymo video, 72 sekundės"><span class="vp-ic"><svg viewBox="0 0 24 24" fill="#152039"><path d="M7 4l12 8-12 8z"/></svg></span><span class="txt">Pažiūrėkite 1 min.</span></button>
+          <button type="button" class="vid-play" id="pvPlay" aria-label="Pažiūrėkite 1 min.: paleisti pristatymo video, 58 sekundės"><span class="vp-ic"><svg viewBox="0 0 24 24" fill="#152039"><path d="M7 4l12 8-12 8z"/></svg></span><span class="txt">Pažiūrėkite 1 min.</span></button>
         </div>
-        <figcaption><b>Pažiūrėkite 1 min.:</b> kaip atrodo pamoka be ekrano. <span class="desk-only">72 s, lietuviškai. </span>Įgarsinta dirbtinio intelekto balsu.</figcaption>
+        <figcaption><b>Pažiūrėkite 1 min.:</b> kaip atrodo pamoka be ekrano. <span class="desk-only">58 s, lietuviškai. </span>Animacija, įgarsinta dirbtinio intelekto balsu.</figcaption>
       </figure>
     </div>
   </div>
@@ -313,10 +327,16 @@
 <!-- ============ FUTURE SKILLS (WEF) ============ -->
 <section class="future" id="ateities-kompetencijos">
   <div class="wrap">
-    <details class="mob-details" id="wefBox">
-      <summary>Ateities įgūdžių pradžia: mygtukas ir knyga<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+    <h2>Ateities įgūdžių pradžia: mygtukas ir knyga</h2>
+    <p class="intro">Pasaulio ekonomikos forumo 2025 m. ataskaitoje daugiau nei 1 000 darbdavių įvardijo, kokie įgūdžiai bus svarbiausi iki 2030 metų. Trimečiui tai labai paprasti dalykai.</p>
+    <ul class="wef-top mob-only" aria-label="Trys svarbiausi ateities įgūdžiai">
+      <li><b>Analitinis mąstymas</b><span>Skaičiuoja žingsnius ir dėlioja kelią rodyklėmis.</span><small>69 % darbdavių, 1 vieta (WEF 2025)</small></li>
+      <li><b>Atsparumas ir lankstumas</b><span>Kai robotas nuvažiuoja ne ten, ieškome klaidos ir bandome dar kartą.</span><small>67 % darbdavių, 2 vieta</small></li>
+      <li><b>Kūrybinis mąstymas</b><span>Sugalvoja savo garsą, žodį ar pasakos pabaigą.</span><small>57 % darbdavių, 4 vieta</small></li>
+    </ul>
+    <details class="mob-details sum-hide" id="wefBox">
+      <summary>Visos 6 kompetencijos pagal amžių ir šaltiniai<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
       <div class="inner">
-        <p class="intro">Pasaulio ekonomikos forumo 2025 m. ataskaitoje daugiau nei 1 000 darbdavių įvardijo, kokie įgūdžiai bus svarbiausi iki 2030 metų. Trimečiui tai labai paprasti dalykai.</p>
         <table class="wef">
           <thead><tr><th>Ateities įgūdis (WEF 2025)</th><th>Ką vaikas daro pas mus</th><th>Pirmi žingsniai pagal amžių</th></tr></thead>
           <tbody>
@@ -346,7 +366,7 @@
     <figure>
       <picture>
         <source media="(min-width:860px)" srcset="assets/img/ai-mentore-grupe-3x2-800.webp 800w, assets/img/ai-mentore-grupe-3x2-1200.webp 1200w" sizes="(min-width:1100px) 520px, 45vw">
-        <img loading="lazy" decoding="async" src="assets/img/ai-mentore-grupe-3x2-800.webp" srcset="assets/img/ai-mentore-grupe-3x2-480.webp 480w, assets/img/ai-mentore-grupe-3x2-800.webp 800w" sizes="94vw" width="800" height="531" alt="Mokytoja atsiklaupusi vaikų akių lygyje rodo žemėlapio langelį, o vaikas deda robotą į starto vietą. DI iliustracija.">
+        <img loading="lazy" decoding="async" src="assets/img/ai-mentore-grupe-3x2-800.webp" srcset="assets/img/ai-mentore-grupe-3x2-480.webp 480w, assets/img/ai-mentore-grupe-3x2-800.webp 800w, assets/img/ai-mentore-grupe-3x2-1200.webp 1200w" sizes="94vw" width="800" height="531" alt="Mokytoja atsiklaupusi vaikų akių lygyje rodo žemėlapio langelį, o vaikas deda robotą į starto vietą. DI iliustracija.">
       </picture>
       <figcaption>DI iliustracija</figcaption>
     </figure>
@@ -354,19 +374,19 @@
       <h2><span class="desk-only">Kas veda ir kaip dirba su vaikais</span><span class="mob-only">Kas veda pamokas</span></h2>
       <p class="lead desk-only">Užsiėmimus veda Robotikos akademijos mentoriai. Taisyklės, kurių laikomės kiekvienoje pamokoje:</p>
       <details class="mob-details" id="rulesBox">
-        <summary>Taisyklės pamokoje ir kas kuria programą<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <summary>Taisyklės pamokoje<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
         <div class="inner">
           <ul class="rules">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Mentorius dirba vaiko akių lygyje: ant kilimo, prie stalo, šalia roboto.</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Kiekvienas vaikas mygtukus spaudžia pats. Mentorius niekada nespaudžia už vaiką.</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Klaidą vadiname „bandymu". Robotas nuėjo ne ten? Puiku, bandome dar.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Klaidą vadiname „bandymu". Kai robotas nuėjo ne ten, sakome: puiku, bandome dar.</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Kalbiname, o ne kalbame už vaiką: „Kas čia? Kas bus toliau?"</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Priedus su smulkiomis dalimis dalija tik mentorius. Telefonai kišenėje.</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Vaikų veidų nefilmuojame ir nefotografuojame be raštiško jūsų sutikimo.</span></li>
           </ul>
-          <p class="creators-p"><b>Kas kuria programą.</b> Robotą ir pagrindines veiklų korteles sukūrė MatataStudio. Užsiėmimus veda Robotikos akademijos mentoriai, o pati akademija vaikus moko nuo 2013 metų. Matata yra nauja programa, todėl pirmųjų grupių tėvų atsiliepimus paskelbsime čia po pirmojo mėnesio.</p>
         </div>
       </details>
+      <p class="creators-p"><b>Kas kuria programą.</b> Robotą ir pagrindines veiklų korteles sukūrė MatataStudio. Užsiėmimus veda Robotikos akademijos mentoriai, o pati akademija vaikus moko nuo 2013 metų.<span class="desk-only"> Matata yra nauja programa, todėl pirmųjų grupių tėvų atsiliepimus paskelbsime čia po pirmojo mėnesio.</span></p>
     </div>
   </div>
 </section>
@@ -375,49 +395,47 @@
 <section class="proof" id="atsiliepimai">
   <div class="wrap">
     <div class="rating" id="rating">
-      <span class="stars" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8z"/></svg></span>
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h3l3-7 4 14 3-7h3"/></svg></span>
       <span><b data-cfg="trust.rating.text">Tėvai mūsų stovyklų mentorius įvertino 9,8 iš 10*</b><small data-cfg="trust.rating.footnote">* Robotikos akademijos tėvų apklausa, 2025 m. vasaros stovyklos</small></span>
     </div>
-    <details class="mob-details" id="tstBox">
-      <summary>Ką sakys tėvai, vaikai ir mentoriai<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
-      <div class="inner">
-    <p class="muted" style="text-align:center;margin:0 auto 12px">Matata yra nauja programa. Tikrus atsiliepimus iš pirmųjų grupių įdėsime čia po pirmojo mėnesio.</p>
-    <div class="tst" id="testimonials" tabindex="0" aria-label="Atsiliepimų vietos, slinkite į šoną">
+    <h2 class="tst-h">Ką sakys tėvai, vaikai ir mentoriai</h2>
+    <p class="tst-note">Matata yra nauja programa. Tikrus atsiliepimus iš pirmųjų grupių įdėsime, kai juos turėsime, tik su raštišku sutikimu.</p>
+    <div class="tst" id="testimonials" role="group" tabindex="0" aria-label="Atsiliepimų vietos, slinkite į šoną">
+      <!--TST-->
       <article class="tcard" data-placeholder="1" data-role="tevai">
-        <span class="ph-label"><span class="desk-only">Pavyzdys · čia bus tikras atsiliepimas</span><span class="mob-only">Pavyzdys · bus tikras atsiliepimas</span></span>
-        <p class="q">Čia bus tikri tėvų žodžiai po pirmojo mėnesio.</p>
-        <div class="by"><span class="ava" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="8"/><path d="M8 42c0-9 7-14 16-14s16 5 16 14"/></svg></span><span><b>Mama arba tėtis</b><small>4 m. vaikas</small></span></div>
+        <span class="ph-label">PAVYZDYS · čia bus tikras atsiliepimas</span>
+        <p class="q">„[Ką vaikas pradėjo daryti namie po 4 pamokų]"</p>
+        <div class="by"><span class="ava" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="8"/><path d="M8 42c0-9 7-14 16-14s16 5 16 14"/></svg></span><span><b>[Vardas]</b><small>[N] m. vaiko mama arba tėtis</small></span></div>
       </article>
       <article class="tcard" data-placeholder="1" data-role="vaikas">
-        <span class="ph-label"><span class="desk-only">Pavyzdys · čia bus tikras atsiliepimas</span><span class="mob-only">Pavyzdys · bus tikras atsiliepimas</span></span>
-        <p class="q">Čia bus tai, ką vaikas pasakė apie robotą.</p>
-        <div class="by"><span class="ava" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="8"/><path d="M8 42c0-9 7-14 16-14s16 5 16 14"/></svg></span><span><b>Vaikas</b><small>4 m.</small></span></div>
+        <span class="ph-label">PAVYZDYS · čia bus tikras atsiliepimas</span>
+        <p class="q">„[Ką pats sukūrė ar išmoko, savo žodžiais]"</p>
+        <div class="by"><span class="ava" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="8"/><path d="M8 42c0-9 7-14 16-14s16 5 16 14"/></svg></span><span><b>[Vardas]</b><small>[N] m.</small></span></div>
       </article>
       <article class="tcard" data-placeholder="1" data-role="mentorius">
-        <span class="ph-label"><span class="desk-only">Pavyzdys · čia bus tikras atsiliepimas</span><span class="mob-only">Pavyzdys · bus tikras atsiliepimas</span></span>
-        <p class="q">Čia bus mentoriaus pastebėjimas iš pirmųjų pamokų.</p>
-        <div class="by"><span class="ava" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="8"/><path d="M8 42c0-9 7-14 16-14s16 5 16 14"/></svg></span><span><b>Robotikos akademijos mentorė (-ius)</b><small>veda darželinukams</small></span></div>
+        <span class="ph-label">PAVYZDYS · čia bus tikras atsiliepimas</span>
+        <p class="q">„[Ką mato per 3 mėnesius]"</p>
+        <div class="by"><span class="ava" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="17" r="8"/><path d="M8 42c0-9 7-14 16-14s16 5 16 14"/></svg></span><span><b>[Vardas]</b><small>Robotikos akademijos mentorė (-ius)</small></span></div>
       </article>
+      <!--/TST-->
     </div>
-      </div>
-    </details>
     <div class="elsewhere">
       <details class="mob-details" id="elsewhereBox">
         <summary>Kaip tai veikia kitur<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary>
         <div class="inner">
-          <p>Tokiais robotais vaikai mokosi darželiuose daugiau nei 60 šalių (gamintojo duomenimis). Singapūre vaikai su juo mokosi net kinų kalbos. Estijoje tokie robotai darželiuose naudojami nuo 2017 metų. Lietuvoje užsiėmimus vedame lietuviškai, su paveikslėlių knygomis ir Robotikos akademijos mentoriais.</p>
+          <p>Tokiais robotais vaikai mokosi darželiuose daugiau nei 60 šalių (gamintojo duomenimis). Singapūre vaikai su jais mokosi net kinų kalbos. Estijoje tokie robotai darželiuose naudojami nuo 2017 metų. Lietuvoje užsiėmimus vedame lietuviškai, su paveikslėlių knygomis ir Robotikos akademijos mentoriais.</p>
           <ul class="flags">
             <li>Singapūras: darželis, pasakos kinų kalba</li>
             <li>Estija: darželiuose nuo 2017 m.</li>
             <li>60+ šalių (gamintojo duomenimis)</li>
           </ul>
           <div class="vids">
-            <button class="yt" type="button" data-yt="CuRwXgbPVS4" aria-label="Paleisti video: Tale-Bot darželyje Singapūre, 30 sekundžių">
+            <button class="yt" type="button" data-yt="CuRwXgbPVS4" aria-label="Tale-Bot darželyje Singapūre (0:30): paleisti YouTube video">
               <img loading="lazy" decoding="async" src="../assets/img/yt-CuRwXgbPVS4.webp" width="700" height="393" alt="">
               <span class="play"><span><svg viewBox="0 0 24 24" fill="#152039"><path d="M7 4l12 8-12 8z"/></svg></span></span>
               <span class="lbl">Tale-Bot darželyje Singapūre (0:30)</span>
             </button>
-            <button class="yt" type="button" data-yt="VMBfrNi6SNA" aria-label="Paleisti video: gamintojo pristatymas, kaip veikia robotas, 5 minutės">
+            <button class="yt" type="button" data-yt="VMBfrNi6SNA" aria-label="Kaip veikia robotas: gamintojo pristatymas (5:36): paleisti YouTube video">
               <img loading="lazy" decoding="async" src="../assets/img/yt-VMBfrNi6SNA.webp" width="480" height="203" alt="">
               <span class="play"><span><svg viewBox="0 0 24 24" fill="#152039"><path d="M7 4l12 8-12 8z"/></svg></span></span>
               <span class="lbl">Kaip veikia robotas: gamintojo pristatymas (5:36)</span>
@@ -435,7 +453,7 @@
   <div class="wrap">
     <div class="sec-head">
       <h2>Kiek kainuoja</h2>
-      <p class="lead">Viena suma per mėnesį pagal vietą. <span data-cfg="lessonsPerMonth">4</span> pamokos po <span data-cfg="lessonMinutes">30</span> min, iki <span data-cfg="groupMax">10</span> vaikų, 1 robotas dviem.</p>
+      <p class="lead">Viena suma per mėnesį pagal vietą. <span data-cfg="lessonsPerMonth">4</span> pamokos po <span data-cfg="lessonMinutes">30</span> min, iki <span data-cfg="groupMax">10</span> vaikų, <span data-cfg="robotRatio">1 robotas dviem</span>.</p>
       <div class="incl desk-only">
         <h3>Kas įskaičiuota</h3>
         <ul>
@@ -450,26 +468,31 @@
       <div class="pgrid">
         <article class="pc darzelis">
           <span class="where"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg><span data-cfg="prices.darzelis.label">Darželyje</span></span>
-          <div class="amt"><b><span data-cfg="prices.darzelis.amount">25</span> <span class="eur">€</span></b><span>per mėnesį</span></div>
+          <div class="amt"><b><span data-cfg="prices.darzelis.amount">25</span> <span class="eur" data-cfg="prices.currency">€</span></b><span>per mėnesį</span></div>
           <p class="per"><span data-cfg="lessonsPerMonth">4</span> pamokos po <span data-cfg="lessonMinutes">30</span> min, apie <span data-cfg="calc:perLesson.darzelis">6,25</span> € už pamoką.</p>
-          <p class="note"><span class="desk-only"><span data-cfg="prices.darzelis.note">Ateiname į vaiko grupę. Vežti nereikia.</span> Pamokos <span data-cfg="prices.darzelis.where">darželyje, dienos metu</span>.</span><span class="mob-only">Dienos metu, vežti nereikia.</span></p>
+          <p class="note"><span class="desk-only"><span data-cfg="prices.darzelis.note">Ateiname į vaiko grupę. Vežti nereikia.</span> Pamokos <span data-cfg="prices.darzelis.where">darželyje, laiką deriname su darželiu</span>.</span><span class="mob-only" data-cfg="prices.darzelis.noteShort">vežti nereikia, ateiname į vaiko grupę. Grupė atsiranda, kai užsirašo keli tėvai iš to paties darželio ir darželis sutinka.</span></p>
+          <p class="exit-line" data-cfg="exitPolicy.text" data-cfg-show="exitPolicy.show" hidden></p>
           <a class="btn btn-y" href="#sarasas" data-cta="price_darzelis" data-loc="darzelis"><span class="desk-only" data-cfg="ctas.primary">Užsirašyti į laukiančiųjų sąrašą</span><span class="mob-only" data-cfg="ctas.primaryShort">Į sąrašą</span></a>
         </article>
         <article class="pc centras">
           <span class="where"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span data-cfg="prices.centras.label">Tech Zity centre</span></span>
-          <div class="amt"><b><span data-cfg="prices.centras.amount">29</span> <span class="eur">€</span></b><span>per mėnesį</span></div>
+          <div class="amt"><b><span data-cfg="prices.centras.amount">29</span> <span class="eur" data-cfg="prices.currency">€</span></b><span>per mėnesį</span></div>
           <p class="per"><span data-cfg="lessonsPerMonth">4</span> pamokos po <span data-cfg="lessonMinutes">30</span> min, apie <span data-cfg="calc:perLesson.centras">7,25</span> € už pamoką.</p>
-          <p class="note"><span class="desk-only"><span data-cfg="prices.centras.where">Tech Zity, Panerių g. 43, Vilnius</span>. <span data-cfg="prices.centras.note">Popiet, Robotikos akademijos centre.</span></span><span class="mob-only">Panerių g. 43, Vilnius.</span></p>
+          <p class="note"><span class="desk-only"><span data-cfg="prices.centras.where">Tech Zity, Panerių g. 43, Vilnius</span>. <span data-cfg="prices.centras.note">Popiet, Robotikos akademijos centre.</span></span><span class="mob-only" data-cfg="prices.centras.noteShort">Panerių g. 43, Vilnius, popiet.</span></p>
+          <p class="exit-line" data-cfg="exitPolicy.text" data-cfg-show="exitPolicy.show" hidden></p>
           <a class="btn btn-y" href="#sarasas" data-cta="price_centras" data-loc="ra-centras"><span class="desk-only" data-cfg="ctas.primary">Užsirašyti į laukiančiųjų sąrašą</span><span class="mob-only" data-cfg="ctas.primaryShort">Į sąrašą</span></a>
         </article>
       </div>
+      <p class="cond mob-only"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg><span><b>Darželyje:</b> <span data-cfg="prices.darzelis.noteShort">vežti nereikia, ateiname į vaiko grupę. Grupė atsiranda, kai užsirašo keli tėvai iš to paties darželio ir darželis sutinka.</span> <b>Centre:</b> <span data-cfg="prices.centras.noteShort">Panerių g. 43, Vilnius, popiet.</span></span></p>
+      <p class="start" id="startLine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span><span id="startText" data-cfg="start.text">Grupės startuoja, kai susirenka pakankamai vaikų. Laukiančiųjų sąraše esantiems pranešime pirmiesiems.</span> <span data-cfg="start.notify">Pradžios datą pranešime el. paštu.</span></span></p>
+      <p class="exit" data-cfg="exitPolicy.text" data-cfg-show="exitPolicy.show" hidden></p>
       <div class="incl mob-only">
         <ul>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Įskaičiuota: robotai, žemėlapiai, kortelės, nauja knyga kas savaitę. Sąrašas neįpareigoja.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Įskaičiuota: robotai, žemėlapiai, knygos. Sąrašas neįpareigoja.</span></li>
         </ul>
       </div>
       <div class="incl">
-        <p class="org-line"><span class="desk-only">Dirbate darželyje arba norite pamokų savo vaiko darželyje?</span><a class="btn btn-w btn-sm" href="#darzeliams" data-cta="price_org"><span data-cfg="ctas.org">Pakvieskite į savo darželį</span></a></p>
+        <p class="org-line"><span class="desk-only">Dirbate darželyje arba norite pamokų savo vaiko darželyje?</span><a class="btn btn-w btn-sm" href="#darzeliams" data-cta="price_org"><span data-cfg="ctas.org">Pakvieskite į savo darželį</span></a><a class="pdf-link" style="color:#fff" href="darzeliui/darzeliui.pdf" data-cfg-attr="href:darzeliui.pdf" data-cta="price_pdf" data-out="pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 19h16"/></svg><span data-cfg="darzeliui.pdfLabel">Atsisiųsti vadovui (PDF, 1 psl.)</span></a></p>
       </div>
     </div>
   </div>
@@ -494,38 +517,50 @@
           <li>viską atsivežame</li>
           <li>tėvams <span data-cfg="prices.darzelis.amount">25</span> €/mėn.</li>
         </ul>
-        <p>Palikite kontaktą, ir susisieksime dėl grupės jūsų darželyje.</p>
+        <p>Palikite kontaktą, ir susisieksime dėl grupės jūsų darželyje. <a class="pdf-link" href="darzeliui/darzeliui.pdf" data-cfg-attr="href:darzeliui.pdf" data-cta="spec_pdf" data-out="pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 19h16"/></svg><span data-cfg="darzeliui.pdfLabel">Atsisiųsti vadovui (PDF, 1 psl.)</span></a></p>
       </div>
     </div>
 
     <div>
       <div class="jtabs" role="tablist" aria-label="Kas registruojasi" id="darzeliams">
-        <button type="button" role="tab" id="tab-tevai" aria-selected="true" aria-controls="wlform" data-jtab="tevai">Esu mama arba tėtis</button>
-        <button type="button" role="tab" id="tab-istaiga" aria-selected="false" aria-controls="orgform" data-jtab="istaiga">Dirbu darželyje</button>
+        <button type="button" role="tab" id="tab-tevai" aria-selected="true" aria-controls="panel-tevai" data-jtab="tevai">Esu mama arba tėtis</button>
+        <button type="button" role="tab" id="tab-istaiga" aria-selected="false" aria-controls="panel-istaiga" data-jtab="istaiga" data-cfg="ctas.orgTab">Kviečiu į darželį</button>
       </div>
+      <p class="jtabs-help">„<span data-cfg="ctas.orgTab">Kviečiu į darželį</span>": <span data-cfg="ctas.orgTabHelp">darbuotojams ir tėvų atstovams</span></p>
 
       <!-- ===== parents ===== -->
-      <form class="form" id="wlform" novalidate role="tabpanel" aria-labelledby="tab-tevai">
-        <div class="joined" id="joined">Jūs jau sąraše iš šio įrenginio. <button type="button" class="linkbtn" id="joinAgain" style="color:var(--blue-deep);min-height:32px">Užrašyti kitą vaiką</button></div>
+      <div role="tabpanel" id="panel-tevai" aria-labelledby="tab-tevai">
+      <form class="form" id="wlform" novalidate>
+        <div class="joined" id="joined">Jūs jau sąraše iš šio įrenginio. <button type="button" class="linkbtn" id="joinAgain">Užrašyti kitą vaiką</button></div>
         <div class="prog" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
         <div class="sr" aria-live="polite" id="stepAnn">1 žingsnis iš 3</div>
         <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <div class="fstep on" data-step="1">
           <h3>Apie vaiką ir vietą</h3>
-          <div class="opts cols3" role="radiogroup" aria-label="Vaiko amžius">
+          <div class="opts cols3" role="radiogroup" aria-label="Vaiko amžius" aria-describedby="err-age">
             <label class="opt"><input type="radio" name="child_age" value="3"><span>3 metai</span></label>
-            <label class="opt"><input type="radio" name="child_age" value="4" checked><span>4 metai</span></label>
+            <label class="opt"><input type="radio" name="child_age" value="4"><span>4 metai</span></label>
             <label class="opt"><input type="radio" name="child_age" value="kitas"><span>Kitas</span></label>
           </div>
-          <div class="opts" role="radiogroup" aria-label="Kur būtų patogiausia">
-            <label class="opt row"><input type="radio" name="location_pref" value="darzelis" checked><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Darželyje dienos metu<small><span data-cfg="prices.darzelis.amount">25</span> €/mėn.</small></span></label>
+          <p class="err" id="err-age" data-err="child_age" role="alert"></p>
+          <div class="opts" role="radiogroup" aria-label="Kur būtų patogiausia" aria-describedby="err-loc">
+            <label class="opt row"><input type="radio" name="location_pref" value="darzelis"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Vaiko darželyje<small><span data-cfg="prices.darzelis.amount">25</span> €/mėn.</small></span></label>
+            <div class="kg" id="kgBox">
+              <label class="f">Darželis
+                <input type="text" name="kindergarten_name" placeholder="Darželio pavadinimas" autocomplete="off" maxlength="120" aria-describedby="help-kg err-kg">
+                <span class="helper" id="help-kg">Kad galėtume suburti grupę iš to paties darželio ir susitarti su darželiu.</span>
+              </label>
+              <p class="err" id="err-kg" data-err="kindergarten_name" role="alert"></p>
+            </div>
             <label class="opt row"><input type="radio" name="location_pref" value="ra-centras"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Tech Zity centre, Vilnius<small><span data-cfg="prices.centras.amount">29</span> €/mėn.</small></span></label>
             <label class="opt row"><input type="radio" name="location_pref" value="nezinau"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg>Dar nežinau</span></label>
           </div>
+          <p class="err" id="err-loc" data-err="location_pref" role="alert"></p>
           <label class="f">Miestas
-            <input type="text" name="city" list="cities" placeholder="Vilnius" autocomplete="address-level2" maxlength="40" required aria-describedby="err-city">
+            <input type="text" name="city" list="cities" placeholder="Pvz. Vilnius" autocomplete="address-level2" maxlength="40" required aria-describedby="help-city err-city">
             <datalist id="cities"><option value="Vilnius"><option value="Kaunas"><option value="Klaipėda"><option value="Šiauliai"><option value="Panevėžys"></datalist>
+            <span class="helper" id="help-city">Pirmosios grupės Vilniuje. Kitur įrašykite miestą: skaičiuojame paklausą.</span>
           </label>
           <p class="err" id="err-city" data-err="city" role="alert"></p>
           <div class="fnav"><span></span><button type="button" class="btn btn-y" data-next>Toliau <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button></div>
@@ -544,10 +579,6 @@
           <label class="f">Telefonas <span class="opt-lbl">(nebūtina)</span>
             <input type="tel" name="phone" placeholder="+370" autocomplete="tel" inputmode="tel" maxlength="30">
           </label>
-          <label class="f">Darželis <span class="opt-lbl">(nebūtina)</span>
-            <input type="text" name="kindergarten_name" placeholder="Darželio pavadinimas" autocomplete="off" maxlength="120" aria-describedby="help-kg">
-            <span class="helper desk-only" id="help-kg">Jei susirinks keli tėvai iš to paties darželio, pasiūlysime pamokas darželyje dienos metu.</span>
-          </label>
           <label class="f">Patogiausia savaitės diena <span class="opt-lbl">(nebūtina)</span></label>
           <div class="opts days" role="group" aria-label="Savaitės dienos">
             <label class="opt"><input type="checkbox" name="preferred_day" value="Pr" aria-label="Pirmadienis"><span>Pr</span></label>
@@ -564,8 +595,9 @@
         <div class="fstep" data-step="3">
           <h3>Paskutinis žingsnis</h3>
           <p class="hint" id="summary"></p>
-          <label class="chk-line"><input type="checkbox" name="consent_contact" value="1" required aria-describedby="err-consent"><span>Sutinku, kad Robotikos akademija susisiektų su manimi el. paštu arba telefonu dėl Matata programos. Sutikimą galiu atšaukti bet kada atsakydama(s) į laišką. <a href="https://robotikosakademija.lt/privatumo-politika/" target="_blank" rel="noopener" data-out="privacy">Privatumo politika</a>.</span></label>
+          <label class="chk-line"><input type="checkbox" name="consent_contact" value="1" required aria-describedby="err-consent"><span>Sutinku, kad Robotikos akademija susisiektų su manimi el. paštu arba telefonu dėl Matata programos. Sutikimą galiu atšaukti bet kada atsakydama(s) į laišką. <a href="https://robotikosakademija.lt/privatumo-politika/" data-cfg-attr="href:privacyUrl" target="_blank" rel="noopener" data-out="privacy">Privatumo politika</a>.</span></label>
           <p class="err" id="err-consent" data-err="consent_contact" role="alert"></p>
+          <p class="legal" data-cfg="exitPolicy.text" data-cfg-show="exitPolicy.show" hidden></p>
           <div class="fnav"><button type="button" class="btn btn-g" data-prev>Atgal</button><button type="submit" class="btn btn-y" id="submitBtn">Užsirašyti <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span></button></div>
           <p class="err" data-err="submit" role="alert"></p>
           <p class="legal">Duomenų valdytojas: VšĮ „Robotikos akademija". Duomenis naudojame tik susisiekti dėl šios programos. Vaiko vardo neprašome ir nesaugome.</p>
@@ -574,20 +606,33 @@
         <div class="done" id="done" tabindex="-1">
           <div class="bot" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none"><rect x="14" y="26" width="92" height="74" rx="20" fill="#fff" stroke="#DCE6FF" stroke-width="3"/><rect x="14" y="26" width="18" height="74" rx="12" fill="#F7A11A"/><circle cx="58" cy="62" r="11" fill="#152039"/><circle cx="86" cy="62" r="11" fill="#152039"/><circle cx="61" cy="58" r="4" fill="#fff"/><circle cx="89" cy="58" r="4" fill="#fff"/><path d="M60 82c6 7 18 7 24 0" stroke="#152039" stroke-width="4" stroke-linecap="round"/><circle cx="48" cy="34" r="4" fill="#56B13F"/><circle cx="60" cy="34" r="4" fill="#FEC404"/><circle cx="72" cy="34" r="4" fill="#3F6EDC"/><circle cx="84" cy="34" r="4" fill="#E6483B"/></svg></div>
           <h3>Labas! Hello! Jūs sąraše.</h3>
-          <p>Parašysime, kai grupė susirinks <b id="doneWhere">jūsų darželyje</b>. Iki tol: atsiverskite su vaiku knygą apie gyvūnus ir paklauskite, kokį garsą daro liūtas.</p>
-          <p class="small muted">Klausimų turite jau dabar? Rašykite <a href="mailto:info@robotikosakademija.lt" data-cta="email">info@robotikosakademija.lt</a>.</p>
-          <button type="button" class="btn btn-w" id="shareBtn" data-share>Pakvieskite kitus tėvus iš savo darželio</button>
+          <p id="doneText">Parašysime, kai grupė susirinks <b id="doneWhere">jūsų darželyje</b>. Iki tol: atsiverskite su vaiku knygą apie gyvūnus ir paklauskite, kokį garsą daro liūtas.</p>
+          <p class="small muted">Klausimų turite jau dabar? Rašykite <a href="mailto:info@robotikosakademija.lt" data-cfg-attr="href:calc:mailtoHref" data-cta="email" data-cfg="legal.email">info@robotikosakademija.lt</a>.</p>
+          <button type="button" class="btn btn-w" id="shareBtn">Pakvieskite kitus tėvus iš savo darželio</button>
           <button type="button" class="again" id="againBtn">Užrašyti kitą vaiką</button>
         </div>
         <div class="confetti" id="confetti" aria-hidden="true"></div>
       </form>
+      </div>
 
       <!-- ===== kindergarten / organisation ===== -->
-      <form class="form" id="orgform" novalidate hidden role="tabpanel" aria-labelledby="tab-istaiga">
+      <div role="tabpanel" id="panel-istaiga" aria-labelledby="tab-istaiga" hidden>
+      <form class="form" id="orgform" novalidate>
         <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="fstep on" data-step="1">
           <h3>Pakvieskite Matata į savo darželį</h3>
-          <p class="hint"><span data-cfg="lessonMinutes">30</span> min kartą per savaitę, iki <span data-cfg="groupMax">10</span> vaikų, viską atsivežame, tėvams <span data-cfg="prices.darzelis.amount">25</span> €/mėn. Atsakome asmeniškai.</p>
+          <div class="dz" id="dz">
+            <b data-cfg="darzeliui.title">Darželiui</b>
+            <ul data-cfg-list="darzeliui.lines">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Darželiui tai nekainuoja: moka tik tėvai, 25 €/mėn.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Laiką deriname su darželiu.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Viską atsivežame: robotus, žemėlapius, korteles ir knygas.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Atvykstame pasikalbėti ir parodyti, kaip vyksta pamoka.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Grupė iki 10 vaikų, 1 robotas dviem, mentorius visada šalia.</span></li>
+            </ul>
+            <a class="pdf-link" href="darzeliui/darzeliui.pdf" data-cfg-attr="href:darzeliui.pdf" data-cta="org_pdf" data-out="pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 19h16"/></svg><span data-cfg="darzeliui.pdfLabel">Atsisiųsti vadovui (PDF, 1 psl.)</span></a>
+          </div>
+          <p class="hint">Palikite kontaktą: susisieksime ir sutarsime, kada atvykti.</p>
           <label class="f">Jūsų vaidmuo
             <select name="org_role" required aria-describedby="err-org_role">
               <option value="">Pasirinkite</option>
@@ -628,7 +673,7 @@
           <label class="f">Telefonas <span class="opt-lbl">(nebūtina)</span>
             <input type="tel" name="phone" placeholder="+370" autocomplete="tel" inputmode="tel" maxlength="30">
           </label>
-          <label class="chk-line"><input type="checkbox" name="consent_contact" value="1" required aria-describedby="err-org_consent"><span>Sutinku, kad Robotikos akademija susisiektų su manimi dėl Matata pamokų mūsų darželyje. <a href="https://robotikosakademija.lt/privatumo-politika/" target="_blank" rel="noopener" data-out="privacy">Privatumo politika</a>.</span></label>
+          <label class="chk-line"><input type="checkbox" name="consent_contact" value="1" required aria-describedby="err-org_consent"><span>Sutinku, kad Robotikos akademija susisiektų su manimi dėl Matata pamokų mūsų darželyje. <a href="https://robotikosakademija.lt/privatumo-politika/" data-cfg-attr="href:privacyUrl" target="_blank" rel="noopener" data-out="privacy">Privatumo politika</a>.</span></label>
           <p class="err" id="err-org_consent" data-err="org_consent" role="alert"></p>
           <div class="fnav"><span></span><button type="submit" class="btn btn-y" id="orgSubmit">Pakviesti <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button></div>
           <p class="err" data-err="org_submit" role="alert"></p>
@@ -637,11 +682,12 @@
         <div class="done" id="orgDone" tabindex="-1">
           <div class="bot" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none"><rect x="14" y="26" width="92" height="74" rx="20" fill="#fff" stroke="#DCE6FF" stroke-width="3"/><rect x="14" y="26" width="18" height="74" rx="12" fill="#F7A11A"/><circle cx="58" cy="62" r="11" fill="#152039"/><circle cx="86" cy="62" r="11" fill="#152039"/><circle cx="61" cy="58" r="4" fill="#fff"/><circle cx="89" cy="58" r="4" fill="#fff"/><path d="M60 82c6 7 18 7 24 0" stroke="#152039" stroke-width="4" stroke-linecap="round"/><circle cx="48" cy="34" r="4" fill="#56B13F"/><circle cx="60" cy="34" r="4" fill="#FEC404"/><circle cx="72" cy="34" r="4" fill="#3F6EDC"/><circle cx="84" cy="34" r="4" fill="#E6483B"/></svg></div>
           <h3>Ačiū! Gavome jūsų kvietimą.</h3>
-          <p>Susisieksime su jumis el. paštu arba telefonu ir sutarsime, kada galime atvykti į <b id="orgDoneWhere">jūsų darželį</b> pasikalbėti apie grupę.</p>
-          <button type="button" class="btn btn-w" id="orgShareBtn" data-share>Pasidalinti su kolegomis</button>
+          <p>Susisieksime su jumis el. paštu arba telefonu ir sutarsime, kada galime atvykti į <b id="orgDoneWhere">jūsų darželį</b> pasikalbėti apie grupę ir parodyti, kaip vyksta pamoka.</p>
+          <button type="button" class="btn btn-w" id="orgShareBtn">Pasidalinti su kolegomis</button>
         </div>
         <div class="confetti" id="orgConfetti" aria-hidden="true"></div>
       </form>
+      </div>
     </div>
   </div>
 </section>
@@ -656,12 +702,13 @@
       <details data-q="programuoti"><summary>Ar trimetis tikrai gali programuoti?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Mūsų prasme taip: spaudžia spalvotas rodykles, ir robotas eina. Skaityti nereikia. Gamintojas robotą skiria 3–5 metų vaikams.</p></details>
       <details data-q="drovus"><summary>Mano vaikas drovus arba dar mažai kalba. Ar tiks?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Tiks. Dirbame poromis, vaikas gali spausti mygtukus ir klausytis. Kalbėti nereikia, kol pats nenori.</p></details>
       <details data-q="kaina"><summary>Kiek kainuoja ir kas įskaičiuota?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p id="faqPrice">Darželyje <span data-cfg="prices.darzelis.amount">25</span> € per mėnesį, Tech Zity centre <span data-cfg="prices.centras.amount">29</span> €: <span data-cfg="lessonsPerMonth">4</span> pamokos po <span data-cfg="lessonMinutes">30</span> min. Įskaičiuoti robotai, žemėlapiai, komandų kortelės ir paveikslėlių knygos. Įsirašymas į sąrašą neįpareigoja, prieš mokėdami gausite visą informaciją.</p></details>
-      <details data-q="kas_toliau"><summary>Kas atsitiks užsiregistravus į sąrašą?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Parašysime, kai atsidarys grupė jūsų darželyje ar centre. Įsipareigojimo nėra: tada ir nuspręsite.</p></details>
+      <details data-q="iseiti" data-cfg-show="exitPolicy.show" hidden><summary>Ar galiu nutraukti, jei vaikui nepatiks?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p data-cfg="exitPolicy.text"></p></details>
+      <details data-q="kas_toliau"><summary>Kas atsitiks užsiregistravus į sąrašą?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Parašysime, kai atsidarys grupė jūsų darželyje ar centre. Įsipareigojimo nėra: tada ir nuspręsite. <span data-cfg="start.text">Grupės startuoja, kai susirenka pakankamai vaikų. Laukiančiųjų sąraše esantiems pranešime pirmiesiems.</span></p></details>
       <div class="faq-more" id="faqMoreBox" hidden>
         <details data-q="learning_styles"><summary>Mano vaikas labiau vizualus (ar judrus). Ar jam tiks?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Tiks. Pamokoje kiekvienas vaikas tą pačią mintį išgirsta, pamato ir išbando rankomis bei kūnu, todėl vieno būdo rinktis nereikia. Tyrimai rodo, kad žodį su paveikslėliu įsimename geriau nei vien išgirstą, o gestai padeda suprasti.</p></details>
         <details data-q="skaityti_anglu"><summary>Ar vaikas išmoks skaityti ir anglų kalbą?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Per kelis mėnesius ne. Ugdome meilę knygai ir mokomės pasakoti: tai pasiruošimas skaityti. Žaisdamas vaikas išgirs ir pakartos pirmuosius angliškus žodžius: tai pirmas žingsnis į kalbą, ne kalbos kursas.</p></details>
         <details data-q="kas_veda"><summary>Kas veda ir kas sukūrė programą?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Robotą ir pagrindines veiklų korteles sukūrė MatataStudio. Užsiėmimus veda Robotikos akademijos mentoriai, o pati akademija vaikus moko nuo 2013 metų. Mentoriaus vardą ir nuotrauką įdėsime, kai susirinks pirmoji grupė.</p></details>
-        <details data-q="kur_kada"><summary>Kur ir kada vyksta?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Vilniuje: darželiuose dienos metu ir Tech Zity centre (Panerių g. 43). Patogiausią dieną pažymite formoje, o kai susirinks grupė, parašysime tikslų laiką.</p></details>
+        <details data-q="kur_kada"><summary>Kur ir kada vyksta?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Vilniuje: darželiuose (laiką deriname su darželiu) ir Tech Zity centre (Panerių g. 43). Patogiausią dieną pažymite formoje, o kai susirinks grupė, parašysime tikslų laiką. <span data-cfg="start.notify">Pradžios datą pranešime el. paštu.</span></p></details>
         <details data-q="darzelio_programa"><summary>Ar tai susiję su darželio programa?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Mūsų tikslai atliepia Lietuvos ikimokyklinio amžiaus vaikų ugdymosi pasiekimų aprašą: mokėjimą mokytis, skaitmeninį sumanumą, matematinį mąstymą ir kalbą. Darželio programos nekartojame: tai atskiras būrelis.</p></details>
         <details data-q="filmuosite"><summary>Ar filmuosite mano vaiką? Ar galiu būti šalia pirmoje pamokoje?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Be jūsų raštiško sutikimo jokių vaiko veidų. Rodome rankas ir robotus. Centre pirmoje pamokoje galite pabūti pirmąsias minutes, kol vaikas apsipranta.</p></details>
       </div>
@@ -682,6 +729,7 @@
         <a class="btn btn-y" href="#sarasas" data-cta="final"><span data-cfg="ctas.primary">Užsirašyti į laukiančiųjų sąrašą</span></a>
         <a class="btn btn-w" href="#darzeliams" data-cta="final_org"><span data-cfg="ctas.org">Pakvieskite į savo darželį</span></a>
       </div>
+      <p style="margin:12px auto 0"><a class="pdf-link" style="color:#fff" href="darzeliui/darzeliui.pdf" data-cfg-attr="href:darzeliui.pdf" data-cta="final_pdf" data-out="pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 19h16"/></svg><span data-cfg="darzeliui.pdfLabel">Atsisiųsti vadovui (PDF, 1 psl.)</span></a></p>
     </div>
   </div>
 </section>
@@ -696,17 +744,17 @@
         <p class="desk-only" style="margin-top:14px;max-width:46ch"><span data-cfg="claims.innovation">Naujausia Robotikos akademijos inovacija darželiams</span>: robotas, knyga ir draugai. Be ekrano.</p>
       </div>
       <div>
-        <h4 class="desk-only">Robotikos akademija</h4>
+        <h3 class="desk-only">Robotikos akademija</h3>
         <ul>
-          <li><a href="https://robotikosakademija.lt/" target="_blank" rel="noopener" data-out="ra-site">robotikosakademija.lt</a></li>
-          <li><a href="tel:+37052525713" data-cta="tel" data-cfg="legal.phone">+370 5 25 25 713</a></li>
-          <li><a href="mailto:info@robotikosakademija.lt" data-cta="email" data-cfg="legal.email">info@robotikosakademija.lt</a></li>
-          <li><a href="https://robotikosakademija.lt/privatumo-politika/" target="_blank" rel="noopener" data-out="privacy">Privatumo politika</a></li>
+          <li class="site-link"><a href="https://robotikosakademija.lt/" data-cfg-attr="href:legal.site" target="_blank" rel="noopener" data-out="ra-site" data-cfg="legal.siteLabel">robotikosakademija.lt</a></li>
+          <li><a href="tel:+37052525713" data-cfg-attr="href:calc:telHref" data-cta="tel" data-cfg="legal.phone">+370 5 25 25 713</a></li>
+          <li><a href="mailto:info@robotikosakademija.lt" data-cfg-attr="href:calc:mailtoHref" data-cta="email" data-cfg="legal.email">info@robotikosakademija.lt</a></li>
+          <li><a href="https://robotikosakademija.lt/privatumo-politika/" data-cfg-attr="href:privacyUrl" target="_blank" rel="noopener" data-out="privacy">Privatumo politika</a></li>
           <li><button type="button" class="linkbtn" id="consentOpen">Slapukų nustatymai</button></li>
         </ul>
       </div>
       <div class="desk-only">
-        <h4>Šiame puslapyje</h4>
+        <h3>Šiame puslapyje</h3>
         <ul>
           <li><a href="#pamoka">Kaip vyksta pamoka</a></li>
           <li><a href="#meile-mokytis">Meilė mokytis</a></li>
@@ -717,9 +765,9 @@
       </div>
     </div>
     <div class="legal-lines">
-      <p><span data-cfg="legal.name">VšĮ „Robotikos akademija"</span>, <span data-cfg="legal.address">Panerių g. 43, LT-03202 Vilnius</span>, <span data-cfg="legal.code">įm. k. 303015010</span>. Asmens duomenų valdytojas: VšĮ „Robotikos akademija". Formos duomenys naudojami tik susisiekti dėl šios programos; vaiko vardo neprašome. <span class="desk-only">Puslapis renka anoniminius naudojimo įvykius be slapukų; Microsoft Clarity įrašai įjungiami tik paspaudus „Leisti".</span><span class="mob-only">Clarity įrašai tik paspaudus „Leisti".</span></p>
+      <p><span data-cfg="legal.name">VšĮ „Robotikos akademija"</span>, <span data-cfg="legal.address">Panerių g. 43, LT-03202 Vilnius</span>, <span data-cfg="legal.code">įm. k. 303015010</span>. <span class="mob-hide">Asmens duomenų valdytojas: VšĮ „Robotikos akademija". Formos duomenys naudojami tik susisiekti dėl šios programos; vaiko vardo neprašome. </span><span class="desk-only">Puslapis renka anoniminius naudojimo įvykius be slapukų; Microsoft Clarity įrašai įjungiami tik paspaudus „Leisti".</span><span class="mob-only">Clarity įrašai tik paspaudus „Leisti".</span></p>
       <p class="coi" data-cfg="coi.text"></p>
-      <p>Mokymosi rezultatai yra programos tikslai, ne garantija. Nuotraukos su užrašu „DI iliustracija" sukurtos dirbtiniu intelektu ir nerodo tikrų vaikų ar Robotikos akademijos pamokų. <span class="desk-only">„Tale-Bot Pro" ir „MatataStudio" yra jų savininkų prekių ženklai. </span>© 2026 Robotikos akademija.</p>
+      <p>Mokymosi rezultatai yra programos tikslai, ne garantija. Nuotraukos su užrašu „DI iliustracija" sukurtos dirbtiniu intelektu ir nerodo tikrų vaikų ar Robotikos akademijos pamokų. <span class="desk-only">„<span data-cfg="robotName">Tale-Bot Pro</span>" ir „MatataStudio" yra jų savininkų prekių ženklai. </span>© 2026 Robotikos akademija.</p>
       <details id="saltiniai">
         <summary>Iš kur šie teiginiai: šaltiniai</summary>
         <ol>
@@ -732,31 +780,31 @@
           <li>Skene ir kt. (2022). Can guidance during play enhance children's learning and development? Child Development 93(4). <a href="https://doi.org/10.1111/cdev.13730" target="_blank" rel="noopener" data-out="doi">DOI</a></li>
           <li>Dargue, Sweller, Jones (2019). When our hands help us understand: a meta-analysis of gesture. Psychological Bulletin 145(8). <a href="https://doi.org/10.1037/bul0000202" target="_blank" rel="noopener" data-out="doi">DOI</a></li>
           <li>Noetel ir kt. (2022). Multimedia design for learning: an overview of reviews. Review of Educational Research 92(3). <a href="https://doi.org/10.3102/00346543211052329" target="_blank" rel="noopener" data-out="doi">DOI</a></li>
-          <li>Robotikos akademijos skaičiai: robotikosakademija.lt; įregistravimo data iš Registrų centro. STEM.org akreditacija: <a href="https://blockchain.stem.org/6e43c2b3-e72b-4a8c-9707-ecb45a6cc024" target="_blank" rel="noopener" data-out="stem-verify">patikrinti</a>.</li>
+          <li>Robotikos akademijos skaičiai: robotikosakademija.lt; įregistravimo data iš Registrų centro. <span id="stemSrc">STEM.org akreditacija: <a href="https://blockchain.stem.org/6e43c2b3-e72b-4a8c-9707-ecb45a6cc024" data-cfg-attr="href:trust.stemOrg.href" target="_blank" rel="noopener" data-out="stem-verify">patikrinti</a>.</span></li>
         </ol>
       </details>
     </div>
   </div>
 </footer>
 
-<div class="bar" id="bar">
+<aside class="bar" id="bar" aria-label="Greitos nuorodos">
   <div class="in">
     <div class="txt"><b>Matata: robotas ir pasakų knyga 3–4 metų vaikams</b><span><span data-cfg="lessonMinutes">30</span> min kartą per savaitę · Vilnius · nuo <span data-cfg="prices.darzelis.amount">25</span> €/mėn.</span></div>
     <a class="btn btn-y" href="#sarasas" data-cta="bar"><span data-cfg="ctas.primaryShort">Į sąrašą</span></a>
     <a class="btn btn-w" href="#darzeliams" data-cta="bar_org"><span data-cfg="ctas.orgShort">Darželiui</span></a>
   </div>
-</div>
+</aside>
 
 <div class="consent" id="consent" role="dialog" aria-label="Slapukų pasirinkimas">
-  <p><b>Ar galime mokytis iš jūsų apsilankymo?</b> Su jūsų sutikimu įjungsime Microsoft Clarity (anoniminius puslapio naudojimo įrašus), kad puslapį darytume aiškesnį. Be sutikimo renkame tik anoniminius įvykius be slapukų.</p>
+  <p><b>Ar galime mokytis iš jūsų apsilankymo?</b> Microsoft Clarity įrašai tik su sutikimu. <a href="https://robotikosakademija.lt/privatumo-politika/" data-cfg-attr="href:privacyUrl" target="_blank" rel="noopener" data-out="privacy">Privatumas</a></p>
   <div class="row">
-    <button type="button" class="btn btn-y" id="consentYes">Leisti</button>
-    <button type="button" class="btn btn-w" id="consentNo">Tik būtini</button>
+    <button type="button" class="btn" id="consentYes">Leisti</button>
+    <button type="button" class="btn" id="consentNo">Tik būtini</button>
   </div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
-<script src="js/main.js?v=2" defer></script>
+<script src="js/main.js?v=3" defer></script>
 </body>
 </html>
