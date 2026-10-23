@@ -103,7 +103,7 @@ window.RA_CFG = {
   },
 
   /* Skaidrumo eilutė: show: true rodo tekstą poraštėje ir lankstinuke. */
-  coi: { show: false, text: '' },
+  coi: { show: true, text: 'Skaidrumas: RA bendraįkūrėjo Kristijono Vasiliausko tėtis atstovauja Matata robotams Lietuvoje.' },
 
   robotName: 'Tale-Bot Pro',
 

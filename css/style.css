@@ -576,3 +576,9 @@ label.f .helper{font-weight:600;font-size:.85rem;color:var(--ink-3);line-height:
 /* round 4 */
 @media (max-width:899px){.faq-list{gap:5px}.fears .ans p{font-size:.93rem}.legal-lines{font-size:.72rem}}
 @media (max-width:899px){.wl-copy .lead{display:none}#rezultatai .foot-note{font-size:.75rem}.fears .ans .src{font-size:.72rem}}
+/* mobile pass 2026-10-23: tap targets >= 44px */
+.age-tog button{min-height:44px}
+.out-tabs button{min-height:44px}
+.brand{min-height:44px}
+#consentOpen,footer .linkbtn{display:inline-flex;align-items:center;min-height:44px}
+@media (max-width:480px){.consent{padding:8px 16px calc(8px + env(safe-area-inset-bottom));gap:6px;grid-template-columns:1fr}.consent p{font-size:.8rem;line-height:1.3}.consent .btn{min-height:44px;padding:6px 12px}}

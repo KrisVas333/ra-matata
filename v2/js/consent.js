@@ -28,7 +28,7 @@
   var css = '.ra-consent{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;color:#152039;border-top:1.5px solid rgba(42,79,181,.32);padding:8px 16px;display:none;grid-template-columns:1fr;gap:6px;align-items:center;font:600 14px/1.3 Nunito,ui-sans-serif,system-ui,sans-serif;box-shadow:0 -12px 30px -20px rgba(21,32,57,.5);padding-bottom:calc(8px + env(safe-area-inset-bottom))}' +
     '.ra-consent.on{display:grid}.ra-consent p{margin:0;max-width:none}.ra-consent a{color:#2A4FB5}.ra-consent .row{display:flex;gap:8px}' +
     '.ra-consent button{flex:1;min-height:44px;padding:6px 14px;border-radius:999px;border:1.5px solid rgba(42,79,181,.32);background:#fff;color:#152039;font:800 14px Nunito,ui-sans-serif,system-ui,sans-serif;cursor:pointer}.ra-consent button:hover{border-color:#3F6EDC}' +
-    '@media (min-width:640px){.ra-consent{grid-template-columns:1fr auto}.ra-consent button{flex:none}}@media print{.ra-consent{display:none!important}}';
+    '@media (min-width:640px){.ra-consent{grid-template-columns:1fr auto}.ra-consent button{flex:none}}@media (max-width:420px){.ra-consent{font-size:13px;line-height:1.25;gap:5px;padding-top:6px}}@media print{.ra-consent{display:none!important}}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
   var box = document.createElement('div'); box.className = 'ra-consent'; box.setAttribute('role', 'dialog'); box.setAttribute('aria-label', 'Slapukų pasirinkimas');
   box.innerHTML = '<p><b>Ar galime mokytis iš jūsų apsilankymo?</b> Su sutikimu įjungsime Microsoft Clarity įrašus (anoniminius). Be sutikimo: tik anoniminiai įvykiai be slapukų. <a href="' + PRIVACY + '" target="_blank" rel="noopener">Privatumo politika</a>.</p>' +

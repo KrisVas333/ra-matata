@@ -1,0 +1,1538 @@
+<!doctype html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matata: robotas ir pasakų knyga be ekrano 3–4 metų vaikams · Robotikos akademija</title>
+<!-- v3-3d PROTOTYPE (2026-10-23). Not production. Copy, prices, numbers and form fields are taken 1:1 from v2/config.js + v2/index.html.
+     Before going live: set PROTO_TEST = false (bottom script), check page_version 'v3-3d' is accepted by ra_waitlist, run kainos.py-style price check. -->
+<meta name="description" content="Naujausia Robotikos akademijos inovacija darželiams: pirmasis būrelis 3–4 metų vaikams su kalbančiu robotu. Vaikas pats valdo robotą, skaičiuoja žingsnius, kartoja žodžius lietuviškai ir angliškai. 30 min kartą per savaitę, darželyje nuo 25 € per mėnesį.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Matata: robotas ir pasakų knyga. Be ekrano. 3–4 metų vaikams">
+<meta property="og:description" content="Pirmasis Robotikos akademijos būrelis 3–4 metų vaikams su kalbančiu robotu. 30 min kartą per savaitę, darželyje arba Tech Zity centre. Nuo 25 € per mėnesį.">
+<meta property="og:image" content="https://krisvas333.github.io/ra-matata/v2/assets/og.png">
+<meta property="og:locale" content="lt_LT">
+<meta name="theme-color" content="#3357C9">
+<link rel="icon" href="../v2/assets/logo/ra-favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="../v2/assets/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="../v2/assets/fonts/nunito-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../v2/assets/fonts/nunito-latin-ext.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="../v2/assets/fonts/syne-latin-ext.woff2" crossorigin>
+<script>
+(function(){
+  document.documentElement.className+=' js';
+  var p=new URLSearchParams(location.search);function c(v,n){return (v||'').replace(/[^a-z0-9_.-]/gi,'').slice(0,n||40)}
+  var base={version:'v3-3d',src:c(p.get('src'))||'direct'};var us=c(p.get('utm_source'));if(us)base.utm_source=us;var uc=c(p.get('utm_campaign'),60);if(uc)base.utm_campaign=uc;if(p.has('fbclid'))base.fbclid=1;
+  window.__btBase=base;
+  window.__nativeShare=(navigator.share&&navigator.canShare!==undefined)?navigator.share.bind(navigator):(navigator.share?navigator.share.bind(navigator):null);
+  var real=window.umami,wrapped=null;
+  function wrap(u){if(!u)return u;if(wrapped&&wrapped.__of===u)return wrapped;var t=u.track;wrapped={__of:u,identify:u.identify?u.identify.bind(u):undefined,track:function(n,d){if(typeof n==='string')return t.call(u,n,Object.assign({},base,d||{}));return t.apply(u,arguments);}};return wrapped;}
+  try{Object.defineProperty(window,'umami',{configurable:true,get:function(){return wrap(real)},set:function(v){real=v}});}catch(e){}
+})();
+</script>
+<script defer src="https://krisvas333.github.io/neuron-ar/track.js" data-brand="ra" data-artifact="matata-v3-3d" data-kind="landing"></script>
+<style>
+/* Matata v3-3d · RA venture brand (from v2/css/style.css tokens): RA blue, yellow pill CTA, Syne display + rounded Nunito body. */
+@font-face{font-family:'Nunito';font-style:normal;font-weight:500 900;font-display:swap;src:url(../v2/assets/fonts/nunito-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Nunito';font-style:normal;font-weight:500 900;font-display:swap;src:url(../v2/assets/fonts/nunito-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Syne';font-style:normal;font-weight:700 800;font-display:swap;src:url(../v2/assets/fonts/syne-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Syne';font-style:normal;font-weight:700 800;font-display:swap;src:url(../v2/assets/fonts/syne-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --navy:#152039;--ink:#152039;--ink-2:#3B4A72;--ink-3:#4E5D84;
+  --blue:#3F6EDC;--blue-deep:#2A4FB5;--blue-ink:#22449F;
+  --yellow:#FEC404;--yellow-deep:#E0AA00;
+  --paper:#FFFCF5;--paper-2:#FFF4DF;--sky:#EEF3FF;--sky-2:#DCE6FF;
+  --green:#56B13F;--orange:#F7A11A;--red:#CF3528;--purple:#6A41D4;
+  --line:rgba(42,79,181,.18);--line-strong:rgba(42,79,181,.32);
+  --display:'Syne',ui-sans-serif,system-ui,sans-serif;
+  --body:'Nunito',ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --r:28px;--r-md:20px;--r-sm:14px;
+  --shadow:0 24px 48px -24px rgba(21,32,57,.35),0 6px 14px -8px rgba(21,32,57,.18);
+  --shadow-soft:0 14px 34px -20px rgba(21,32,57,.28);
+  --hero-grad:linear-gradient(165deg,#3357C9 0%,#3F6EDC 55%,#3B86E8 100%);
+  --max:1180px;--gutter:16px;--head-h:60px;
+}
+@media (min-width:600px){:root{--gutter:24px}}
+@media (min-width:1100px){:root{--gutter:32px}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;font-weight:500;overflow-x:hidden}
+img,svg,video{max-width:100%;display:block}
+a{color:var(--blue-deep)}
+::selection{background:var(--yellow);color:var(--ink)}
+:focus-visible{outline:3px solid var(--blue-ink);outline-offset:3px;border-radius:10px}
+.top :focus-visible,.stage-frame :focus-visible{outline-color:var(--yellow)}
+button{font:inherit;color:inherit;cursor:pointer}
+h1,h2,h3{font-family:var(--display);line-height:1.12;margin:0 0 .45em;text-wrap:balance;letter-spacing:0}
+h1{font-weight:800;font-size:clamp(2rem,8.4vw,3.3rem)}
+h2{font-weight:800;font-size:clamp(1.5rem,5.6vw,2.3rem)}
+h3{font-weight:700;font-size:1.15rem}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.lead{font-size:clamp(1.05rem,1.8vw,1.22rem);color:var(--ink-2);font-weight:600}
+.muted{color:var(--ink-3)}
+.small{font-size:1rem}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--yellow);color:var(--ink);padding:10px 16px;border-radius:999px;font-weight:800;text-decoration:none}
+.skip:focus{top:12px}
+section{padding:40px 0;position:relative}
+@media (min-width:900px){section{padding:72px 0}}
+section[id],#wlform,#orgform,#darzeliams{scroll-margin-top:calc(var(--head-h) + 16px)}
+.sec-head{max-width:760px;margin:0 0 20px}
+.proto{background:#152039;color:#fff;font-size:15px;font-weight:700;text-align:center;padding:6px 12px}
+.proto b{color:var(--yellow)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:12px 24px;border-radius:999px;border:2px solid transparent;font:800 1.05rem/1.2 var(--body);text-decoration:none;text-align:center;transition:transform .15s,background .15s,box-shadow .15s}
+.btn:active{transform:translateY(1px) scale(.99)}
+.btn-y{background:var(--yellow);color:var(--navy);box-shadow:0 10px 24px -12px rgba(224,170,0,.9)}
+.btn-y:hover{background:#FFD23A}
+.btn-w{background:#fff;color:var(--navy);border-color:var(--line-strong)}
+.btn-w:hover{border-color:var(--blue)}
+.btn-g{background:transparent;color:var(--ink-2);border-color:var(--line-strong)}
+.btn .ic{width:22px;height:22px;display:inline-grid;place-items:center}
+.btn .ic svg{width:20px;height:20px}
+.linkbtn{background:none;border:0;padding:0;color:var(--blue-deep);font-weight:800;text-decoration:underline}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:var(--hero-grad);color:#fff;height:var(--head-h)}
+.nav{display:flex;align-items:center;gap:14px;height:100%}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;min-width:0}
+.brand img{height:30px;width:auto}
+.brand .mw{font:800 1.1rem/1 var(--display);white-space:nowrap}
+.brand .mw small{display:block;font:700 .78rem/1.2 var(--body);opacity:.92;margin-top:2px}
+.nav .sp{flex:1}
+.nav-links{display:none;gap:22px}
+.nav-links a{color:#fff;text-decoration:none;font-weight:700;font-size:1rem}
+.nav-links a:hover{text-decoration:underline}
+.top .btn{min-height:42px;padding:8px 18px;font-size:1rem}
+@media (min-width:900px){.nav-links{display:flex}}
+@media (max-width:420px){.brand img{height:26px}.brand .mw small{display:none}}
+
+/* ===== story: hero + sticky 3D stage + scroll steps ===== */
+.story{position:relative;padding:0}
+.story .wrap{display:block}
+.hero{padding:22px 0 18px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--sky);color:var(--blue-ink);border:1.5px solid var(--line);border-radius:999px;padding:4px 14px;font-weight:800;font-size:1rem;margin-bottom:10px}
+.kicker{font-weight:800;color:var(--blue-deep);margin:0 0 6px;font-size:1rem}
+.hero h1 span{display:inline-block;background:linear-gradient(transparent 62%,rgba(254,196,4,.55) 62%);padding:0 .08em}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px}
+.ctas .btn{flex:1 1 260px}
+.micro{font-size:1rem;color:var(--ink-3);margin:0 0 12px}
+.org-line{font-size:1rem;font-weight:700;margin:0 0 12px}
+.mob{display:inline}.desk{display:none}
+@media (min-width:900px){.mob{display:none}.desk{display:inline}.org-line{display:none}}
+@media (max-width:899px){.ctas .btn-w.hero-org{display:none}.kicker{display:none}h1{font-size:clamp(1.85rem,7.6vw,2.6rem)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.chips li{background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:5px 13px;font-weight:700;font-size:1rem;color:var(--ink-2)}
+.chips li b{color:var(--navy)}
+
+.stage{position:sticky;top:calc(var(--head-h) + 6px);z-index:6;margin:0 calc(var(--gutter) * -1);padding:0 var(--gutter) 6px;background:linear-gradient(var(--paper) 85%,rgba(255,252,245,0))}
+.stage-frame{position:relative;border-radius:var(--r);background:var(--hero-grad);padding:6px;box-shadow:var(--shadow)}
+.stage-view{position:relative;height:clamp(205px,28svh,320px);border-radius:calc(var(--r) - 6px);overflow:hidden;background:radial-gradient(120% 90% at 50% 10%,#FFFFFF 0%,#EEF3FF 55%,#DCE6FF 100%)}
+.stage-view canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:pan-y;opacity:0;transition:opacity .5s}
+.stage.ready .stage-view canvas{opacity:1}
+.fallback{position:absolute;inset:0;display:grid;place-items:center;padding:10px;transition:opacity .4s}
+.fallback svg{width:100%;height:100%;max-height:100%}
+.stage.ready .fallback{opacity:0;pointer-events:none}
+.say{position:absolute;left:50%;top:10px;transform:translate(-50%,-6px);background:#fff;color:var(--navy);border:2px solid var(--navy);border-radius:18px;padding:6px 14px;font-weight:800;font-size:1rem;white-space:nowrap;opacity:0;transition:opacity .2s,transform .2s;pointer-events:none;max-width:92%;overflow:hidden;text-overflow:ellipsis}
+.say.on{opacity:1;transform:translate(-50%,0)}
+.snd{position:absolute;right:10px;bottom:10px;z-index:2;display:flex;align-items:center;gap:6px;min-height:44px;padding:6px 12px;border-radius:999px;border:1.5px solid var(--line-strong);background:rgba(255,255,255,.92);color:var(--navy);font-weight:800;font-size:1rem}
+.snd svg{width:18px;height:18px}
+.snd[aria-pressed="true"]{background:var(--yellow);border-color:var(--yellow-deep)}
+.hint3d{position:absolute;left:10px;bottom:10px;z-index:2;background:rgba(255,255,255,.92);border-radius:999px;padding:6px 12px;font-weight:700;font-size:1rem;color:var(--ink-2);border:1.5px solid var(--line)}
+.stage:not(.ready) .snd,.stage:not(.ready) .hint3d{display:none}
+.pad{display:flex;flex-direction:column;gap:6px;padding:8px 4px 2px;color:#fff;min-height:86px}
+.pad-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-weight:800;font-size:1rem}
+.pad-top .cnt{font-weight:700;opacity:.95;white-space:nowrap}
+.pad-row{display:flex;gap:6px;align-items:stretch}
+.pad-row button{min-width:46px;min-height:46px;border-radius:14px;border:0;background:#fff;color:var(--navy);display:grid;place-items:center;font-weight:900;box-shadow:0 4px 0 rgba(21,32,57,.25)}
+.pad-row button:active{transform:translateY(2px);box-shadow:0 2px 0 rgba(21,32,57,.25)}
+.pad-row button svg{width:24px;height:24px}
+.pad-row button[data-cmd="F"]{background:#E3F4DD}.pad-row button[data-cmd="B"]{background:#FFF2C2}.pad-row button[data-cmd="L"]{background:#DCE6FF}.pad-row button[data-cmd="R"]{background:#FFE0DC}
+.pad-row .go{flex:1;background:var(--yellow);font-size:1.02rem;padding:0 10px}
+.pad-row button:disabled{opacity:.55;cursor:default}
+.pad-load{display:none;align-items:center;justify-content:center;min-height:46px;font-weight:700;color:#fff;opacity:.95}
+.stage:not(.ready) .pad-top,.stage:not(.ready) .pad-row{display:none}
+.stage:not(.ready) .pad-load{display:flex}
+.stage.no3d .pad-load{display:flex}
+.pad-load button{background:var(--yellow);color:var(--navy);border:0;border-radius:999px;min-height:44px;padding:6px 18px;font-weight:800}
+
+.steps{position:relative;padding:8px 0 40px}
+.step{min-height:52svh;display:flex;align-items:center;padding:12px 0}
+.step-card{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-md);padding:18px 18px 8px;box-shadow:var(--shadow-soft);transition:border-color .25s,box-shadow .25s,transform .25s;max-width:560px}
+.step.on .step-card{border-color:var(--blue);box-shadow:0 18px 40px -22px rgba(42,79,181,.6);transform:translateY(-2px)}
+.step-num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--sky);color:var(--blue-ink);font:800 1rem var(--display);margin-bottom:8px}
+.step.on .step-num{background:var(--yellow);color:var(--navy)}
+.step .src{font-size:.9rem;color:var(--ink-3)}
+
+@media (min-width:900px){
+  .story .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.08fr);column-gap:48px}
+  .hero{grid-column:1;grid-row:1;padding:64px 0 24px}
+  .steps{grid-column:1;grid-row:2;padding-bottom:12vh}
+  .stage{grid-column:2;grid-row:1/3;align-self:start;margin:0;padding:0;top:calc(var(--head-h) + 24px);background:none;margin-top:40px}
+  .stage-view{height:min(calc(100vh - var(--head-h) - 200px),560px)}
+  .step{min-height:68vh}
+  .pad{padding:12px 10px 6px}
+}
+
+/* trust */
+.trust{background:#fff;border-top:1.5px solid var(--line);border-bottom:1.5px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0 0 14px}
+@media (min-width:900px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.stats li{background:var(--sky);border-radius:var(--r-sm);padding:14px}
+.stats b{display:block;font:800 1.6rem/1.1 var(--display);color:var(--blue-ink)}
+.stats span{font-weight:700;color:var(--ink-2);font-size:.98rem}
+.badge-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px}
+.stem{display:flex;align-items:center;gap:10px;font-weight:700}
+.stem img{width:56px;height:56px}
+.rating{background:var(--paper-2);border-radius:var(--r-sm);padding:12px 14px;font-weight:700}
+.rating small{display:block;font-weight:600;color:var(--ink-3);font-size:.94rem}
+
+/* three questions */
+.cards3{display:grid;gap:14px}
+@media (min-width:900px){.cards3{grid-template-columns:repeat(3,1fr)}}
+.qc{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-md);padding:18px}
+.qc .ico{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;margin-bottom:10px}
+.qc .ico svg{width:30px;height:30px}
+
+/* lesson timeline */
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.tl li{display:grid;grid-template-columns:86px 1fr;gap:12px;background:#fff;border:1.5px solid var(--line);border-radius:var(--r-sm);padding:12px 14px}
+.tl time{font:800 .95rem/1.3 var(--display);color:var(--blue-ink)}
+.tl b{display:block}
+.tl p{margin:0;font-size:.98rem;color:var(--ink-2)}
+details.more>summary{cursor:pointer;font-weight:800;color:var(--blue-deep);list-style:none;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+details.more>summary::-webkit-details-marker{display:none}
+
+.video-box{position:relative;border-radius:var(--r-md);overflow:hidden;background:var(--navy);aspect-ratio:16/9;max-width:760px}
+.video-box video{width:100%;height:100%;object-fit:cover}
+.video-box .play{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,rgba(21,32,57,.1),rgba(21,32,57,.55));border:0;color:#fff;font-weight:800}
+.video-box .play span{display:inline-flex;align-items:center;gap:10px;background:var(--yellow);color:var(--navy);border-radius:999px;padding:12px 20px}
+.video-box .play.off{display:none}
+
+.goals{display:grid;gap:12px}
+@media (min-width:900px){.goals{grid-template-columns:1fr 1fr}}
+.goal{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-md);padding:16px 18px}
+.goal h3{color:var(--blue-ink)}
+
+/* price */
+.price{background:var(--sky)}
+.pcs{display:grid;gap:14px;margin:18px 0}
+@media (min-width:900px){.pcs{grid-template-columns:1fr 1fr}}
+.pc{background:#fff;border-radius:var(--r);padding:20px;border:2px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.pc.feat{border-color:var(--blue)}
+.pc .amt{font:800 2.6rem/1 var(--display);color:var(--navy)}
+.pc .amt small{font:700 1rem var(--body);color:var(--ink-2)}
+.pc .btn{margin-top:auto}
+.incl{list-style:none;padding:0;margin:0 0 10px;display:grid;gap:8px}
+.incl li{display:flex;gap:10px;align-items:flex-start}
+.incl svg{flex:none;width:22px;height:22px;color:var(--green);margin-top:3px}
+
+/* form (same structure/classes as v2) */
+.join{background:var(--paper-2)}
+.join .wrap{display:grid;gap:22px}
+@media (min-width:900px){.join .wrap{grid-template-columns:.85fr 1.15fr;align-items:start}}
+.join-copy ul{list-style:none;padding:0;margin:0 0 12px;display:grid;gap:8px}
+.join-copy li{display:flex;gap:10px}
+.join-copy li svg{flex:none;width:22px;height:22px;color:var(--green);margin-top:3px}
+.jtabs{display:flex;gap:6px;background:#fff;border-radius:999px;padding:5px;border:1.5px solid var(--line)}
+.jtabs button{flex:1;min-height:46px;border-radius:999px;border:0;background:transparent;font-weight:800;color:var(--ink-2);font-size:.98rem}
+.jtabs button[aria-selected="true"]{background:var(--blue-deep);color:#fff}
+.jtabs-help{font-size:1rem;color:var(--ink-3);margin:6px 4px 12px}
+.form{position:relative;background:#fff;border-radius:var(--r);padding:20px 18px;box-shadow:var(--shadow);overflow:hidden}
+.form.sending{opacity:.75}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.fstep{display:none}.fstep.on{display:block}
+.prog{display:flex;gap:6px;margin-bottom:14px}.prog i{flex:1;height:6px;border-radius:6px;background:var(--sky-2)}.prog i.on{background:var(--blue)}
+.opts{display:grid;gap:8px;margin:8px 0 4px}
+.opts.cols3{grid-template-columns:repeat(3,1fr)}
+.opts.days{grid-template-columns:repeat(7,1fr);gap:5px}
+.opt{position:relative;display:block}
+.opt input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.opt>span{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;border:2px solid var(--line-strong);border-radius:var(--r-sm);padding:8px 12px;font-weight:800;text-align:center;background:#fff}
+.opt.row>span{justify-content:flex-start;text-align:left}
+.opt.row small{margin-left:auto;font-weight:800;color:var(--blue-ink);white-space:nowrap}
+.opts.days .opt>span{padding:6px 0;min-height:46px;font-size:.95rem}
+.opt input:checked+span{border-color:var(--blue-deep);background:var(--sky);box-shadow:inset 0 0 0 1px var(--blue-deep)}
+.opt input:focus-visible+span{outline:3px solid var(--blue-ink);outline-offset:2px}
+.kg{display:none;padding:2px 0 6px}.kg.on{display:block}
+label.f{display:block;font-weight:800;margin:12px 0 4px}
+label.f input,label.f select{display:block;width:100%;margin-top:6px;min-height:52px;padding:12px 14px;border-radius:var(--r-sm);border:2px solid var(--line-strong);font:600 1.05rem var(--body);color:var(--ink);background:#fff}
+label.f input:focus,label.f select:focus{border-color:var(--blue-deep);outline:3px solid rgba(63,110,220,.25);outline-offset:0}
+[aria-invalid="true"]{border-color:var(--red)!important}
+.helper{display:block;font-weight:600;font-size:1rem;color:var(--ink-3);margin-top:6px}
+.opt-lbl{font-weight:600;color:var(--ink-3)}
+.err{color:var(--red);font-weight:700;font-size:1rem;margin:4px 0 0;min-height:0}
+.err:empty{display:none}
+.fnav{display:flex;justify-content:space-between;gap:10px;margin-top:16px}
+.fnav .btn{flex:0 1 auto}
+.chk-line{display:flex;gap:12px;align-items:flex-start;font-weight:600;font-size:.98rem;margin:10px 0}
+.chk-line input{flex:none;width:26px;height:26px;margin-top:2px;accent-color:var(--blue-deep)}
+.hint{color:var(--ink-2);font-weight:700}
+.legal{font-size:.88rem;color:var(--ink-3);margin:12px 0 0}
+.done{display:none;text-align:center;padding:10px 0}.done.on{display:block}
+.done .bot{width:110px;margin:0 auto 8px}
+.done .btn{width:100%;margin:6px 0}
+.again{background:none;border:0;color:var(--blue-deep);font-weight:800;text-decoration:underline;min-height:44px}
+.joined{display:none;background:var(--sky);border-radius:var(--r-sm);padding:10px 12px;margin-bottom:12px;font-weight:700}.joined.on{display:block}
+.dz{background:var(--sky);border-radius:var(--r-sm);padding:12px 14px;margin-bottom:10px}
+.dz ul{list-style:none;padding:0;margin:6px 0 8px;display:grid;gap:6px}
+.dz li{display:flex;gap:8px;font-weight:600;font-size:.98rem}
+.dz li svg{flex:none;width:20px;height:20px;color:var(--green);margin-top:3px}
+.pdf-link{display:inline-flex;align-items:center;gap:8px;font-weight:800}
+.pdf-link svg{width:20px;height:20px}
+.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+@keyframes fall{0%{opacity:1;transform:translateY(0) rotate(0)}100%{opacity:0;transform:translateY(420px) rotate(320deg)}}
+
+/* faq */
+.faq details{background:#fff;border:1.5px solid var(--line);border-radius:var(--r-sm);margin-bottom:8px}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px 16px;font-weight:800;min-height:52px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{flex:none;width:28px;height:28px;border-radius:50%;background:var(--sky);display:grid;place-items:center;transition:transform .2s}
+.faq summary .pm svg{width:14px;height:14px}
+.faq details[open] .pm{transform:rotate(45deg)}
+.faq details p{padding:0 16px 14px;margin:0}
+
+.final{background:var(--hero-grad);color:#fff;text-align:center}
+.final p{margin-left:auto;margin-right:auto}
+.final .ctas{justify-content:center}
+.final .ctas .btn{flex:0 1 auto}
+
+footer{background:var(--navy);color:#DCE3F5;padding:36px 0 120px;font-size:1rem}
+footer a{color:#fff}
+footer .cols{display:grid;gap:18px}
+@media (min-width:900px){footer .cols{grid-template-columns:1.3fr 1fr}footer{padding-bottom:40px}}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+footer .fine{font-size:.86rem;color:#B9C3DE;margin-top:18px}
+.foot-btn{background:none;border:0;color:#fff;text-decoration:underline;padding:0;font:inherit}
+
+/* sticky mobile CTA */
+.mbar{position:fixed;left:0;right:0;bottom:calc(var(--consent-h,0px));z-index:50;background:#fff;border-top:1.5px solid var(--line-strong);box-shadow:0 -12px 30px -18px rgba(21,32,57,.45);padding:10px var(--gutter) calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:12px;transform:translateY(120%);transition:transform .25s}
+.show-bar .mbar{transform:none}
+.mbar .t{flex:1;min-width:0;font-weight:700;font-size:1rem;line-height:1.3;color:var(--ink-2)}
+.mbar .t b{display:block;color:var(--navy);font-size:1rem}
+.mbar .btn{min-height:48px;padding:8px 20px;flex:none}
+@media (min-width:900px){.mbar{display:none}}
+
+/* consent (same behaviour as v2) */
+.consent{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;color:var(--navy);border-top:1.5px solid var(--line-strong);padding:10px var(--gutter) calc(10px + env(safe-area-inset-bottom));display:none;gap:8px;box-shadow:0 -12px 30px -20px rgba(21,32,57,.5);font-size:.95rem}
+.consent.on{display:grid}
+.consent p{margin:0;max-width:none}
+.consent .row{display:flex;gap:8px}
+.consent .btn{flex:1;min-height:46px;padding:6px 14px;font-size:.98rem;border-color:var(--line-strong);background:#fff}
+#consentYes{background:var(--yellow);border-color:var(--yellow-deep)}
+@media (min-width:640px){.consent{grid-template-columns:1fr auto;align-items:center}.consent .btn{flex:none}}
+/* mobile pass 2026-10-23 */
+.coi-near{background:#fff;border:1.5px solid var(--line-strong);border-left:5px solid var(--blue);border-radius:var(--r-sm);padding:10px 14px;font-size:1rem;font-weight:700;color:var(--navy)}
+.stats b{white-space:nowrap;font-size:clamp(1.2rem,5.6vw,1.6rem)}
+@media (max-width:420px){.stats li{padding:12px}}
+.top .btn{min-height:44px;white-space:nowrap}
+@media (max-width:380px){.nav{gap:8px}.brand{gap:8px}.brand img{height:22px}.brand .mw{font-size:.95rem}.top .btn{padding:8px 14px}}
+.brand{min-height:44px}
+.pdf-link,.foot-btn{min-height:44px}
+footer ul a{display:inline-flex;align-items:center;min-height:44px}
+footer ul{gap:0}
+.consent-open .mbar{transform:translateY(120%);visibility:hidden}
+@media (max-width:639px){
+  .mbar{padding:8px var(--gutter) calc(8px + env(safe-area-inset-bottom))}
+  .mbar .btn{min-height:44px}
+  .consent{padding:8px var(--gutter) calc(8px + env(safe-area-inset-bottom));gap:6px;font-size:.9rem;line-height:1.35}
+  .consent .btn{min-height:44px;padding:4px 12px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#sarasas">Į formą</a>
+<div class="proto" id="protoBar"><b>Prototipas v3-3d.</b> Forma duomenų nesiunčia (testas).</div>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="https://robotikosakademija.lt/" target="_blank" rel="noopener" data-out="ra-site">
+      <img src="../v2/assets/logo/ra-logo-white.svg" alt="Robotikos akademija" width="148" height="41">
+      <span class="mw">Matata<small>robotika nuo 3 metų</small></span>
+    </a>
+    <span class="sp"></span>
+    <nav class="nav-links" aria-label="Puslapio skyriai">
+      <a href="#kaip">Kaip vyksta</a>
+      <a href="#pamoka">Pamoka</a>
+      <a href="#kaina">Kaina</a>
+      <a href="#duk">DUK</a>
+    </nav>
+    <a class="btn btn-y" href="#sarasas" data-cta="header">Į sąrašą</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO + 3D STORY ============ -->
+<section class="story" id="kaip" aria-label="Kaip vyksta pamoka">
+  <div class="wrap">
+    <div class="hero" id="hero">
+      <span class="eyebrow">3–4 metų vaikams</span>
+      <p class="kicker">Naujausia Robotikos akademijos inovacija darželiams</p>
+      <h1>Robotas ir pasakų knyga. <span>Be ekrano.</span></h1>
+      <p class="lead">Pirmasis Robotikos akademijos būrelis 3–4 metų vaikams su kalbančiu robotu. Vaikas pats valdo robotą, skaičiuoja žingsnius, kartoja žodžius lietuviškai ir angliškai.</p>
+      <div class="ctas">
+        <a class="btn btn-y" href="#sarasas" data-cta="hero">Užsirašyti į laukiančiųjų sąrašą <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="btn btn-w hero-org" href="#darzeliams" data-cta="hero_org">Pakvieskite į savo darželį</a>
+      </div>
+      <p class="micro">Užtruks 1 minutę. Parašysime, kai atidarysime grupę jūsų darželyje ar centre.</p>
+      <p class="org-line">Dirbate darželyje? <a href="#darzeliams" data-cta="hero_org">Pakvieskite į savo darželį</a></p>
+      <ul class="chips" aria-label="Trumpai">
+        <li><b>30 min</b> <span class="desk">kartą per savaitę</span><span class="mob">/ sav.</span></li>
+        <li>iki <b>10</b> vaikų<span class="desk">, 1 robotas dviem</span></li>
+        <li><span class="desk">darželyje arba Tech Zity, Vilnius</span><span class="mob">Vilniaus darželiuose ar Tech Zity</span></li>
+        <li>nuo <b>25 €</b><span class="desk"> per mėnesį</span><span class="mob">/mėn.</span></li>
+      </ul>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="stage-frame">
+        <div class="stage-view" id="stageView" role="img" aria-label="Iliustracija: mažas robotas važiuoja spalvotų komandų kortelių keliu iki liūto.">
+          <div class="fallback" aria-hidden="true">
+            <svg viewBox="0 0 400 260" fill="none">
+              <rect x="20" y="150" width="360" height="70" rx="18" fill="#DCE6FF"/>
+              <g><rect x="40" y="166" width="48" height="38" rx="10" fill="#56B13F"/><path d="M64 196v-22M56 182l8-8 8 8" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+              <g><rect x="98" y="166" width="48" height="38" rx="10" fill="#56B13F"/><path d="M122 196v-22M114 182l8-8 8 8" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+              <g><rect x="156" y="166" width="48" height="38" rx="10" fill="#3F6EDC"/><path d="M190 185h-22M176 177l-8 8 8 8" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+              <g><rect x="214" y="166" width="48" height="38" rx="10" fill="#56B13F"/><path d="M238 196v-22M230 182l8-8 8 8" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+              <g><rect x="272" y="166" width="48" height="38" rx="10" fill="#E6483B"/><path d="M284 185h22M298 177l8 8-8 8" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+              <g transform="translate(70 22) scale(1)"><rect x="14" y="26" width="92" height="74" rx="20" fill="#fff" stroke="#DCE6FF" stroke-width="3"/><rect x="14" y="26" width="18" height="74" rx="12" fill="#F7A11A"/><circle cx="58" cy="62" r="11" fill="#152039"/><circle cx="86" cy="62" r="11" fill="#152039"/><circle cx="61" cy="58" r="4" fill="#fff"/><circle cx="89" cy="58" r="4" fill="#fff"/><path d="M60 82c6 7 18 7 24 0" stroke="#152039" stroke-width="4" stroke-linecap="round"/><circle cx="48" cy="34" r="4" fill="#56B13F"/><circle cx="60" cy="34" r="4" fill="#FEC404"/><circle cx="72" cy="34" r="4" fill="#3F6EDC"/><circle cx="84" cy="34" r="4" fill="#E6483B"/></g>
+              <path d="M200 88h90" stroke="#3F6EDC" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 12"/>
+              <g transform="translate(318 84)"><circle r="34" fill="#F7A11A"/><circle r="24" fill="#FEC404"/><circle cx="-8" cy="-4" r="3.5" fill="#152039"/><circle cx="8" cy="-4" r="3.5" fill="#152039"/><path d="M-6 8c4 4 8 4 12 0" stroke="#152039" stroke-width="3" stroke-linecap="round"/></g>
+            </svg>
+          </div>
+          <div class="say" id="say" aria-live="polite"></div>
+          <span class="hint3d" aria-hidden="true"><span class="desk">Patempkite arba palieskite robotą</span><span class="mob">Palieskite robotą</span></span>
+          <button type="button" class="snd" id="snd" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="w" d="M16 9a4 4 0 0 1 0 6"/></svg><span>Garsas išj.</span></button>
+        </div>
+        <div class="pad">
+          <div class="pad-top"><span><span class="desk">Pabandykite patys: n</span><span class="mob">N</span>uveskite robotą iki liūto</span><span class="cnt">Žingsnių: <b id="stepCount">0</b></span></div>
+          <div class="pad-row" role="group" aria-label="Roboto komandos">
+            <button type="button" data-cmd="F" aria-label="Pirmyn"><svg viewBox="0 0 24 24" fill="none" stroke="#3E8A28" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+            <button type="button" data-cmd="B" aria-label="Atgal"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg></button>
+            <button type="button" data-cmd="L" aria-label="Pasukti kairėn"><svg viewBox="0 0 24 24" fill="none" stroke="#22449F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-2"/></svg></button>
+            <button type="button" data-cmd="R" aria-label="Pasukti dešinėn"><svg viewBox="0 0 24 24" fill="none" stroke="#B02A1F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m15 14 5-5-5-5"/><path d="M20 9H10a6 6 0 0 0 0 12h2"/></svg></button>
+            <button type="button" class="go" id="runBtn">Paleisti</button>
+            <button type="button" id="resetBtn" aria-label="Iš naujo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></button>
+          </div>
+          <div class="pad-load" id="padLoad"><span>Kraunamas 3D robotas…</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="steps" id="steps">
+      <div class="step on" data-i="0"><div class="step-card">
+        <span class="step-num">1</span>
+        <h2 class="h3" style="font-size:1.35rem">Vaikas sumano kelią</h2>
+        <p>Vaikas pats pasako, kur keliaus robotas, ir išsidėlioja kelią komandų kortelėmis: pirmyn, atgal, kairėn, dešinėn.</p>
+      </div></div>
+      <div class="step" data-i="1"><div class="step-card">
+        <span class="step-num">2</span>
+        <h2 style="font-size:1.35rem">Spaudžia mygtukus ant roboto. Be ekrano.</h2>
+        <p>Vaikai valdo robotą mygtukais ant jo nugaros. Planšečių ir telefonų nėra. Mygtukus spaudžia kiekvienas, niekas nelieka stebėti iš šono.</p>
+      </div></div>
+      <div class="step" data-i="2"><div class="step-card">
+        <span class="step-num">3</span>
+        <h2 style="font-size:1.35rem">Robotas važiuoja, vaikai skaičiuoja</h2>
+        <p>Pora spaudžia mygtukus, skaičiuoja „1, 2, 3" ir žiūri, ar robotas nuvažiavo ten, kur norėjo. Skaičiai tampa keliu, kurį vaikas praeina pats.</p>
+      </div></div>
+      <div class="step" data-i="3"><div class="step-card">
+        <span class="step-num">4</span>
+        <h2 style="font-size:1.35rem">Nuėjo ne ten? Bandome dar.</h2>
+        <p>Klaidą vadiname „bandymu". Kai robotas nuėjo ne ten, sakome: puiku, bandome dar. Pamoka baigiasi tuo, kad vaikas parodo draugams, kur robotas nukeliavo.</p>
+        <p><a class="btn btn-y" href="#sarasas" data-cta="story_end">Užsirašyti į laukiančiųjų sąrašą</a></p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="trust" aria-labelledby="trust-h">
+  <div class="wrap">
+    <h2 id="trust-h" style="font-size:1.35rem">Vaikus moko nuo 2013 m.</h2>
+    <ul class="stats">
+      <li><b>13+</b><span>metų patirties</span></li>
+      <li><b>10 000+</b><span>vaikų per metus</span></li>
+      <li><b>650+</b><span>vietų Lietuvoje</span></li>
+      <li><b>9 iš 10</b><span>klientų rekomenduoja</span></li>
+    </ul>
+    <div class="badge-row">
+      <a class="stem" id="stemBadge" data-until="2026-10-31" href="https://blockchain.stem.org/6e43c2b3-e72b-4a8c-9707-ecb45a6cc024" target="_blank" rel="noopener" data-out="stem-org"><img src="../v2/assets/logo/stem-org-accredited-200.png" alt="STEM.org Accredited ženklas" width="56" height="56" loading="lazy">STEM.org Accredited™ akredituota organizacija · Patikrinti</a>
+      <p class="rating">Tėvai mūsų stovyklų mentorius įvertino 9,8 iš 10*<small>* Robotikos akademijos tėvų apklausa, 2025 m. vasaros stovyklos</small></p>
+    </div>
+    <p class="small muted">Skaičiai iš robotikosakademija.lt. Matata yra nauja programa.</p>
+  </div>
+</section>
+
+<!-- ============ THREE PARENT QUESTIONS ============ -->
+<section aria-labelledby="q3-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="q3-h">Trys dalykai, kurių tėvai klausia pirmiausia</h2></div>
+    <div class="cards3">
+      <article class="qc">
+        <div class="ico" style="background:#E3F4DD" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#3E8A28" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M3 3l18 18"/></svg></div>
+        <h3>Be ekrano</h3>
+        <p>Vaikai valdo robotą mygtukais ant jo nugaros. Planšečių ir telefonų nėra. PSO rekomenduoja, kad 3–4 metų vaikai prie ekrano sėdėtų ne ilgiau kaip valandą per dieną, o kuo mažiau, tuo geriau.</p>
+        <p class="small muted">Šaltinis: <a href="https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more" target="_blank" rel="noopener" data-out="source">PSO, 2019</a></p>
+      </article>
+      <article class="qc">
+        <div class="ico" style="background:#FFF2C2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#8A6A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2zM22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/></svg></div>
+        <h3>Knyga ir žodžiai dviem kalbomis</h3>
+        <p>Kas savaitę nauja paveikslėlių knyga ir nauja tema. Vaikas kalba apie paveikslėlius ir kartoja žodžius lietuviškai ir angliškai. Robotas prabyla lietuviškai mūsų balsu: žodžius įrašome kartu su vaikais.</p>
+      </article>
+      <article class="qc">
+        <div class="ico" style="background:#DCE6FF" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#22449F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5a2 2 0 0 1 4 0v6"/><path d="M13 9a2 2 0 0 1 4 0v4"/><path d="M17 11a2 2 0 0 1 4 0v3a8 8 0 0 1-8 8h-1a8 8 0 0 1-7-4l-2-4a2 2 0 0 1 3.5-2L9 14"/></svg></div>
+        <h3>Kiekvienas vaikas spaudžia pats</h3>
+        <p>Iki 10 vaikų grupėje, 1 robotas dviem. Mygtukus spaudžia kiekvienas, niekas nelieka stebėti iš šono.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LESSON ============ -->
+<section id="pamoka" aria-labelledby="pamoka-h" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 id="pamoka-h">Viena pamoka: 30 minučių</h2>
+      <p>Tema „Apsilankymas zoologijos sode": paveikslėlių knyga apie gyvūnus, 5 robotai, 5 žemėlapiai, iki 10 vaikų. Mentorius visą laiką prie stalo.</p>
+    </div>
+    <ol class="tl">
+      <li><time>0–3 min</time><div><b>Sveikinimasis ratu</b><p>Robotas pasisveikina įrašytu balsu: „Labas! Hello!" Vaikas pasako robotui savo vardą.</p></div></li>
+      <li><time>3–8 min</time><div><b>Knyga</b><p>Mentorius skaito 3–4 puslapius ir klausia: „Kas čia? Kokį garsą daro liūtas?" Vaikai rodo ir kartoja gyvūnų vardus lietuviškai ir angliškai.</p></div></li>
+      <li><time>8–11 min</time><div><b>„Būk robotas" kūnu</b><p>Vaikai žingsniuoja pagal rodyklių korteles ant grindų ir skaičiuoja žingsnius garsiai. Be roboto, visu kūnu.</p></div></li>
+      <li><time>11–21 min</time><div><b>Robotas ant žemėlapio, poromis</b><p>Robotą dedame ant „įėjimo". Balsas duoda užduotį, pora spaudžia mygtukus, skaičiuoja „1, 2, 3" ir su mentoriumi taiso, jei robotas nuėjo ne ten.</p></div></li>
+      <li><time>21–26 min</time><div><b>Įrašas</b><p>Kiekviena pora įrašo į robotą vieną sakinį: „Liūtas labai didelis" arba „The lion says roar". Vaikas kalba į mikrofoną ir girdi save.</p></div></li>
+      <li><time>26–29 min</time><div><b>Parodyk draugams</b><p>Dvi ar trys poros paleidžia savo robotą, kiti ploja. Vaikas papasakoja, kur robotas nuėjo.</p></div></li>
+      <li><time>29–30 min</time><div><b>Atsisveikinimas ratu</b><p>Prisimename, ką šiandien aplankė robotas, ir atsisveikiname su juo lietuviškai ir angliškai.</p></div></li>
+    </ol>
+
+    <h3 style="margin-top:28px">Pažiūrėkite 1 min.: kaip atrodo pamoka be ekrano.</h3>
+    <div class="video-box">
+      <video id="pv" poster="../v2/assets/poster-640.webp" preload="none" playsinline width="1280" height="720" aria-label="Matata pristatymas, 58 sekundės, lietuviškai">
+        <source src="../v2/assets/video/matata-pristatymas-v2.mp4" type="video/mp4">
+      </video>
+      <button type="button" class="play" id="pvPlay"><span><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg>Paleisti video</span></button>
+    </div>
+    <p class="small muted" style="margin-top:8px">58 s, lietuviškai. Animacija, įgarsinta dirbtinio intelekto balsu.</p>
+  </div>
+</section>
+
+<!-- ============ GOALS ============ -->
+<section aria-labelledby="goals-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="goals-h">Ko tikimės po 3 ir 6 mėnesių</h2><p>Kartą per savaitę: 3 mėnesiai yra apie 12 pamokų, 6 mėnesiai apie 24.</p></div>
+    <div class="goals">
+      <div class="goal"><h3>Po 3 mėn. · ~12 pamokų</h3><p>Pavadina apie 20 naujų temų žodžių, atpažįsta keletą angliškų (drąsesni apie 10), skaičiuoja iki 5, įrašo savo sakinį robotui.</p></div>
+      <div class="goal"><h3>Po 6 mėn. · ~24 pamokos</h3><p>Padedamas papasakoja trumpą pasaką (keturmečiai 2–3 įvykius iš eilės), skaičiuoja iki 5 (drąsesni iki 10), parodo robotą draugams ir jums.</p></div>
+    </div>
+    <p class="small muted" style="margin-top:12px">Tai programos tikslai. Kiekvienas vaikas auga savo tempu, todėl jų negarantuojame. Vaikas neišmoks skaityti ar kalbėti angliškai per pusmetį: tai pasiruošimas skaityti ir pirmieji žodžiai.</p>
+    <p class="small muted">Tokiais robotais vaikai mokosi darželiuose daugiau nei 60 šalių (gamintojo duomenimis). Estijoje tokie robotai darželiuose naudojami nuo 2017 metų. Lietuvoje užsiėmimus vedame lietuviškai, su paveikslėlių knygomis ir Robotikos akademijos mentoriais.</p>
+  </div>
+</section>
+
+<!-- ============ PRICE ============ -->
+<section class="price" id="kaina" aria-labelledby="kaina-h">
+  <div class="wrap">
+    <div class="sec-head"><h2 id="kaina-h">Kiek kainuoja</h2><p>Viena suma per mėnesį pagal vietą. 4 pamokos po 30 min, iki 10 vaikų, 1 robotas dviem.</p></div>
+    <ul class="incl">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Robotai, pasakų žemėlapiai ir komandų kortelės pamokoje. Nieko pirkti nereikia.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Nauja paveikslėlių knyga ir nauja tema kiekvieną savaitę.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Robotikos akademijos mentorius, dirbantis su darželinukais.</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg>Įsirašyti į sąrašą galite be įsipareigojimo. Prieš mokėdami gausite visą informaciją.</li>
+    </ul>
+    <div class="pcs">
+      <div class="pc feat">
+        <h3>Darželyje</h3>
+        <div class="amt">25 € <small>per mėnesį</small></div>
+        <p class="small" style="margin:0">4 pamokos po 30 min, apie 6,25 € už pamoką.</p>
+        <p>Ateiname į vaiko grupę. Vežti nereikia. Grupė atsiranda, kai užsirašo keli tėvai iš to paties darželio ir darželis sutinka.</p>
+        <a class="btn btn-y" href="#sarasas" data-cta="price_darzelis" data-loc="darzelis">Užsirašyti į laukiančiųjų sąrašą</a>
+      </div>
+      <div class="pc">
+        <h3>Tech Zity centre</h3>
+        <div class="amt">29 € <small>per mėnesį</small></div>
+        <p class="small" style="margin:0">4 pamokos po 30 min, apie 7,25 € už pamoką.</p>
+        <p>Tech Zity, Panerių g. 43, Vilnius. Popiet, Robotikos akademijos centre.</p>
+        <a class="btn btn-y" href="#sarasas" data-cta="price_centras" data-loc="ra-centras">Užsirašyti į laukiančiųjų sąrašą</a>
+      </div>
+    </div>
+    <p class="coi-near">Skaidrumas: RA bendraįkūrėjo Kristijono Vasiliausko tėtis atstovauja Matata robotams Lietuvoje.</p>
+    <p>Grupės startuoja, kai susirenka pakankamai vaikų. Laukiančiųjų sąraše esantiems pranešime pirmiesiems. Pradžios datą pranešime el. paštu.</p>
+    <p class="small">Dirbate darželyje arba norite pamokų savo vaiko darželyje? <a href="#darzeliams" data-cta="price_org">Pakvieskite į savo darželį</a> · <a class="pdf-link" href="../v2/darzeliui/darzeliui.pdf" data-cta="price_pdf" data-out="pdf" target="_blank" rel="noopener">Atsisiųsti vadovui (PDF, 1 psl.)</a></p>
+  </div>
+</section>
+
+<!-- ============ FORM (fields identical to v2) ============ -->
+<section class="join" id="sarasas">
+  <div class="wrap">
+    <div class="join-copy">
+      <h2>Laukiančiųjų sąrašas</h2>
+      <p class="lead">Pirmieji sužinosite, kada grupė atsidaro jūsų darželyje arba Tech Zity centre. Įsipareigojimo nėra: parašysime, kai susirinks grupė.</p>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Parašysime, kai susirinks grupė. Tada ir nuspręsite.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Vaiko vardo neprašome. Tik amžius, kad pasiūlytume tinkamą grupę.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Užtrunka apie minutę.</span></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="jtabs" role="tablist" aria-label="Kas registruojasi" id="darzeliams">
+        <button type="button" role="tab" id="tab-tevai" aria-selected="true" aria-controls="panel-tevai" data-jtab="tevai">Esu mama arba tėtis</button>
+        <button type="button" role="tab" id="tab-istaiga" aria-selected="false" aria-controls="panel-istaiga" data-jtab="istaiga">Kviečiu į darželį</button>
+      </div>
+      <p class="jtabs-help">„Kviečiu į darželį": darbuotojams ir tėvų atstovams</p>
+
+      <!-- ===== parents ===== -->
+      <div role="tabpanel" id="panel-tevai" aria-labelledby="tab-tevai">
+      <form class="form" id="wlform" novalidate>
+        <div class="joined" id="joined">Jūs jau sąraše iš šio įrenginio. <button type="button" class="linkbtn" id="joinAgain">Užrašyti kitą vaiką</button></div>
+        <div class="prog" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+        <div class="sr" aria-live="polite" id="stepAnn">1 žingsnis iš 3</div>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <div class="fstep on" data-step="1">
+          <h3>Apie vaiką ir vietą</h3>
+          <div class="opts cols3" role="radiogroup" aria-label="Vaiko amžius" aria-describedby="err-age">
+            <label class="opt"><input type="radio" name="child_age" value="3"><span>3 metai</span></label>
+            <label class="opt"><input type="radio" name="child_age" value="4"><span>4 metai</span></label>
+            <label class="opt"><input type="radio" name="child_age" value="kitas"><span>Kitas</span></label>
+          </div>
+          <p class="err" id="err-age" data-err="child_age" role="alert"></p>
+          <div class="opts" role="radiogroup" aria-label="Kur būtų patogiausia" aria-describedby="err-loc">
+            <label class="opt row"><input type="radio" name="location_pref" value="darzelis"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg>Vaiko darželyje<small>25 €/mėn.</small></span></label>
+            <div class="kg" id="kgBox">
+              <label class="f">Darželis
+                <input type="text" name="kindergarten_name" placeholder="Darželio pavadinimas" autocomplete="off" maxlength="120" aria-describedby="help-kg err-kg">
+                <span class="helper" id="help-kg">Kad galėtume suburti grupę iš to paties darželio ir susitarti su darželiu.</span>
+              </label>
+              <p class="err" id="err-kg" data-err="kindergarten_name" role="alert"></p>
+            </div>
+            <label class="opt row"><input type="radio" name="location_pref" value="ra-centras"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Tech Zity centre, Vilnius<small>29 €/mėn.</small></span></label>
+            <label class="opt row"><input type="radio" name="location_pref" value="nezinau"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2A4FB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01"/></svg>Dar nežinau</span></label>
+          </div>
+          <p class="err" id="err-loc" data-err="location_pref" role="alert"></p>
+          <label class="f">Miestas
+            <input type="text" name="city" list="cities" placeholder="Pvz. Vilnius" autocomplete="address-level2" maxlength="40" required aria-describedby="help-city err-city">
+            <datalist id="cities"><option value="Vilnius"><option value="Kaunas"><option value="Klaipėda"><option value="Šiauliai"><option value="Panevėžys"></datalist>
+            <span class="helper" id="help-city">Pirmosios grupės Vilniuje. Kitur įrašykite miestą: skaičiuojame paklausą.</span>
+          </label>
+          <p class="err" id="err-city" data-err="city" role="alert"></p>
+          <div class="fnav"><span></span><button type="button" class="btn btn-y" data-next>Toliau <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button></div>
+        </div>
+
+        <div class="fstep" data-step="2">
+          <h3>Kam parašyti, kai atsidarys grupė?</h3>
+          <label class="f">Jūsų vardas
+            <input type="text" name="parent_name" placeholder="Pvz. Ieva" autocomplete="given-name" maxlength="80" required aria-describedby="err-parent_name">
+          </label>
+          <p class="err" id="err-parent_name" data-err="parent_name" role="alert"></p>
+          <label class="f">El. paštas
+            <input type="email" name="email" placeholder="jus@pastas.lt" autocomplete="email" inputmode="email" maxlength="160" required aria-describedby="err-email">
+          </label>
+          <p class="err" id="err-email" data-err="email" role="alert"></p>
+          <label class="f">Telefonas <span class="opt-lbl">(nebūtina)</span>
+            <input type="tel" name="phone" placeholder="+370" autocomplete="tel" inputmode="tel" maxlength="30">
+          </label>
+          <label class="f">Patogiausia savaitės diena <span class="opt-lbl">(nebūtina)</span></label>
+          <div class="opts days" role="group" aria-label="Savaitės dienos">
+            <label class="opt"><input type="checkbox" name="preferred_day" value="Pr" aria-label="Pirmadienis"><span>Pr</span></label>
+            <label class="opt"><input type="checkbox" name="preferred_day" value="An" aria-label="Antradienis"><span>An</span></label>
+            <label class="opt"><input type="checkbox" name="preferred_day" value="Tr" aria-label="Trečiadienis"><span>Tr</span></label>
+            <label class="opt"><input type="checkbox" name="preferred_day" value="Kt" aria-label="Ketvirtadienis"><span>Kt</span></label>
+            <label class="opt"><input type="checkbox" name="preferred_day" value="Pn" aria-label="Penktadienis"><span>Pn</span></label>
+            <label class="opt"><input type="checkbox" name="preferred_day" value="Š" aria-label="Šeštadienis"><span>Š</span></label>
+            <label class="opt"><input type="checkbox" name="preferred_day" value="S" aria-label="Sekmadienis"><span>S</span></label>
+          </div>
+          <div class="fnav"><button type="button" class="btn btn-g" data-prev>Atgal</button><button type="button" class="btn btn-y" data-next>Toliau <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button></div>
+        </div>
+
+        <div class="fstep" data-step="3">
+          <h3>Paskutinis žingsnis</h3>
+          <p class="hint" id="summary"></p>
+          <label class="chk-line"><input type="checkbox" name="consent_contact" value="1" required aria-describedby="err-consent"><span>Sutinku, kad Robotikos akademija susisiektų su manimi el. paštu arba telefonu dėl Matata programos. Sutikimą galiu atšaukti bet kada atsakydama(s) į laišką. <a href="https://robotikosakademija.lt/privatumo-politika/" target="_blank" rel="noopener" data-out="privacy">Privatumo politika</a>.</span></label>
+          <p class="err" id="err-consent" data-err="consent_contact" role="alert"></p>
+          <div class="fnav"><button type="button" class="btn btn-g" data-prev>Atgal</button><button type="submit" class="btn btn-y" id="submitBtn">Užsirašyti <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg></span></button></div>
+          <p class="err" data-err="submit" role="alert"></p>
+          <p class="legal">Duomenų valdytojas: VšĮ „Robotikos akademija". Duomenis naudojame tik susisiekti dėl šios programos. Vaiko vardo neprašome ir nesaugome.</p>
+        </div>
+
+        <div class="done" id="done" tabindex="-1">
+          <div class="bot" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none"><rect x="14" y="26" width="92" height="74" rx="20" fill="#fff" stroke="#DCE6FF" stroke-width="3"/><rect x="14" y="26" width="18" height="74" rx="12" fill="#F7A11A"/><circle cx="58" cy="62" r="11" fill="#152039"/><circle cx="86" cy="62" r="11" fill="#152039"/><circle cx="61" cy="58" r="4" fill="#fff"/><circle cx="89" cy="58" r="4" fill="#fff"/><path d="M60 82c6 7 18 7 24 0" stroke="#152039" stroke-width="4" stroke-linecap="round"/><circle cx="48" cy="34" r="4" fill="#56B13F"/><circle cx="60" cy="34" r="4" fill="#FEC404"/><circle cx="72" cy="34" r="4" fill="#3F6EDC"/><circle cx="84" cy="34" r="4" fill="#E6483B"/></svg></div>
+          <h3>Labas! Hello! Jūs sąraše.</h3>
+          <p id="doneText">Parašysime, kai grupė susirinks <b id="doneWhere">jūsų darželyje</b>. Iki tol: atsiverskite su vaiku knygą apie gyvūnus ir paklauskite, kokį garsą daro liūtas.</p>
+          <p class="small muted">Klausimų turite jau dabar? Rašykite <a href="mailto:info@robotikosakademija.lt" data-cta="email">info@robotikosakademija.lt</a>.</p>
+          <button type="button" class="btn btn-w" id="shareBtn">Pakvieskite kitus tėvus iš savo darželio</button>
+          <button type="button" class="again" id="againBtn">Užrašyti kitą vaiką</button>
+        </div>
+        <div class="confetti" id="confetti" aria-hidden="true"></div>
+      </form>
+      </div>
+
+      <!-- ===== kindergarten / organisation ===== -->
+      <div role="tabpanel" id="panel-istaiga" aria-labelledby="tab-istaiga" hidden>
+      <form class="form" id="orgform" novalidate>
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="fstep on" data-step="1">
+          <h3>Pakvieskite Matata į savo darželį</h3>
+          <div class="dz">
+            <b>Darželiui</b>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Darželiui tai nekainuoja: moka tik tėvai, 25 €/mėn.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Laiką deriname su darželiu.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Viską atsivežame: robotus, žemėlapius, korteles ir knygas.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Atvykstame pasikalbėti ir parodyti, kaip vyksta pamoka.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><span>Grupė iki 10 vaikų, 1 robotas dviem, mentorius visada šalia.</span></li>
+            </ul>
+            <a class="pdf-link" href="../v2/darzeliui/darzeliui.pdf" data-cta="org_pdf" data-out="pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 19h16"/></svg><span>Atsisiųsti vadovui (PDF, 1 psl.)</span></a>
+          </div>
+          <p class="hint">Palikite kontaktą: susisieksime ir sutarsime, kada atvykti.</p>
+          <label class="f">Jūsų vaidmuo
+            <select name="org_role" required aria-describedby="err-org_role">
+              <option value="">Pasirinkite</option>
+              <option value="direktore">Direktorė (-ius)</option>
+              <option value="pavaduotoja">Direktorės pavaduotoja (-as)</option>
+              <option value="aukletoja">Auklėtoja (-as), pedagogė (-as)</option>
+              <option value="tevu-atstovas">Tėvų atstovė (-as)</option>
+              <option value="kita">Kita</option>
+            </select>
+          </label>
+          <p class="err" id="err-org_role" data-err="org_role" role="alert"></p>
+          <label class="f">Darželis
+            <input type="text" name="org_name" placeholder="Darželio pavadinimas" maxlength="160" required aria-describedby="err-org_name">
+          </label>
+          <p class="err" id="err-org_name" data-err="org_name" role="alert"></p>
+          <label class="f">Miestas
+            <input type="text" name="city" list="cities2" placeholder="Vilnius" autocomplete="address-level2" maxlength="40" required aria-describedby="err-org_city">
+            <datalist id="cities2"><option value="Vilnius"><option value="Kaunas"><option value="Klaipėda"><option value="Šiauliai"><option value="Panevėžys"></datalist>
+          </label>
+          <p class="err" id="err-org_city" data-err="org_city" role="alert"></p>
+          <label class="f">Kiek 3–4 metų vaikų darželyje? <span class="opt-lbl">(apytiksliai)</span>
+            <select name="org_size">
+              <option value="">Nežinau</option>
+              <option value="iki-10">iki 10</option>
+              <option value="10-20">10–20</option>
+              <option value="20-40">20–40</option>
+              <option value="40+">daugiau nei 40</option>
+            </select>
+          </label>
+          <label class="f">Jūsų vardas
+            <input type="text" name="parent_name" placeholder="Pvz. Rasa" autocomplete="given-name" maxlength="80" required aria-describedby="err-org_contact">
+          </label>
+          <p class="err" id="err-org_contact" data-err="org_contact" role="alert"></p>
+          <label class="f">El. paštas
+            <input type="email" name="email" placeholder="jus@darzelis.lt" autocomplete="email" inputmode="email" maxlength="160" required aria-describedby="err-org_email">
+          </label>
+          <p class="err" id="err-org_email" data-err="org_email" role="alert"></p>
+          <label class="f">Telefonas <span class="opt-lbl">(nebūtina)</span>
+            <input type="tel" name="phone" placeholder="+370" autocomplete="tel" inputmode="tel" maxlength="30">
+          </label>
+          <label class="chk-line"><input type="checkbox" name="consent_contact" value="1" required aria-describedby="err-org_consent"><span>Sutinku, kad Robotikos akademija susisiektų su manimi dėl Matata pamokų mūsų darželyje. <a href="https://robotikosakademija.lt/privatumo-politika/" target="_blank" rel="noopener" data-out="privacy">Privatumo politika</a>.</span></label>
+          <p class="err" id="err-org_consent" data-err="org_consent" role="alert"></p>
+          <div class="fnav"><span></span><button type="submit" class="btn btn-y" id="orgSubmit">Pakviesti <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button></div>
+          <p class="err" data-err="org_submit" role="alert"></p>
+          <p class="legal">Duomenų valdytojas: VšĮ „Robotikos akademija". Duomenis naudojame tik susisiekti dėl šios programos.</p>
+        </div>
+        <div class="done" id="orgDone" tabindex="-1">
+          <h3>Ačiū! Gavome jūsų kvietimą.</h3>
+          <p>Susisieksime su jumis el. paštu arba telefonu ir sutarsime, kada galime atvykti į <b id="orgDoneWhere">jūsų darželį</b> pasikalbėti apie grupę ir parodyti, kaip vyksta pamoka.</p>
+          <button type="button" class="btn btn-w" id="orgShareBtn">Pasidalinti su kolegomis</button>
+        </div>
+        <div class="confetti" id="orgConfetti" aria-hidden="true"></div>
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="duk" aria-labelledby="duk-h">
+  <div class="wrap" style="max-width:860px">
+    <h2 id="duk-h">Dažniausi klausimai</h2>
+    <details data-q="programuoti"><summary>Ar trimetis tikrai gali programuoti?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Mūsų prasme taip: spaudžia spalvotas rodykles, ir robotas eina. Skaityti nereikia. Gamintojas robotą skiria 3–5 metų vaikams.</p></details>
+    <details data-q="drovus"><summary>Mano vaikas drovus arba dar mažai kalba. Ar tiks?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Tiks. Dirbame poromis, vaikas gali spausti mygtukus ir klausytis. Kalbėti nereikia, kol pats nenori.</p></details>
+    <details data-q="kaina"><summary>Kiek kainuoja ir kas įskaičiuota?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Darželyje 25 € per mėnesį, Tech Zity centre 29 €: 4 pamokos po 30 min. Įskaičiuoti robotai, žemėlapiai, komandų kortelės ir paveikslėlių knygos. Įsirašymas į sąrašą neįpareigoja, prieš mokėdami gausite visą informaciją.</p></details>
+    <details data-q="sarasas"><summary>Kas atsitiks užsiregistravus į sąrašą?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Parašysime, kai atsidarys grupė jūsų darželyje ar centre. Įsipareigojimo nėra: tada ir nuspręsite. Grupės startuoja, kai susirenka pakankamai vaikų. Laukiančiųjų sąraše esantiems pranešime pirmiesiems.</p></details>
+    <details data-q="skaityti"><summary>Ar vaikas išmoks skaityti ir anglų kalbą?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Per kelis mėnesius ne. Ugdome meilę knygai ir mokomės pasakoti: tai pasiruošimas skaityti. Žaisdamas vaikas išgirs ir pakartos pirmuosius angliškus žodžius: tai pirmas žingsnis į kalbą, ne kalbos kursas.</p></details>
+    <details data-q="kas-veda"><summary>Kas veda ir kas sukūrė programą?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Robotą ir pagrindines veiklų korteles sukūrė MatataStudio. Užsiėmimus veda Robotikos akademijos mentoriai, o pati akademija vaikus moko nuo 2013 metų. Mentoriaus vardą ir nuotrauką įdėsime, kai susirinks pirmoji grupė.</p></details>
+    <details data-q="kur"><summary>Kur ir kada vyksta?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Vilniuje: darželiuose (laiką deriname su darželiu) ir Tech Zity centre (Panerių g. 43). Patogiausią dieną pažymite formoje, o kai susirinks grupė, parašysime tikslų laiką. Pradžios datą pranešime el. paštu.</p></details>
+    <details data-q="filmuoti"><summary>Ar filmuosite mano vaiką? Ar galiu būti šalia pirmoje pamokoje?<span class="pm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></summary><p>Be jūsų raštiško sutikimo jokių vaiko veidų. Rodome rankas ir robotus. Centre pirmoje pamokoje galite pabūti pirmąsias minutes, kol vaikas apsipranta.</p></details>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="final-h">
+  <div class="wrap">
+    <h2 id="final-h">Vienas paprastas žingsnis</h2>
+    <p class="lead" style="color:#fff">Įsirašykite į sąrašą, o kai grupė susirinks jūsų darželyje ar Tech Zity centre, parašysime pirmiesiems.</p>
+    <div class="ctas">
+      <a class="btn btn-y" href="#sarasas" data-cta="final">Užsirašyti į laukiančiųjų sąrašą</a>
+      <a class="btn btn-w" href="#darzeliams" data-cta="final_org">Pakvieskite į savo darželį</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <img src="../v2/assets/logo/ra-logo-white.svg" alt="Robotikos akademija" width="148" height="41" loading="lazy" style="margin-bottom:10px">
+        <ul>
+          <li><a href="https://robotikosakademija.lt/" target="_blank" rel="noopener" data-out="ra-site">robotikosakademija.lt</a></li>
+          <li><a href="tel:+37052525713">+370 5 25 25 713</a></li>
+          <li><a href="mailto:info@robotikosakademija.lt">info@robotikosakademija.lt</a></li>
+          <li><a href="https://robotikosakademija.lt/privatumo-politika/" target="_blank" rel="noopener" data-out="privacy">Privatumo politika</a></li>
+          <li><button type="button" class="foot-btn" id="consentOpen">Slapukų nustatymai</button></li>
+        </ul>
+      </div>
+      <div>
+        <p>VšĮ „Robotikos akademija", Panerių g. 43, LT-03202 Vilnius, įm. k. 303015010. Asmens duomenų valdytojas: VšĮ „Robotikos akademija". Formos duomenys naudojami tik susisiekti dėl šios programos; vaiko vardo neprašome.</p>
+        <p>Puslapis renka anoniminius naudojimo įvykius be slapukų; Microsoft Clarity įrašai įjungiami tik paspaudus „Leisti".</p>
+      </div>
+    </div>
+    <p class="fine">Skaidrumas: RA bendraįkūrėjo Kristijono Vasiliausko tėtis atstovauja Matata robotams Lietuvoje. Mokymosi rezultatai yra programos tikslai, ne garantija. 3D robotas puslapyje yra iliustracija, ne tikro roboto modelis. „Tale-Bot Pro" ir „MatataStudio" yra jų savininkų prekių ženklai. © 2026 Robotikos akademija.</p>
+  </div>
+</footer>
+
+<div class="mbar" id="mbar" aria-hidden="true">
+  <div class="t"><b>Laukiančiųjų sąrašas</b>nuo 25 €/mėn.</div>
+  <a class="btn btn-y" href="#sarasas" data-cta="sticky_bar" tabindex="-1">Į sąrašą</a>
+</div>
+
+<div class="consent" id="consent" role="dialog" aria-label="Slapukų pasirinkimas">
+  <p><b>Ar galime mokytis iš jūsų apsilankymo?</b> Microsoft Clarity įrašai tik su sutikimu. <a href="https://robotikosakademija.lt/privatumo-politika/" target="_blank" rel="noopener" data-out="privacy">Privatumas</a></p>
+  <div class="row">
+    <button type="button" class="btn" id="consentYes">Leisti</button>
+    <button type="button" class="btn" id="consentNo">Tik būtini</button>
+  </div>
+</div>
+
+<script>
+/* Matata v3-3d · page logic (no 3D here). Forms, tracking and consent are copied from v2/js/main.js; only CFG is inlined. */
+(function () {
+  'use strict';
+  /* ⚠️ PROTOTYPE GUARD: true = the form NEVER posts to Supabase (ra_waitlist is the LIVE table). Set to false only when this page replaces v2. */
+  var PROTO_TEST = true;
+  var CFG = {
+    supabase: { url: 'https://iiekmeylpppczicrsxho.supabase.co/rest/v1/ra_waitlist', key: 'sb_publishable_iJC59f30YJm7hU4OwZsLDQ_9FN-ygzF' },
+    clarityId: 'yvonvcmo2n',
+    siteUrl: 'https://krisvas333.github.io/ra-matata/v2/'
+  };
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var body = document.body;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var BASE = window.__btBase || { version: 'v3-3d', src: 'direct' };
+  var SRC = BASE.src || 'direct';
+  if (!PROTO_TEST) { var pb = $('#protoBar'); if (pb) pb.remove(); }
+
+  function track(name, props) {
+    if (typeof window.bt !== 'function') return;
+    try { window.bt(name, Object.assign({}, BASE, props || {})); } catch (e) {}
+  }
+  window.__mt = track;
+
+  // ---------- STEM.org badge hides itself after validUntil (same rule as v2 config) ----------
+  var stem = $('#stemBadge'); if (stem && new Date() > new Date(stem.dataset.until + 'T23:59:59')) stem.hidden = true;
+
+  // ---------- tabs ----------
+  var wl = $('#wlform'), org = $('#orgform');
+  function jtab(which, quiet) {
+    $('#panel-tevai').hidden = which !== 'tevai'; $('#panel-istaiga').hidden = which !== 'istaiga';
+    $$('[data-jtab]').forEach(function (b) { b.setAttribute('aria-selected', String(b.getAttribute('data-jtab') === which)); });
+    if (!quiet) track('engage', { what: 'tab', id: 'join_' + which });
+  }
+  $$('[data-jtab]').forEach(function (b) { b.addEventListener('click', function () { jtab(b.getAttribute('data-jtab')); }); });
+  function kgSync() { var kg = $('#kgBox'); if (!kg || !wl) return; var r = wl.elements.location_pref; var on = false; for (var i = 0; r && i < r.length; i++) if (r[i].checked && r[i].value === 'darzelis') on = true; kg.classList.toggle('on', on); }
+  // ?age=3|4 preselects the age (same param as v1/v2)
+  (function () { var a = new URLSearchParams(location.search).get('age'); if (a === '3' || a === '4') { var r = $('input[name="child_age"][value="' + a + '"]'); if (r) r.checked = true; } })();
+
+  var lastNavClick = 0;
+  $$('[data-cta]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var where = a.getAttribute('data-cta'), href = a.getAttribute('href') || '';
+      var p = { where: where };
+      if (href.indexOf('mailto:') === 0) p.kind = 'email'; else if (href.indexOf('tel:') === 0) p.kind = 'tel'; else if (a.getAttribute('data-out')) p.kind = a.getAttribute('data-out');
+      track('cta', p);
+      if (href.charAt(0) === '#') lastNavClick = Date.now();
+      if (href === '#darzeliams') jtab('istaiga', true); else if (href === '#sarasas') jtab('tevai', true);
+      var loc = a.getAttribute('data-loc');
+      if (loc) { var r = $('input[name="location_pref"][value="' + loc + '"]'); if (r) { r.checked = true; kgSync(); } }
+    });
+  });
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a'); if (!a || a.hasAttribute('data-cta')) return;
+    var href = a.getAttribute('href') || '';
+    if (href.charAt(0) === '#') { lastNavClick = Date.now(); track('engage', { what: 'nav', to: href.slice(1, 40), from: (a.closest('header') ? 'header' : a.closest('footer') ? 'footer' : 'body') }); return; }
+    if (href.indexOf('tel:') === 0) { track('cta', { where: 'tel', kind: 'tel' }); return; }
+    if (href.indexOf('mailto:') === 0) { track('cta', { where: 'email', kind: 'email' }); return; }
+    if (/^https?:/.test(href)) { var h = href.split('/')[2] || ''; track('cta', { where: 'out', kind: a.getAttribute('data-out') || 'link', host: h.slice(0, 60) }); }
+  }, { capture: true, passive: true });
+
+  // FAQ
+  $$('.faq details').forEach(function (d) { d.addEventListener('toggle', function () { if (d.open) track('engage', { what: 'faq', q: d.getAttribute('data-q') || 'q' }); }); });
+
+  // video: loads nothing until tap
+  var pv = $('#pv'), pvPlay = $('#pvPlay');
+  if (pv && pvPlay) {
+    var fired = false, marks = {};
+    pvPlay.addEventListener('click', function () { pv.play().catch(function () {}); });
+    pv.addEventListener('play', function () { pvPlay.classList.add('off'); pv.controls = true; if (!fired) { fired = true; track('engage', { what: 'video_play', id: 'pristatymas-v2' }); } });
+    pv.addEventListener('timeupdate', function () { if (!pv.duration) return; var pct = pv.currentTime / pv.duration * 100; [25, 50, 75].forEach(function (m) { if (pct >= m && !marks[m]) { marks[m] = 1; track('engage', { what: 'video_progress', pct: m }); } }); });
+  }
+
+  // ---------- sound: OFF by default, never persisted ----------
+  var ac = null; window.__snd = false;
+  window.__beep = function (f, d, type, vol, delay) {
+    if (!window.__snd || !ac) return;
+    try {
+      var o = ac.createOscillator(), g = ac.createGain(), t = ac.currentTime + (delay || 0); d = d || 0.12;
+      o.type = type || 'triangle'; o.frequency.value = f;
+      g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol || 0.08, t + 0.012); g.gain.exponentialRampToValueAtTime(0.0001, t + d);
+      o.connect(g); g.connect(ac.destination); o.start(t); o.stop(t + d + 0.03);
+    } catch (e) {}
+  };
+  var snd = $('#snd');
+  if (snd) snd.addEventListener('click', function () {
+    window.__snd = !window.__snd;
+    snd.setAttribute('aria-pressed', String(window.__snd)); snd.querySelector('span').textContent = window.__snd ? 'Garsas įj.' : 'Garsas išj.';
+    if (window.__snd) { try { ac = ac || new (window.AudioContext || window.webkitAudioContext)(); if (ac.state === 'suspended') ac.resume(); } catch (e) {} window.__beep(660, .12); }
+    track('engage', { what: 'sound', on: window.__snd ? 1 : 0 });
+  });
+
+  // ---------- scroll story: progress 0..1 over the steps (drives the 3D robot + the active step card) ----------
+  var stepsEl = $('#steps'), stageEl = $('#stage'), stepEls = $$('.step', stepsEl), lastStep = -1, seenSteps = {}, ticking = false;
+  window.__storyP = 0;
+  function storyProgress() {
+    ticking = false;
+    var r = stepsEl.getBoundingClientRect(), sr = stageEl.getBoundingClientRect(), mob = window.innerWidth < 900;
+    var line = mob ? Math.max(sr.bottom, 0) + (window.innerHeight - Math.max(sr.bottom, 0)) * 0.45 : window.innerHeight * 0.55;
+    var p = (line - r.top) / r.height; p = p < 0 ? 0 : p > 1 ? 1 : p;
+    window.__storyP = p;
+    var idx = Math.min(stepEls.length - 1, Math.floor(p * stepEls.length));
+    if (idx !== lastStep) {
+      stepEls.forEach(function (s, i) { s.classList.toggle('on', i === idx); });
+      lastStep = idx;
+      if (!seenSteps[idx] && p > 0) { seenSteps[idx] = 1; track('engage', { what: 'story_step', step: idx + 1 }); }
+    }
+    document.dispatchEvent(new CustomEvent('storyp', { detail: p }));
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(storyProgress); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  storyProgress();
+
+  // ---------- sticky bar + view events ----------
+  var hero = $('#hero'), join = $('#sarasas'), barEl = $('#mbar'), heroOut = false, formIn = false;
+  function bar() { var on = heroOut && !formIn; body.classList.toggle('show-bar', on); if (barEl) { barEl.setAttribute('aria-hidden', String(!on)); var b = $('.btn', barEl); if (b) b.tabIndex = on ? 0 : -1; } }
+  function viewOnce(sel, what) {
+    var el = $(sel); if (!el) return; var t = null;
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { if (!t) t = setTimeout(function () { track('view', { what: what }); io.disconnect(); }, 1000); } else if (t) { clearTimeout(t); t = null; } }); }, { threshold: 0.3 });
+    io.observe(el);
+  }
+  if ('IntersectionObserver' in window && hero) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { heroOut = !e.isIntersecting && e.boundingClientRect.top < 0; bar(); if (heroOut) consentMaybe('scroll'); }); }, { threshold: 0 }).observe(hero);
+    if (join) new IntersectionObserver(function (es) { es.forEach(function (e) { formIn = e.isIntersecting; bar(); if (!formIn) consentMaybe('form_left'); }); }, { threshold: 0.15 }).observe(join);
+    [['#steps', 'story'], ['#pamoka', 'lesson'], ['#kaina', 'price'], ['#sarasas', 'form']].forEach(function (p) { viewOnce(p[0], p[1]); });
+  }
+
+  // ---------- forms (copied from v2/js/main.js; post() gated by PROTO_TEST) ----------
+  function humanError(status) {
+    if (status === 0) return 'Nėra ryšio. Patikrinkite internetą ir bandykite dar kartą.';
+    if (status === 400 || status === 422) return 'Patikrinkite laukus: tekstas per ilgas arba netinkamo formato (miestas iki 40 ženklų).';
+    if (status === 409) return 'Atrodo, šis el. paštas jau sąraše. Jei norite pridėti kitą vaiką, parašykite info@robotikosakademija.lt.';
+    return 'Nepavyko išsiųsti. Pabandykite dar kartą arba parašykite info@robotikosakademija.lt su tema „Matata".';
+  }
+  function post(payload) {
+    if (PROTO_TEST) { try { console.info('[v3-3d PROTO_TEST] not sent:', payload); } catch (e) {} return new Promise(function (res) { setTimeout(res, 500); }); }
+    var sb = CFG.supabase || {};
+    return fetch(sb.url, { method: 'POST', headers: { apikey: sb.key, 'Content-Type': 'application/json', Prefer: 'return=minimal' }, body: JSON.stringify(payload) })
+      .then(function (r) { if (r.status !== 201) { var e = new Error('http'); e.status = r.status; throw e; } return r; })
+      .catch(function (x) { if (x.status === undefined) x.status = 0; throw x; });
+  }
+  function scrollToEl(el, offset) {
+    var top = el.getBoundingClientRect().top;
+    if (top < 84 || top > window.innerHeight * 0.4) window.scrollTo({ top: window.scrollY + top - (offset || 84), behavior: reduce ? 'auto' : 'smooth' });
+  }
+  function val(form, name) { var e = form.elements[name]; if (!e) return ''; if (e.length && !e.value && e[0] && e[0].type === 'radio') { for (var i = 0; i < e.length; i++) if (e[i].checked) return e[i].value; return ''; } if (e.type === 'radio' && !e.checked) return ''; return (e.value || '').trim(); }
+  var EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  function isVilnius(city) { return /^viln/i.test((city || '').trim()); }
+  function restoreBtn(btn) { if (!btn) return; btn.disabled = false; if (btn.dataset.label) btn.innerHTML = btn.dataset.label; }
+  function share(btn, where, text, src) {
+    var url = (CFG.siteUrl || location.href.split('#')[0].split('?')[0]) + '?src=' + src;
+    var data = { title: 'Matata: robotas ir pasakų knyga. Be ekrano.', text: text, url: url };
+    if (window.__nativeShare) { track('share', { how: 'native', where: where }); try { window.__nativeShare(data).catch(function () {}); } catch (e) {} return; }
+    if (navigator.clipboard) { navigator.clipboard.writeText(url).then(function () { btn.textContent = 'Nuoroda nukopijuota'; track('share', { how: 'copy', where: where }); }).catch(function () {}); }
+  }
+
+  if (wl) {
+    var steps = $$('.fstep', wl), cur = 1, total = steps.length, prog = $$('.prog i', wl), ann = $('#stepAnn'), started = false;
+    var submitBtn = $('#submitBtn'); if (submitBtn) submitBtn.dataset.label = submitBtn.innerHTML;
+    function err(name, msg, field) {
+      var p = wl.querySelector('[data-err="' + name + '"]'); if (p) p.textContent = msg || '';
+      var f = wl.elements[field || name];
+      if (f && f.setAttribute) f.setAttribute('aria-invalid', msg ? 'true' : 'false');
+      else if (f && f.length) for (var i = 0; i < f.length; i++) f[i].setAttribute('aria-invalid', msg ? 'true' : 'false');
+      if (msg) track('form_error', { form: 'tevai', field: name });
+    }
+    function focusFirst(n) {
+      var bad = steps[n - 1].querySelector('[aria-invalid="true"]');
+      var first = bad || steps[n - 1].querySelector('input:not([type=radio]):not([type=checkbox]):not(.hp), select, h3');
+      if (first && first.focus) { if (first.tagName === 'H3') first.setAttribute('tabindex', '-1'); first.focus({ preventScroll: true }); }
+    }
+    function show(n, back) {
+      cur = n; steps.forEach(function (s) { s.classList.toggle('on', +s.dataset.step === n); });
+      prog.forEach(function (p, i) { p.classList.toggle('on', i < n); });
+      if (ann) ann.textContent = n + ' žingsnis iš ' + total;
+      if (n === total) summary();
+      scrollToEl(wl); focusFirst(n);
+      track('engage', { what: back ? 'form_back' : 'form_step', step: n });
+    }
+    function validate(n) {
+      var ok = true;
+      if (n === 1) {
+        if (!val(wl, 'child_age')) { err('child_age', 'Pažymėkite vaiko amžių.'); ok = false; } else err('child_age');
+        var loc = val(wl, 'location_pref');
+        if (!loc) { err('location_pref', 'Pažymėkite, kur būtų patogiausia.'); ok = false; } else err('location_pref');
+        if (loc === 'darzelis') { if (val(wl, 'kindergarten_name').length < 2) { err('kindergarten_name', 'Įrašykite darželio pavadinimą, kad galėtume suburti grupę būtent ten.'); ok = false; } else err('kindergarten_name'); } else err('kindergarten_name');
+        if (val(wl, 'city').length < 2) { err('city', 'Įrašykite miestą, kad žinotume, kur atidaryti grupę.'); ok = false; } else err('city');
+      }
+      if (n === 2) {
+        if (val(wl, 'parent_name').length < 2) { err('parent_name', 'Įrašykite vardą, kad žinotume, kaip kreiptis.'); ok = false; } else err('parent_name');
+        if (!EMAIL.test(val(wl, 'email'))) { err('email', 'Patikrinkite el. paštą: reikia @ ir taško, pvz. vardas@pastas.lt.'); ok = false; } else err('email');
+      }
+      if (n === 3) { if (!wl.elements.consent_contact.checked) { err('consent_contact', 'Be sutikimo negalėsime parašyti, kai atsidarys grupė.'); ok = false; } else err('consent_contact'); }
+      if (!ok && n === cur) focusFirst(n);
+      return ok;
+    }
+    function product() { var a = val(wl, 'child_age'); return a === '3' ? 'matata-3' : a === '4' ? 'matata-4' : 'matata'; }
+    function kgName() { return val(wl, 'kindergarten_name').slice(0, 60); }
+    function whereText() { var l = val(wl, 'location_pref'); return l === 'darzelis' ? ('jūsų darželyje' + (kgName() ? ' „' + kgName() + '"' : '')) : l === 'ra-centras' ? 'Tech Zity centre' : 'jūsų darželyje arba Tech Zity centre'; }
+    function summary() { var a = val(wl, 'child_age'); var s = $('#summary'); if (s) s.textContent = (a === 'kitas' ? 'Vaikas: kito amžiaus' : 'Vaikas: ' + a + ' m.') + ' · ' + val(wl, 'city') + ' · ' + whereText() + ' · ' + val(wl, 'email'); }
+    function days() { return $$('input[name="preferred_day"]:checked', wl).map(function (c) { return c.value; }).join(','); }
+    wl.addEventListener('focusin', function () { if (!started) { started = true; track('engage', { what: 'form_start' }); } });
+    wl.addEventListener('click', function (e) {
+      var t = e.target.closest('[data-next],[data-prev]'); if (!t) return;
+      if (t.hasAttribute('data-next')) { if (validate(cur)) show(Math.min(cur + 1, total)); } else show(Math.max(cur - 1, 1), true);
+    });
+    $$('input[name="child_age"]', wl).forEach(function (r) { r.addEventListener('change', function () { err('child_age'); track('engage', { what: 'form_age', age: r.value }); }); });
+    $$('input[name="location_pref"]', wl).forEach(function (r) { r.addEventListener('change', function () { kgSync(); err('location_pref'); track('engage', { what: 'form_location', loc: r.value }); }); });
+    kgSync();
+    wl.addEventListener('keydown', function (e) { if (e.key === 'Enter' && e.target.tagName === 'INPUT' && cur < total) { e.preventDefault(); if (validate(cur)) show(cur + 1); } });
+
+    function done() {
+      steps.forEach(function (s) { s.classList.remove('on'); }); $('.prog', wl).style.display = 'none';
+      var city = val(wl, 'city'), dt = $('#doneText');
+      if (dt) {
+        if (isVilnius(city) || !city) dt.innerHTML = 'Parašysime, kai grupė susirinks <b id="doneWhere"></b>. Iki tol: atsiverskite su vaiku knygą apie gyvūnus ir paklauskite, kokį garsą daro liūtas.';
+        else dt.innerHTML = 'Parašysime, kai atsiras grupė jūsų mieste (<b id="doneWhere"></b>). Pirmosios grupės startuoja Vilniuje, kitur skaičiuojame paklausą. Iki tol: atsiverskite su vaiku knygą apie gyvūnus ir paklauskite, kokį garsą daro liūtas.';
+        $('#doneWhere').textContent = (isVilnius(city) || !city) ? whereText() : city.slice(0, 40);
+      }
+      var d = $('#done'); d.classList.add('on'); wl.classList.remove('sending'); restoreBtn(submitBtn); d.focus({ preventScroll: true }); scrollToEl(wl); celebrate($('#confetti'));
+      try { localStorage.setItem('matata-v2-joined', '1'); } catch (x) {}
+      setTimeout(function () { consentMaybe('done'); }, 1200);
+    }
+    wl.addEventListener('submit', function (e) {
+      e.preventDefault();
+      for (var n = 1; n <= total; n++) { if (!validate(n)) { if (cur !== n) show(n); else focusFirst(n); return; } }
+      var btn = submitBtn; btn.disabled = true; btn.textContent = 'Siunčiame…'; wl.classList.add('sending'); err('submit');
+      if (val(wl, 'website')) { track('form_error', { form: 'tevai', field: 'honeypot' }); done(); return; }
+      var payload = {
+        product: product(), lead_type: 'tevai',
+        parent_name: val(wl, 'parent_name').slice(0, 80),
+        email: val(wl, 'email').toLowerCase().slice(0, 160),
+        phone: val(wl, 'phone').slice(0, 30) || null,
+        child_age: val(wl, 'child_age').slice(0, 20),
+        city: val(wl, 'city').slice(0, 40),
+        kindergarten_name: val(wl, 'kindergarten_name').slice(0, 120) || null,
+        location_pref: val(wl, 'location_pref').slice(0, 80),
+        preferred_day: days().slice(0, 60) || null,
+        src: SRC.slice(0, 60), page_version: 'v3-3d',
+        consent_contact: true, consent_text_version: 'v2'
+      };
+      post(payload).then(function () {
+        done();
+        track('value', { step: 'waitlist_submit', product: payload.product, location: payload.location_pref, has_phone: payload.phone ? 1 : 0, has_kg: payload.kindergarten_name ? 1 : 0, proto: PROTO_TEST ? 1 : 0 });
+      }).catch(function (x) {
+        wl.classList.remove('sending'); btn.disabled = false; btn.textContent = 'Bandyti dar kartą';
+        err('submit', humanError(x.status)); track('error', { where: 'waitlist_submit', code: x.status || 0 });
+      });
+    });
+    var shareBtn = $('#shareBtn');
+    if (shareBtn) shareBtn.addEventListener('click', function () { share(shareBtn, 'tevai_done', 'Robotika be ekrano 3–4 metų vaikams darželyje.', 'share'); });
+    function again() {
+      $('#done').classList.remove('on'); $('.prog', wl).style.display = ''; wl.reset(); restoreBtn(submitBtn); err('submit'); kgSync();
+      $('#joined').classList.remove('on'); show(1); track('engage', { what: 'form_again' });
+    }
+    var againBtn = $('#againBtn'); if (againBtn) againBtn.addEventListener('click', again);
+    var joinAgain = $('#joinAgain'); if (joinAgain) joinAgain.addEventListener('click', function () { $('#joined').classList.remove('on'); track('engage', { what: 'form_again' }); });
+    try { if (localStorage.getItem('matata-v2-joined') === '1') $('#joined').classList.add('on'); } catch (x) {}
+  }
+
+  if (org) {
+    var ostarted = false, orgBtn = $('#orgSubmit'); if (orgBtn) orgBtn.dataset.label = orgBtn.innerHTML;
+    org.addEventListener('focusin', function () { if (!ostarted) { ostarted = true; track('engage', { what: 'org_form_start' }); } });
+    function oerr(name, msg, field) {
+      var p = org.querySelector('[data-err="' + name + '"]'); if (p) p.textContent = msg || '';
+      var f = org.elements[field]; if (f && f.setAttribute) f.setAttribute('aria-invalid', msg ? 'true' : 'false');
+      if (msg) track('form_error', { form: 'istaiga', field: name });
+    }
+    org.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true;
+      if (!val(org, 'org_role')) { oerr('org_role', 'Pasirinkite vaidmenį.', 'org_role'); ok = false; } else oerr('org_role', '', 'org_role');
+      if (val(org, 'org_name').length < 2) { oerr('org_name', 'Įrašykite darželio pavadinimą.', 'org_name'); ok = false; } else oerr('org_name', '', 'org_name');
+      if (val(org, 'city').length < 2) { oerr('org_city', 'Įrašykite miestą.', 'city'); ok = false; } else oerr('org_city', '', 'city');
+      if (val(org, 'parent_name').length < 2) { oerr('org_contact', 'Įrašykite savo vardą.', 'parent_name'); ok = false; } else oerr('org_contact', '', 'parent_name');
+      if (!EMAIL.test(val(org, 'email'))) { oerr('org_email', 'Patikrinkite el. paštą: reikia @ ir taško.', 'email'); ok = false; } else oerr('org_email', '', 'email');
+      if (!org.elements.consent_contact.checked) { oerr('org_consent', 'Be sutikimo negalėsime susisiekti.', 'consent_contact'); ok = false; } else oerr('org_consent', '', 'consent_contact');
+      if (!ok) { var bad = org.querySelector('[aria-invalid="true"]'); if (bad) { bad.focus({ preventScroll: true }); scrollToEl(bad, 120); } return; }
+      var btn = orgBtn; btn.disabled = true; btn.textContent = 'Siunčiame…'; org.classList.add('sending'); oerr('org_submit', '');
+      function odone() {
+        $$('.fstep', org).forEach(function (s) { s.classList.remove('on'); });
+        $('#orgDoneWhere').textContent = val(org, 'org_name') ? '„' + val(org, 'org_name').slice(0, 60) + '"' : 'jūsų darželį';
+        var d = $('#orgDone'); d.classList.add('on'); org.classList.remove('sending'); restoreBtn(orgBtn); d.focus({ preventScroll: true }); scrollToEl(org); celebrate($('#orgConfetti'));
+        setTimeout(function () { consentMaybe('done'); }, 1200);
+      }
+      if (val(org, 'website')) { track('form_error', { form: 'istaiga', field: 'honeypot' }); odone(); return; }
+      var payload = {
+        product: 'matata', lead_type: 'istaiga',
+        org_role: val(org, 'org_role').slice(0, 60), org_name: val(org, 'org_name').slice(0, 160), org_size: val(org, 'org_size').slice(0, 40) || null,
+        city: val(org, 'city').slice(0, 40), parent_name: val(org, 'parent_name').slice(0, 80),
+        email: val(org, 'email').toLowerCase().slice(0, 160), phone: val(org, 'phone').slice(0, 30) || null,
+        location_pref: 'darzelis', src: SRC.slice(0, 60), page_version: 'v3-3d', consent_contact: true, consent_text_version: 'v2'
+      };
+      post(payload).then(function () {
+        odone(); track('value', { step: 'org_lead_submit', role: payload.org_role, size: payload.org_size || '', proto: PROTO_TEST ? 1 : 0 });
+      }).catch(function (x) {
+        org.classList.remove('sending'); btn.disabled = false; btn.textContent = 'Bandyti dar kartą';
+        oerr('org_submit', humanError(x.status)); track('error', { where: 'org_lead_submit', code: x.status || 0 });
+      });
+    });
+    var os = $('#orgShareBtn');
+    if (os) os.addEventListener('click', function () { share(os, 'istaiga_done', 'Robotika be ekrano 3–4 metų vaikams darželyje.', 'share-darzelis'); });
+  }
+
+  function celebrate(box) {
+    if (reduce || !box) return;
+    var cols = ['#56B13F', '#FEC404', '#3F6EDC', '#E6483B', '#F7A11A', '#6A41D4'];
+    for (var i = 0; i < 40; i++) {
+      var s = document.createElement('i');
+      s.style.cssText = 'position:absolute;top:-12px;width:10px;height:14px;border-radius:3px;opacity:0;animation:fall 1.6s cubic-bezier(.16,1,.3,1) forwards';
+      s.style.left = (Math.random() * 100) + '%'; s.style.background = cols[i % cols.length];
+      s.style.animationDelay = (Math.random() * .5) + 's'; s.style.animationDuration = (1.3 + Math.random() * .9) + 's';
+      box.appendChild(s);
+    }
+    setTimeout(function () { box.innerHTML = ''; }, 3000);
+  }
+
+  // ---------- consent gate: Clarity only after „Leisti" (copied from v2) ----------
+  var banner = $('#consent'), CONSENT_KEY = 'matata-consent-v2', CLARITY_ID = CFG.clarityId || '';
+  var saved = null; try { saved = localStorage.getItem(CONSENT_KEY); } catch (e) {}
+  function loadClarity() {
+    if (!CLARITY_ID || window.__clarityLoaded) { if (window.clarity) { try { window.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'granted' }); } catch (e) {} } return; }
+    window.__clarityLoaded = true;
+    (function (c, l, a, r, i, t, y) { c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); }; t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i; y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y); })(window, document, 'clarity', 'script', CLARITY_ID);
+    try { window.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'granted' }); } catch (e) {}
+  }
+  function dropClarityCookies() {
+    var host = location.hostname, past = 'expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/';
+    ['_clck', '_clsk'].forEach(function (n) {
+      document.cookie = n + '=; ' + past;
+      document.cookie = n + '=; ' + past + '; domain=' + host;
+      document.cookie = n + '=; ' + past + '; domain=.' + host;
+    });
+  }
+  function closeBanner() { banner.classList.remove('on'); body.classList.remove('consent-open'); body.style.removeProperty('--consent-h'); }
+  function decide(v) {
+    saved = v;
+    try { localStorage.setItem(CONSENT_KEY, v); } catch (e) {}
+    closeBanner();
+    if (v === 'all') loadClarity();
+    else { if (window.clarity) { try { window.clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'denied' }); } catch (e) {} } dropClarityCookies(); }
+    track('consent', { choice: v });
+  }
+  function openBanner(why) {
+    banner.classList.add('on'); body.classList.add('consent-open');
+    body.style.setProperty('--consent-h', (banner.offsetHeight || 0) + 'px');
+    track('engage', { what: 'consent_open', why: why || 'auto' });
+  }
+  var consentAsked = false;
+  function consentMaybe(why) {
+    if (consentAsked || saved || !CLARITY_ID || banner.classList.contains('on')) return;
+    if (why !== 'done') { if (Date.now() - lastNavClick < 1500) return; if (formIn) return; if (why !== 'dwell' && !heroOut) return; }
+    consentAsked = true; openBanner(why);
+  }
+  if (saved === 'all') loadClarity();
+  setTimeout(function () { consentMaybe('dwell'); }, 25000);
+  $('#consentYes').addEventListener('click', function () { decide('all'); });
+  $('#consentNo').addEventListener('click', function () { decide('essential'); });
+  var co = $('#consentOpen'); if (co) co.addEventListener('click', function () { consentAsked = true; openBanner('footer'); });
+  window.addEventListener('resize', function () { if (banner.classList.contains('on')) body.style.setProperty('--consent-h', banner.offsetHeight + 'px'); });
+})();
+</script>
+
+<script type="module">
+/* Matata v3-3d · procedural 3D stage. Lazy: starts after load + idle, never blocks text/CTA. Fallback SVG stays if WebGL/CDN fails. */
+const THREE_URL = 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.min.js';
+const stage = document.getElementById('stage');
+const view = document.getElementById('stageView');
+const sayEl = document.getElementById('say');
+const padLoad = document.getElementById('padLoad');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const track = (n, p) => { try { window.__mt && window.__mt(n, p); } catch (e) {} };
+const beep = (...a) => { try { window.__beep && window.__beep(...a); } catch (e) {} };
+
+let sayT = 0;
+function say(txt, ms = 2200) { sayEl.textContent = txt; sayEl.classList.add('on'); clearTimeout(sayT); sayT = setTimeout(() => sayEl.classList.remove('on'), ms); }
+function noGL(why) {
+  stage.classList.add('no3d');
+  padLoad.innerHTML = '<span>Robotą pamatysite pamokoje: mygtukai ant jo nugaros, be ekrano.</span>';
+  track('engage', { what: '3d_fail', why });
+}
+function hasGL() { try { const c = document.createElement('canvas'); return !!(window.WebGLRenderingContext && (c.getContext('webgl2') || c.getContext('webgl'))); } catch (e) { return false; } }
+
+let started = false;
+async function boot(why) {
+  if (started) return; started = true;
+  if (!hasGL()) return noGL('webgl');
+  let THREE;
+  performance.mark('m3d-start');
+  try { THREE = await import(THREE_URL); } catch (e) { return noGL('cdn'); }
+  performance.mark('m3d-imported');
+  try { build(THREE); performance.mark('m3d-ready'); track('engage', { what: '3d_ready', why }); } catch (e) { console.warn(e); noGL('build'); }
+}
+
+// Lazy-init: after load + idle. Data-saver / 2G: wait for a tap.
+const conn = navigator.connection || {};
+const lowData = conn.saveData || /(^|-)2g$/.test(conn.effectiveType || '') || (navigator.deviceMemory && navigator.deviceMemory <= 2);
+function schedule() {
+  if (lowData) {
+    padLoad.innerHTML = '<button type="button" id="load3d">Rodyti 3D robotą</button>';
+    document.getElementById('load3d').addEventListener('click', () => { padLoad.innerHTML = '<span>Kraunamas 3D robotas…</span>'; boot('tap'); });
+    return;
+  }
+  const go = () => boot('auto');
+  if ('requestIdleCallback' in window) requestIdleCallback(go, { timeout: 1800 }); else setTimeout(go, 500);
+}
+if (document.readyState === 'complete') schedule(); else addEventListener('load', schedule, { once: true });
+
+function build(THREE) {
+  const C = { navy: 0x152039, blue: 0x3F6EDC, blueDeep: 0x2A4FB5, yellow: 0xFEC404, orange: 0xF7A11A, green: 0x56B13F, red: 0xE6483B, sky: 0xEEF3FF, sky2: 0xDCE6FF, paper: 0xFFF4DF, white: 0xFFFFFF, pink: 0xFFB3A7 };
+  const COLS = 5, ROWS = 4, START = { gx: 0, gy: 0, h: 1 }, LION = { gx: 4, gy: 2 };
+  const STORY = ['F', 'F', 'L', 'F', 'F', 'R', 'F', 'F'];
+  const CMD_COL = { F: C.green, B: C.yellow, L: C.blue, R: C.red };
+  const MAX_CMDS = 10;
+
+  // renderer
+  const phone = matchMedia('(pointer: coarse) and (max-width: 899px)').matches, dpr = window.devicePixelRatio || 1;
+  const renderer = new THREE.WebGLRenderer({ antialias: !(phone && dpr >= 2), alpha: true, powerPreference: 'low-power' });
+  renderer.setPixelRatio(Math.min(dpr, phone ? 1.5 : 1.75));
+  view.prepend(renderer.domElement);
+  renderer.domElement.setAttribute('aria-hidden', 'true');
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(34, 1, 0.1, 100);
+  const target = new THREE.Vector3(0.3, 0.15, 0.35);
+
+  scene.add(new THREE.HemisphereLight(0xffffff, 0xC9D6FF, 1.5));
+  const sun = new THREE.DirectionalLight(0xffffff, 1.9); sun.position.set(3, 7, 5); scene.add(sun);
+
+  // toon ramp (RGBA for WebGL1 safety)
+  const ramp = new Uint8Array([150, 150, 150, 255, 215, 215, 215, 255, 255, 255, 255, 255]);
+  const gradientMap = new THREE.DataTexture(ramp, 3, 1, THREE.RGBAFormat);
+  gradientMap.minFilter = gradientMap.magFilter = THREE.NearestFilter; gradientMap.needsUpdate = true;
+  const mats = {};
+  const toon = (hex) => mats[hex] || (mats[hex] = new THREE.MeshToonMaterial({ color: hex, gradientMap }));
+
+  function rbox(w, h, d, r) {
+    r = Math.min(r, w / 2 - 0.001, h / 2 - 0.001, d / 2 - 0.001);
+    const s = new THREE.Shape(), x = -w / 2 + r, y = -h / 2 + r, ww = w - 2 * r, hh = h - 2 * r, cr = Math.min(r, ww / 2, hh / 2) * 0.6;
+    s.moveTo(x + cr, y); s.lineTo(x + ww - cr, y); s.quadraticCurveTo(x + ww, y, x + ww, y + cr);
+    s.lineTo(x + ww, y + hh - cr); s.quadraticCurveTo(x + ww, y + hh, x + ww - cr, y + hh);
+    s.lineTo(x + cr, y + hh); s.quadraticCurveTo(x, y + hh, x, y + hh - cr); s.lineTo(x, y + cr); s.quadraticCurveTo(x, y, x + cr, y);
+    const g = new THREE.ExtrudeGeometry(s, { depth: d - 2 * r, bevelEnabled: true, bevelThickness: r, bevelSize: r, bevelSegments: 3, curveSegments: 5 });
+    g.translate(0, 0, -(d - 2 * r) / 2); g.computeVertexNormals();
+    return g;
+  }
+
+  const world = new THREE.Group(); scene.add(world);
+  const g2w = (gx, gy) => [gx - 2, 1.5 - gy];
+
+  // ---- pose model ----
+  const DIRS = [[0, 1], [1, 0], [0, -1], [-1, 0]];
+  function theta(h) { return Math.PI - h * Math.PI / 2; }
+  function stepPose(p, c) {
+    let { gx, gy, h, th } = p; th = th === undefined ? theta(h) : th; let edge = false;
+    if (c === 'F' || c === 'B') { const s = c === 'F' ? 1 : -1; const nx = gx + DIRS[h][0] * s, ny = gy + DIRS[h][1] * s; if (nx < 0 || ny < 0 || nx >= COLS || ny >= ROWS) edge = true; else { gx = nx; gy = ny; } }
+    else if (c === 'L') { h = (h + 3) % 4; th += Math.PI / 2; }
+    else if (c === 'R') { h = (h + 1) % 4; th -= Math.PI / 2; }
+    return { pose: { gx, gy, h, th }, edge };
+  }
+  function simulate(cmds) {
+    const poses = [{ ...START, th: theta(START.h) }]; let edgeAt = -1;
+    for (let i = 0; i < cmds.length; i++) { const r = stepPose(poses[poses.length - 1], cmds[i]); if (r.edge) { edgeAt = i; break; } poses.push(r.pose); }
+    return { poses, edgeAt };
+  }
+  // board
+  const base = new THREE.Mesh(rbox(6.2, 0.2, 4.4, 0.09), toon(C.sky2)); base.position.set(0.4, -0.12, 0); world.add(base);
+  const lionPad = new THREE.Mesh(new THREE.CylinderGeometry(0.34, 0.34, 0.06, 28), toon(C.paper)); { const [x, z] = g2w(LION.gx, LION.gy); lionPad.position.set(x + 0.88, 0.01, z); } world.add(lionPad);
+  const tileG = rbox(0.92, 0.08, 0.92, 0.035);
+  const storyCells = new Set(); { let p = { ...START }; storyCells.add(p.gx + ',' + p.gy); for (const c of STORY) { p = stepPose(p, c).pose; storyCells.add(p.gx + ',' + p.gy); } }
+  for (let gx = 0; gx < COLS; gx++) for (let gy = 0; gy < ROWS; gy++) {
+    const col = storyCells.has(gx + ',' + gy) ? C.paper : ((gx + gy) % 2 ? C.white : C.sky);
+    const t = new THREE.Mesh(tileG, toon(col)); const [x, z] = g2w(gx, gy); t.position.set(x, 0, z); world.add(t);
+  }
+  // start pad
+  const startDot = new THREE.Mesh(new THREE.CylinderGeometry(0.16, 0.16, 0.02, 24), toon(C.green));
+  { const [x, z] = g2w(START.gx, START.gy); startDot.position.set(x - 0.28, 0.05, z + 0.28); world.add(startDot); }
+
+  // soft blob shadow texture
+  const sc = document.createElement('canvas'); sc.width = sc.height = 64; const sx = sc.getContext('2d');
+  const grd = sx.createRadialGradient(32, 32, 2, 32, 32, 32); grd.addColorStop(0, 'rgba(21,32,57,.38)'); grd.addColorStop(1, 'rgba(21,32,57,0)'); sx.fillStyle = grd; sx.fillRect(0, 0, 64, 64);
+  const shadowTex = new THREE.CanvasTexture(sc);
+  const blob = (s) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(s, s), new THREE.MeshBasicMaterial({ map: shadowTex, transparent: true, depthWrite: false })); m.rotation.x = -Math.PI / 2; m.position.y = 0.045; return m; };
+
+  // ---- robot (Matata-style: rounded body, big friendly eyes, arrow buttons on the back/top) ----
+  const robot = new THREE.Group(); const rBody = new THREE.Group(); robot.add(rBody);
+  const body = new THREE.Mesh(rbox(0.7, 0.5, 0.7, 0.13), toon(C.white)); body.position.y = 0.36; rBody.add(body);
+  const bumper = new THREE.Mesh(rbox(0.74, 0.14, 0.74, 0.06), toon(C.orange)); bumper.position.y = 0.14; rBody.add(bumper);
+  const eyeG = new THREE.SphereGeometry(0.085, 20, 16), hiG = new THREE.SphereGeometry(0.03, 10, 8);
+  const eyes = [];
+  for (const sx_ of [-0.15, 0.15]) {
+    const e = new THREE.Group(); e.position.set(sx_, 0.42, 0.345);
+    const ball = new THREE.Mesh(eyeG, toon(C.navy)); ball.scale.z = 0.55; e.add(ball);
+    const hi = new THREE.Mesh(hiG, new THREE.MeshBasicMaterial({ color: 0xffffff })); hi.position.set(0.03, 0.03, 0.045); e.add(hi);
+    rBody.add(e); eyes.push(e);
+  }
+  const smile = new THREE.Mesh(new THREE.TorusGeometry(0.075, 0.017, 8, 20, Math.PI), toon(C.navy)); smile.rotation.z = Math.PI; smile.position.set(0, 0.29, 0.352); rBody.add(smile);
+  for (const sx_ of [-0.25, 0.25]) { const ch = new THREE.Mesh(new THREE.CircleGeometry(0.045, 16), new THREE.MeshBasicMaterial({ color: C.pink, transparent: true, opacity: 0.8 })); ch.position.set(sx_, 0.32, 0.352); rBody.add(ch); }
+  const btnG = new THREE.CylinderGeometry(0.07, 0.07, 0.05, 20);
+  const buttons = {};
+  [['F', 0, -0.17], ['B', 0, 0.17], ['L', -0.17, 0], ['R', 0.17, 0]].forEach(([k, x, z]) => {
+    // local +z is the face, so "forward" button sits toward the face side
+    const b = new THREE.Mesh(btnG, new THREE.MeshToonMaterial({ color: CMD_COL[k], gradientMap, emissive: 0x000000 }));
+    b.position.set(x, 0.625, -z); rBody.add(b); buttons[k] = b;
+  });
+  const goBtn = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, 0.05, 20), toon(C.orange)); goBtn.position.set(0, 0.625, 0); rBody.add(goBtn);
+  const ant = new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.015, 0.18, 8), toon(C.navy)); ant.position.set(0.22, 0.72, -0.22); rBody.add(ant);
+  const antBall = new THREE.Mesh(new THREE.SphereGeometry(0.05, 14, 10), toon(C.yellow)); antBall.position.set(0.22, 0.83, -0.22); rBody.add(antBall);
+  const wheelG = new THREE.CylinderGeometry(0.09, 0.09, 0.06, 16); wheelG.rotateZ(Math.PI / 2);
+  for (const [x, z] of [[-0.38, 0.2], [0.38, 0.2], [-0.38, -0.2], [0.38, -0.2]]) { const w = new THREE.Mesh(wheelG, toon(C.navy)); w.position.set(x, 0.1, z); rBody.add(w); }
+  robot.add(blob(1.0));
+  world.add(robot);
+
+  // ---- lion (goal) ----
+  const lion = new THREE.Group();
+  const mane = new THREE.Mesh(new THREE.SphereGeometry(0.3, 20, 16), toon(C.orange)); mane.scale.set(1, 1, 0.6); mane.position.y = 0.38; lion.add(mane);
+  const head = new THREE.Mesh(new THREE.SphereGeometry(0.21, 20, 16), toon(C.yellow)); head.position.set(0, 0.38, 0.1); lion.add(head);
+  for (const sx_ of [-0.075, 0.075]) { const e = new THREE.Mesh(new THREE.SphereGeometry(0.03, 10, 8), toon(C.navy)); e.position.set(sx_, 0.43, 0.29); lion.add(e); }
+  const nose = new THREE.Mesh(new THREE.SphereGeometry(0.035, 10, 8), toon(0x8A4B1F)); nose.position.set(0, 0.36, 0.31); lion.add(nose);
+  for (const sx_ of [-0.17, 0.17]) { const ear = new THREE.Mesh(new THREE.SphereGeometry(0.07, 12, 10), toon(C.yellow)); ear.position.set(sx_, 0.6, 0.02); lion.add(ear); }
+  const lb = new THREE.Mesh(rbox(0.36, 0.28, 0.3, 0.1), toon(C.yellow)); lb.position.set(0, 0.14, -0.05); lion.add(lb);
+  lion.add(blob(0.9));
+  { const [x, z] = g2w(LION.gx, LION.gy); lion.position.set(x + 0.88, 0.04, z); lion.scale.setScalar(0.85); lion.rotation.y = -1.1; }
+  world.add(lion);
+
+  // ---- program cards (the blocks the child lays out) ----
+  const cardsG = new THREE.Group(); world.add(cardsG);
+  const cardG = rbox(0.42, 0.06, 0.5, 0.05);
+  const arrowShape = new THREE.Shape(); arrowShape.moveTo(0, 0.17); arrowShape.lineTo(0.12, 0.03); arrowShape.lineTo(0.045, 0.03); arrowShape.lineTo(0.045, -0.15); arrowShape.lineTo(-0.045, -0.15); arrowShape.lineTo(-0.045, 0.03); arrowShape.lineTo(-0.12, 0.03); arrowShape.closePath();
+  const arrowG = new THREE.ShapeGeometry(arrowShape); arrowG.rotateX(-Math.PI / 2);
+  const arrowMat = new THREE.MeshBasicMaterial({ color: 0xffffff });
+  const ARROW_ROT = { F: 0, B: Math.PI, L: Math.PI / 2, R: -Math.PI / 2 };
+  let cards = [];
+  function layCards(cmds, animate) {
+    cards.forEach(c => cardsG.remove(c)); cards = [];
+    const n = cmds.length, gap = Math.min(0.5, 5 / Math.max(n, 1));
+    cmds.forEach((k, i) => {
+      const g = new THREE.Group();
+      const m = new THREE.Mesh(cardG, new THREE.MeshToonMaterial({ color: CMD_COL[k], gradientMap, emissive: 0x000000 })); g.add(m);
+      const a = new THREE.Mesh(arrowG, arrowMat); a.position.y = 0.036; a.rotation.y = ARROW_ROT[k]; g.add(a);
+      g.position.set((i - (n - 1) / 2) * gap, 0.02, 2.55);
+      g.userData = { base: 0.02, delay: animate && !reduce ? i * 0.08 : -1 };
+      if (g.userData.delay >= 0) g.position.y = 1.2;
+      cardsG.add(g); cards.push(g);
+    });
+    layStart = now();
+    kick();
+  }
+
+  const story = simulate(STORY).poses;
+  const smooth = (k) => k * k * (3 - 2 * k);
+  function applyPose(poses, t) {
+    const n = poses.length - 1; t = Math.max(0, Math.min(n, t));
+    const i = Math.min(n - 1, Math.floor(t)), f = n === 0 ? 0 : smooth(t - i);
+    const a = poses[Math.max(0, i)], b = poses[Math.min(n, i + 1)] || a;
+    const [ax, az] = g2w(a.gx, a.gy), [bx, bz] = g2w(b.gx, b.gy);
+    robot.position.set(ax + (bx - ax) * f, 0.04, az + (bz - az) * f);
+    robot.rotation.y = a.th + (b.th - a.th) * f;
+    const moving = (ax !== bx || az !== bz) && f > 0 && f < 1;
+    rBody.position.y = moving ? Math.sin(f * Math.PI) * 0.035 : 0;
+  }
+
+  // ---- state ----
+  let mode = 'story', storyP = window.__storyP || 0, dispRun = 0, arrived = false;
+  let prog = [], playPoses = null, playT = 0, playing = false, edgeAt = -1, runs = 0, gameStarted = false;
+  let hop = null, lionHop = null, bump = null, layStart = 0, blinkAt = 2;
+  const clock = new THREE.Clock(); const now = () => clock.getElapsedTime();
+
+  function storyMap(p) {
+    const N = STORY.length;
+    const scan = p < 0.25 ? Math.floor(p / 0.25 * N) : -1;
+    const press = p >= 0.25 && p < 0.42 ? Math.floor((p - 0.25) / 0.17 * N) : -1;
+    const run = Math.max(0, Math.min(1, (p - 0.42) / 0.5)) * N;
+    return { scan, press, run };
+  }
+  function highlight(idx, pressKey) {
+    cards.forEach((c, i) => { const on = i === idx; c.children[0].material.emissive.setHex(on ? 0x333333 : 0); c.userData.lift = on ? 0.09 : 0; });
+    for (const k in buttons) { const on = k === pressKey; buttons[k].material.emissive.setHex(on ? 0x444444 : 0); buttons[k].position.y = on ? 0.6 : 0.625; }
+  }
+
+  // ---- camera fit ----
+  function resize() {
+    const w = view.clientWidth, h = view.clientHeight; if (!w || !h) return;
+    renderer.setSize(w, h, false); camera.aspect = w / h;
+    const vf = THREE.MathUtils.degToRad(camera.fov), hf = 2 * Math.atan(Math.tan(vf / 2) * camera.aspect);
+    const R = 3.45, dist = R / Math.sin(Math.min(vf, hf) / 2);
+    const dir = new THREE.Vector3(0.32, 0.95, 1).normalize();
+    camera.position.copy(target).addScaledVector(dir, dist); camera.lookAt(target); camera.updateProjectionMatrix();
+    kick();
+  }
+  new ResizeObserver(resize).observe(view);
+
+  // ---- render loop: runs only while visible; idles at rest when reduced motion ----
+  let visible = true, running = false, last = 0;
+  function kick() { if (!running && visible && !document.hidden) { running = true; requestAnimationFrame(frame); } }
+  new IntersectionObserver((es) => { visible = es[0].isIntersecting; if (visible) kick(); }, { threshold: 0 }).observe(view);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) kick(); });
+
+  function frame() {
+    running = false;
+    const t = now(), dt = Math.min(0.1, t - last); last = t;
+    let busy = false;
+
+    // cards drop-in + lift
+    cards.forEach((c) => {
+      const u = c.userData; let y = u.base + (u.lift || 0);
+      if (u.delay >= 0) { const k = Math.max(0, Math.min(1, (t - layStart - u.delay) / 0.35)); if (k < 1) busy = true; y = 1.2 + (y - 1.2) * (1 - Math.pow(1 - k, 3)); }
+      const ny = reduce ? y : c.position.y + (y - c.position.y) * Math.min(1, dt * 14);
+      if (Math.abs(ny - y) > 0.001) busy = true; c.position.y = ny;
+    });
+
+    if (mode === 'story') {
+      const m = storyMap(storyP);
+      const goal = m.run;
+      if (reduce) dispRun = Math.round(goal); else { dispRun += (goal - dispRun) * Math.min(1, dt * 5); if (Math.abs(goal - dispRun) > 0.002) busy = true; else dispRun = goal; }
+      applyPose(story, dispRun);
+      const runIdx = dispRun > 0.001 && dispRun < STORY.length - 0.001 ? Math.floor(dispRun) : -1;
+      const idx = m.scan >= 0 ? m.scan : m.press >= 0 ? m.press : runIdx;
+      highlight(idx, m.press >= 0 ? STORY[m.press] : null);
+      const atLion = dispRun >= STORY.length - 0.02;
+      if (atLion && !arrived) { arrived = true; celebrateLion(); }
+      if (!atLion && dispRun < STORY.length - 0.5) arrived = false;
+    } else if (playPoses) {
+      if (playing) {
+        const end = playPoses.length - 1;
+        playT = reduce ? end : Math.min(end, playT + dt * 1.8);
+        const i = Math.floor(playT);
+        highlight(playT < end ? i : -1, playT < end ? prog[i] : null);
+        if (playT >= end) { playing = false; finishRun(); } else busy = true;
+        if (!reduce && i !== frame.lastI) { frame.lastI = i; if (i < end) beep(prog[i] === 'F' || prog[i] === 'B' ? 520 : 440, 0.1); }
+      }
+      applyPose(playPoses, playT);
+    }
+
+    // one-shot animations
+    if (hop) { const k = (t - hop) / 0.7; if (k >= 1) { hop = null; } else { rBody.position.y += Math.abs(Math.sin(k * Math.PI * 2)) * 0.18; rBody.rotation.y = k * Math.PI * 2; busy = true; } }
+    if (!hop) rBody.rotation.y = 0;
+    if (bump) { const k = (t - bump) / 0.45; if (k >= 1) bump = null; else { rBody.position.x = 0; rBody.position.z = Math.sin(k * Math.PI * 4) * 0.06 * (1 - k); busy = true; } }
+    if (!bump) rBody.position.z = 0;
+    if (lionHop) { const k = (t - lionHop) / 0.9; if (k >= 1) { lionHop = null; lion.position.y = 0.04; } else { lion.position.y = 0.04 + Math.abs(Math.sin(k * Math.PI * 3)) * 0.2 * (1 - k); busy = true; } }
+
+    // idle life (motion-safe only); idle-only frames are drawn at ~30 fps
+    const active = busy;
+    if (!reduce) {
+      rBody.position.y += Math.sin(t * 2.2) * 0.008;
+      antBall.position.y = 0.83 + Math.sin(t * 3) * 0.012;
+      if (t > blinkAt) { const k = (t - blinkAt) / 0.14; const s = k < 1 ? 1 - Math.sin(k * Math.PI) * 0.9 : 1; eyes.forEach(e => e.scale.y = s); if (k >= 1) blinkAt = t + 2.5 + Math.random() * 2.5; }
+      busy = true;
+    }
+
+    if (active || t - frame.drawn > 0.032 || !frame.drawn) { renderer.render(scene, camera); frame.drawn = t; }
+    if (busy) kick();
+  }
+
+  function celebrateLion() { lionHop = now(); say('Liūtas! Lion! Pavyko!', 2600); beep(523, .12); beep(659, .12, 'triangle', .08, .12); beep(784, .2, 'triangle', .08, .24); kick(); }
+
+  // ---- story progress from the classic script ----
+  document.addEventListener('storyp', (e) => { storyP = e.detail; if (mode === 'story') kick(); });
+
+  // ---- drag to turn the board, tap the robot ----
+  const ray = new THREE.Raycaster(), ndc = new THREE.Vector2();
+  let drag = null, dragged = false;
+  const cv = renderer.domElement;
+  cv.addEventListener('pointerdown', (e) => { drag = { x: e.clientX, y: e.clientY, r: world.rotation.y, moved: false }; });
+  cv.addEventListener('pointermove', (e) => {
+    if (!drag) return; const dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (!drag.moved && Math.abs(dx) > 6 && Math.abs(dx) > Math.abs(dy)) { drag.moved = true; try { cv.setPointerCapture(e.pointerId); } catch (x) {} }
+    if (drag.moved) { world.rotation.y = Math.max(-0.7, Math.min(0.7, drag.r + dx * 0.008)); kick(); if (!dragged) { dragged = true; track('engage', { what: 'robot_drag' }); } }
+  });
+  const end = (e) => {
+    if (!drag) return; const wasDrag = drag.moved; drag = null; if (wasDrag) return;
+    const r = cv.getBoundingClientRect(); ndc.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
+    ray.setFromCamera(ndc, camera);
+    if (ray.intersectObject(robot, true).length) { if (!reduce) hop = now(); say('Labas! Hello!'); beep(660, .1); beep(880, .14, 'triangle', .08, .1); track('engage', { what: 'robot_tap' }); kick(); }
+    else if (ray.intersectObject(lion, true).length) { if (!reduce) lionHop = now(); say('Liūtas! Lion!'); beep(220, .25, 'sawtooth', .05); kick(); }
+  };
+  cv.addEventListener('pointerup', end); cv.addEventListener('pointercancel', () => { drag = null; });
+
+  // ---- mini-game: program the robot ----
+  const countEl = document.getElementById('stepCount');
+  const runBtn = document.getElementById('runBtn'), resetBtn = document.getElementById('resetBtn');
+  const cmdBtns = Array.from(document.querySelectorAll('[data-cmd]'));
+  const NAMES = { F: 'pirmyn', B: 'atgal', L: 'kairėn', R: 'dešinėn' };
+  function setBusy(b) { cmdBtns.concat(runBtn).forEach(x => x.disabled = b); }
+  function toPlay() {
+    if (mode !== 'play') { mode = 'play'; prog = []; playPoses = [{ ...START, th: theta(START.h) }]; playT = 0; arrived = false; }
+    if (!gameStarted) { gameStarted = true; track('engage', { what: 'game_start' }); }
+  }
+  cmdBtns.forEach(b => b.addEventListener('click', () => {
+    toPlay(); if (playing) return;
+    if (prog.length >= MAX_CMDS) { say('Užteks komandų: paspauskite „Paleisti".'); return; }
+    const k = b.dataset.cmd; prog.push(k); countEl.textContent = prog.length;
+    playPoses = [{ ...START, th: theta(START.h) }]; playT = 0;
+    layCards(prog, false); highlight(-1, k); beep(k === 'F' || k === 'B' ? 520 : 440, .08);
+    say(prog.map(c => NAMES[c]).join(' · '), 1600);
+    setTimeout(() => { if (!playing) highlight(-1, null), kick(); }, 220);
+  }));
+  runBtn.addEventListener('click', () => {
+    toPlay(); if (playing) return;
+    if (!prog.length) { say('Pirmiausia paspauskite rodykles.'); return; }
+    runs++; const sim = simulate(prog); playPoses = sim.poses; edgeAt = sim.edgeAt; playT = 0; playing = true; frame.lastI = -1; setBusy(true);
+    track('engage', { what: 'game_run', moves: prog.length, run: runs }); kick();
+  });
+  function finishRun() {
+    setBusy(false); highlight(-1, null);
+    const p = playPoses[playPoses.length - 1];
+    if (edgeAt >= 0) { if (!reduce) bump = now(); say('Robotas sustojo čia. Bandome dar kartą.', 2400); beep(180, .25, 'square', .05); track('engage', { what: 'game_edge', moves: prog.length, run: runs }); }
+    else if (p.gx === LION.gx && p.gy === LION.gy) { celebrateLion(); track('engage', { what: 'game_done', moves: prog.length, run: runs }); }
+    else { say('Robotas sustojo čia. Bandome dar kartą.', 2200); beep(300, .2); track('engage', { what: 'game_miss', moves: prog.length, run: runs }); }
+    kick();
+  }
+  resetBtn.addEventListener('click', () => {
+    playing = false; prog = []; countEl.textContent = '0'; mode = 'story'; dispRun = 0; arrived = false; setBusy(false);
+    layCards(STORY, true); track('engage', { what: 'game_reset' }); kick();
+  });
+
+  renderer.domElement.addEventListener('webglcontextlost', (e) => { e.preventDefault(); stage.classList.remove('ready'); noGL('lost'); });
+
+  layCards(STORY, true);
+  resize();
+  stage.classList.add('ready');
+  kick();
+}
+</script>
+</body>
+</html>
